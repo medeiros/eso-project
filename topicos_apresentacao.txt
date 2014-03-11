@@ -1,4 +1,4 @@
-Slides da apresentação:
+Relação de tópicos da apresentação:
 
 - Título:
 	- Título do Projeto
@@ -24,4 +24,5 @@ Slides da apresentação:
 - Testes
 - Gerenciamento de Manutenção
 - Gerenciamento de Configuração
+- Fechamento
 
