@@ -1,0 +1,27 @@
+Slides da apresentação:
+
+- Título:
+	- Título do Projeto
+	- Subtítulo do Projeto
+	- Número da Equipe
+	- Nomes dos integrantes do grupo
+	
+- Pauta da Apresentação
+	- Breve descrição do projeto
+	- Requisitos atendidos pelo projeto
+	- Levantamento de Requisitos
+	- Design
+	- Construção
+	- Testes
+	- Gerenciamento de Manutenção
+	- Gerenciamento de Configuração
+
+- Breve descrição do projeto
+- Requisitos atendidos pelo projeto
+- Levantamento de Requisitos
+- Design
+- Construção
+- Testes
+- Gerenciamento de Manutenção
+- Gerenciamento de Configuração
+
