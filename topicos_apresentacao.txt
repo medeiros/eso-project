@@ -1,4 +1,14 @@
-Relação de tópicos da apresentação:
+----------==========    COMENTÁRIOS    ==========----------
+
+- Vou procurar, sempre que possível, buscar suporte no esquema argumentativo
+(Fundamentos/Evidências/Ressalvas/Afirmações) que o professor nos apresenta no 
+documento ProjetoComoEscrever.pdf, disponível no TEA [1].
+
+- Vide exemplo da empresa Car2Go [3]. Trata-se de uma empresa de carsharing
+apoiada pela Daimler. Existem outras empresas de carsharing subsdiárias de 
+montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
+
+----------========== TÓPICOS PROPOSTOS ==========----------
 
 - Título:
 	- Título do Projeto
@@ -7,8 +17,7 @@ Relação de tópicos da apresentação:
 	- Nomes dos integrantes do grupo
 	
 - Pauta da Apresentação
-	- Breve descrição do projeto
-	- Requisitos atendidos pelo projeto
+	- Contextualização do projeto
 	- Levantamento de Requisitos
 	- Design
 	- Construção
@@ -16,8 +25,27 @@ Relação de tópicos da apresentação:
 	- Gerenciamento de Manutenção
 	- Gerenciamento de Configuração
 
-- Breve descrição do projeto
-- Requisitos atendidos pelo projeto
+- Contextualização do projeto
+	- O trânsito nas cidades está se tornando inviável;
+	- Meios de transporte coletivo têm sido vistos como a resposta mais racional para esse problema;
+	- Porém, nos deparamos com diversos tipos de ineficiência no transporte coletivo público;
+	- Assim, muitas pessoas ainda consideram menos desvantajoso utilizar seus próprios automóveis;
+	- Uma alternativa intermediária e que pode incentivar essas pessoas a não usar seus automóveis é 
+	  o aluguel de veículos sob o regime de "carsharing", um modelo no qual as pessoas alugam veículos 
+	  por um período de tempo mais curto ([2])
+	- Escopo geral do projeto:
+		- desenvolver software de apoio à gestão de operações de carsharing;
+		- desenvolver software que permita expandir o conceito de vehicle as a service através de customizações 
+		  automáticas conforme preferências do usuário, tornando o serviço mais atrativo;
+	- Implementação: diferentes modelos de negócio na área de carsharing têm surgido e se mostrado viáveis [5][6]. Dentre os modelos de 
+	  negócio que têm surgido, dois nos parecem mais apropriados para o caso em questão: serviços de carsharing prestados por montadoras 
+	  e os de serviços de carsharing como diversificação do modelo de negócios de empresas de locação de veículos tradicionais;
+	- Desenvolver o projeto internamente poderia limitar os modelos de negócios possíveis: apenas a Motorbrás exploraria esse projeto. 
+          Assim, para conseguir maior flexibilidade nos modelos de negócio possíveis, propomos a criação de uma Startup para
+          o desenvolvimento do projeto. Essa startup operaria no regime de prestadora de serviços da Motorbrás, mas estaria livre para oferecer
+	  esse serviço a outras instituições interessadas;
+	- Por razões estratégicas, é possível que haja o interesse em limitar a lista de possíveis clientes da Startup (por exemplo, pode-se
+	  desejar evitar que ela ofereça serviços a concorrentes da Motorbrás). Tais decisões, porém, fogem do escopo de nossa área;
 - Levantamento de Requisitos
 - Design
 - Construção
@@ -26,3 +54,12 @@ Relação de tópicos da apresentação:
 - Gerenciamento de Configuração
 - Fechamento
 
+
+
+----------========== REFERÊNCIAS  ==========----------
+[1] http://tea.ipt.br/tea/file.php/235/projeto/ProjetoComoEscrever.pdf
+[2] http://en.wikipedia.org/wiki/Carsharing
+[3] http://www.car2go.com
+[4] http://www.independent.co.uk/life-style/motoring/volkswagen-becomes-latest-automaker-to-enter-carsharing-business-2283656.html
+[5] Carsharing Services Will Surpass 12 Million Members Worldwide by 2020 (http://www.navigantresearch.com/newsroom/carsharing-services-will-surpass-12-million-members-worldwide-by-2020);
+[6] Navigant forecasts global carsharing services to grow to $6.2B by 2020 (http://www.greencarcongress.com/2013/08/20130822-navigant.html);
