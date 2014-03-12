@@ -18,6 +18,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	
 - Pauta da Apresentação
 	- Contextualização do projeto
+	- Características dos Produtos
 	- Levantamento de Requisitos
 	- Design
 	- Construção
@@ -35,7 +36,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	  por um período de tempo mais curto ([2])
 	- Escopo geral do projeto:
 		- desenvolver software de apoio à gestão de operações de carsharing;
-		- desenvolver software que permita expandir o conceito de vehicle as a service através de customizações 
+		- desenvolver software que permita expandir o conceito de carsharing através de customizações 
 		  automáticas conforme preferências do usuário, tornando o serviço mais atrativo;
 	- Implementação: diferentes modelos de negócio na área de carsharing têm surgido e se mostrado viáveis [5][6]. Dentre os modelos de 
 	  negócio que têm surgido, dois nos parecem mais apropriados para o caso em questão: serviços de carsharing prestados por montadoras 
@@ -46,10 +47,130 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	  esse serviço a outras instituições interessadas;
 	- Por razões estratégicas, é possível que haja o interesse em limitar a lista de possíveis clientes da Startup (por exemplo, pode-se
 	  desejar evitar que ela ofereça serviços a concorrentes da Motorbrás). Tais decisões, porém, fogem do escopo de nossa área;
+
+- Características dos Produtos
+	- As características do projeto nos levam a uma divisão nos seguintes blocos funcionais:
+		- Sistema para gestão da operação de carsharing;
+		- Sistema embarcado de interação motorista-veículo;
+	- Os blocos funcionais atendem a públicos diferentes e, consequentemente, possuem grupos de stakeholders
+	  diferentes:
+		- Sistema de gestão: clientes (que desejam alugar um veículo), operadores do parque do parque de
+		  veículos, investidores, agências reguladoras, auditores (internos ou externos), pessoal de
+		  suporte à TI, investidores patrocinadores do negócio; 
+		- Sistema de interação motorista-veículo: clientes (que já alugaram o veículo e o estão utilizando),
+		  operadores do parque de veículos, pessoal de suporte à TI, pessoal de suporte ao motorista;
+	- Cada um desses blocos funcionais possuirão as seguintes características:
+		- Sistema de gestão:
+			- Módulo de funções administrativas, financeiras etc;
+			- Interface web para credenciamento de motoristas e agendamento de locações;
+			- Módulo com funções para os operadores do pátio de veículos (localização dos veículos,
+			  situação das baterias, planejamento conforme os agendamentos, entre outras);
+			- Interfaces para integração com outros sistemas (ERPs de mercado, sistemas de extração
+			  de indicadores etc);
+		- Sistema de interação motorista-veículo:
+			- Software para execução em tela touchscreen instalada no console do veículo;
+			- Sistemas de reconhecimento biométrico (optou-se pelo reconhecimento de íris);
+			- Software server-side para armazenamento de preferências do usuário e interações diversas
+			  com redes sociais (definição de playlists, entre outras);
+			- Sistema de interação com equipamentos do veículo (definição de posição dos bancos, volante,
+			  posição dos espelhos, entre outros, também de acordo com parâmetros pré-definidos pelo
+			  motorista);
+
 - Levantamento de Requisitos
+	- Seguindo as tendências de adoção de métodos ágeis [8], o Scrum [9] será adotado (este item está mais ligado
+	  às disciplinas de processo, que estão fora desta apresentação, mas é importante fazer menção a isto para
+	  esclarecer as bases das decisões que foram tomadas ao longo do trabalho);
+	- Os requisitos de software serão expressados na forma de User Stories, que são descrições funcionais
+	  de alto nível;
+	- A obtenção de requisitos junto aos atores do processo será um trabalho essencialmente multidisciplinar [7, pg 2-3].
+	  Os analistas de requisitos de cada uma das células de desenvolvimento (equipes multidisciplinares de 
+	  engenheiros de software) conduzirão o processo de obtenção de requisitos e redação das User Stories;
+	- Alguns dos stakeholders estarão dentro da Motorbrás (pessoal de marketing, jurídico entre outros). Para que bons 
+	  resultados sejam atingidos, é fundamental que os analistas de requisitos tenham acesso aos stakeholders internos.
+	- Porém, alguns stakeholders importantes, como os usuários finais, não estão presentes. O pessoal de marketing
+	  pode representar os interesses desses usuários, mas seria interessante que clientes em potencial pudessem
+	  ser consultados pelos analistas de requisitos;
+	  
 - Design
-- Construção
+	- O sistema é composto por diferentes componentes "macro" de software. Nota-se que cada um desses componentes 
+	  requer diferentes competências e, assim, a divisão em componentes-macro e, por sua vez, a divisão do projeto em
+	  sub-projetos deve trazer bom resultados.
+	- Além disso, [8] defende que a divisão de projetos de TI em projetos menores é desafiadora, mas contribui para o
+	  sucesso do projeto;
+	- Em função dos fatores apontados e das características funcionais dos componentes a serem desenvolvidos,
+	  optamos pela seguinte divisão de componentes de software:
+		- No caso do Sistema de Gestão:
+			- Aplicativo com funções administrativas;
+			- Aplicativo web para cadastramento, agendamento e outras funções de interação com os
+			  clientes finais;
+			- Aplicativo com funções operacionais para controle e acompanhamento de veículos;
+			- Interfaces de integração com outros sistemas;
+		- No caso do sistema de interação motorista-veículo:
+			- Software para execução em dispositivo acoplado ao console do veículo (comentário:
+			  aqui notamos uma sinergia com os esforços das equipes que estão trabalhando no conceito
+			  de carro como plataforma);
+			- Software para interação com dispositivos de reconhecimento biométrico (optamos
+			  pelo reconhecimento de íris, mas as preocupações no sentido de manutenção e expansão
+			  futura recomendam que o software seja desenvolvido de modo a facilitar a integração
+			  com outros tipos de reconhecimento biométrico);
+			- Software em servidor para gerenciamento de preferências dos usuários, dados para interações
+			  com redes sociais e outras funcionalidades (aqui também deve haver a preocupação com
+			  possibilidades de expansões futuras);
+			- Software embarcado de interação com sensores e atuadores dentro do veículo, para coleta
+			  de dados de preferências do usuário acerca de posição de espelhos, volante, bancos,
+			  entre outros; e também a possibilidade de interação com atuadores no veículo, para definição
+			  automática da posição desses itens assim que o perfil do usuário for carregado;
+	- Os itens acima descrevem decisões de design ligadas aos dois blocos funcionais macro identificados. Porém,
+	  verificamos que existem interações complexas ENTRE os blocos funcionais e INTRA blocos funcionais, isto é,
+	  existem interações complexas entre componentes de um mesmo bloco funcional;
+	- Para viabilizar a futura divisão das equipes em células focadas em cada componente de software, optamos
+	  por estabelecer uma célula responsável por identificar e documentar as interações entre esses
+	  diversos componentes;
+	- Com o investimento feito na formalização das interações entre componentes, espera-se conseguir atingir, não apenas
+	  em nível de código, mas em nível de projeto, alguns dos princípios descritos em [7, pg 3-2], como a Abstração,
+	  a Decomposição e Modularização, Separação entre Interface e Implementação.
+	- Com esses princípios bem estabelecidos, espera-se obter boa independência entre os trabalhos das equipes e
+	  facilidades nos processos de testes (mais sobre isso adiante);
+	- Para promover o reuso em vários níveis do código [7, pg 3-4], optamos por eleger o engenheiro de software
+	  de perfil mais sênior de cada célula para definir e descrever elementos arquiteturais em nível macro
+	  (como a adoção de padrões de projeto, por exemplo).
+	- Entretanto, seguindo a linha de métodos ágeis adotada no projeto, o desenho detalhado ficará a cargo da
+	  equipe (arquitetura emergente);
+	- Visando os processos posteriores de Gerenciamento de Qualidade, nesta fase será instituido um roteiro
+	  com critérios para validação da qualidade do design e do código produzido durante a fase de construção;
+- Construção:
+	- O processo de construção será permeado por preocupações com a boa interação com os demais processos;
+	- A construção e o design serão tratados de maneira muito próxima. Conforme citado anteriormente, o
+	  processo de design proverá informações que guiarão o processo de construção, mas é durante o processo
+	  de construção que alguns detalhes arquiteturais serão definidos;
+	- O roteiro de validação da qualidade do design, instituído na fase anterior, será aplicado ao código
+	  produzido, visando os processos de Qualidade de Software, os quais estão fora do escopo desta
+	  apresentação;
 - Testes
+	- Atividades ligadas ao processo de testes terão início já no levantamento de requisitos. O analista de
+	  testes participará do processo de levantamento e documentação dos requisitos, garantindo que os
+	  requisitos produzidos atingem critérios básicos de verificação e testabilidade;
+	- É importante fazer uma distinção entre verificações dinâmicas (verificação do software em funcionamento)
+	  e verificações estáticas. As validações dinâmicas serão classificadas como atividades do processo
+	  de Testes. As validações estáticas ficarão agrupadas sob o processo de Qualidade de Software, [7, 5-1] 
+	  que não será abordado nesta apresentação.
+	- As atividades de teste serão organizadas de acordo com os seguintes Níveis de Teste [7, 5-3]:
+		- Testes Unitários: os Testes Unitários ficarão sob responsabilidade dos desenvolvedores
+		  (processo de construção). Os resultados desses testes serão visíveis pelo Analista de Testes;
+		- A equipe responsável pelo projeto das interações entre os componentes (vide tópicos sobre o
+		  Design) terá produzido descrições detalhadas sobre as interfaces de cada componente. Essas
+		  descrições darão a oportunidade de cada equipe criar componentes "fake" [10] que simulam 
+		  o comportamento dos componentes interagentes, promovendo a essência dos testes unitários, 
+		  que é testar funcionalidades da forma mais isolada possível;
+		- Testes de Integração: 
+			- conforme mencionado no tópico sobre Design, o sistema que está
+			  sendo projetado possui interações complexas e, da mesma forma que é necessário grande esforço
+			  no gerenciamento dessas interações, muito esforço é necessário para o teste das mesmas;
+			- Assim, a célula responsável pelo estabelecimento e controle das interações entre
+			  componentes ficará responsável pelos testes de integração, verificando o funcionamento
+			  geral do sistema desenvolvido.
+		- Teste do Sistema
+			
 - Gerenciamento de Manutenção
 - Gerenciamento de Configuração
 - Fechamento
@@ -63,3 +184,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 [4] http://www.independent.co.uk/life-style/motoring/volkswagen-becomes-latest-automaker-to-enter-carsharing-business-2283656.html
 [5] Carsharing Services Will Surpass 12 Million Members Worldwide by 2020 (http://www.navigantresearch.com/newsroom/carsharing-services-will-surpass-12-million-members-worldwide-by-2020);
 [6] Navigant forecasts global carsharing services to grow to $6.2B by 2020 (http://www.greencarcongress.com/2013/08/20130822-navigant.html);
+[7] SWEBOK 2004;
+[8] Chaos Manifesto 2013;
+[9] https://www.scrum.org/Portals/0/Documents/Scrum%20Guides/2013/Scrum-Guide.pdf;
+[10] Endo-Testing: Unit Testing with Mock Objects. http://instinct.googlecode.com/svn/tags/Release-0.1.6/core/docs/reference/endotesting.pdf
