@@ -170,7 +170,8 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 			  componentes ficará responsável pelos testes de integração, verificando o funcionamento
 			  geral do sistema desenvolvido.
 		- Teste do Sistema
-			
+	- Aplicação do TDD
+		[11]
 - Gerenciamento de Manutenção
 - Gerenciamento de Configuração
 - Fechamento
@@ -188,3 +189,4 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 [8] Chaos Manifesto 2013;
 [9] https://www.scrum.org/Portals/0/Documents/Scrum%20Guides/2013/Scrum-Guide.pdf;
 [10] Endo-Testing: Unit Testing with Mock Objects. http://instinct.googlecode.com/svn/tags/Release-0.1.6/core/docs/reference/endotesting.pdf
+[11] Exploding Software-Engineering Myths. http://research.microsoft.com/en-us/news/features/nagappan-100609.aspx
