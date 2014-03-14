@@ -100,7 +100,7 @@ O tester também deve estar no levantamento de requisitos, para prover uma visã
 mais funcional que permita que a definição da especificação seja definida de uma
 forma funcional e testável.
 
-Os analistas de requisito precisarão ter livre acesso aos stackholders (pessoal
+Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal
 de marketing e parte jurídica – que atuam como reguladores), que vão fornecer e
 auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
 entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD (mais do
@@ -123,7 +123,7 @@ projeto, apoiando-se em técnicas como refatoração e automatização de testes
 regressão.
 
 Os requisitos serão validados através de testes de aceitação, de duas formas:
-manual (na reunião de demonstração da iteração, quando os stackholders comparam
+manual (na reunião de demonstração da iteração, quando os stakeholders comparam
 as histórias combinadas em relação ao funcionamento do sistema), e automatizada:
 utilizando a técnica de BDD, cada cenário de cada história será vinculado a
 métodos de teste durante a construção, de forma que cada execução da suite de
@@ -235,7 +235,7 @@ finalizadas), e finalizando na entrega (onde os stackholder validam, numa
 reunião de demonstração, o sistema rodando, a documentação e demais artefatos
 que tenham sido previamente combinados a serem entregues). Para medida das
 iterações, são utilizadas as métricas já descritas nos tópicos anteriores, bem
-como o próprio aval dos stackholders.
+como o próprio aval dos stakeholders.
 
 
 3.4. Testes
@@ -294,7 +294,7 @@ próxima iteração, seguindo o mesmo fluxo de um novo requisito. Desta forma,
 incorporando correções no fluxo normal de desenvolvimento (e não após todo o
 projeto ter terminado), procura-se eliminar o problema onde 80% do esforço de
 manutenção é gasto em ações não corretivas. Neste caso, a manutenção acontece
-enquanto o projeto ainda existe, e a prioridade fica a cargo dos stackholders. 
+enquanto o projeto ainda existe, e a prioridade fica a cargo dos stakeholders. 
 
 A evolução do software, portanto, será agregada durante o projeto de
 desenvolvimento, cabendo apenas que haja um gerenciamento dos requisitos em
@@ -357,9 +357,9 @@ Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA e 1 tester
 
 Os analistas de requisitos precisam ter um forte entendimento do negócio
 e das tendências da empresa, bem como acesso livre à pessoas da parte
-operacional, da forma que um grupo de stackholders precisará ser definido.
+operacional, da forma que um grupo de stakeholders precisará ser definido.
 Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função
-de interagir com os Stackholders e definir limites e restrições necessárias para
+de interagir com os Stakeholders e definir limites e restrições necessárias para
 o andamento do projeto.
 
 [colocar esse trecho na parte relativa a processo]

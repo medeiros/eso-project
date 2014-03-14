@@ -265,7 +265,13 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 			  planejados antecipadamente, então não citei que eles devem ser planejados
 			  no início do sprint))
 - Gerenciamento de Manutenção
+	- A equipe responsável pela manutenção futura dos softwares será a mesma equipe
+	  que atuou nas fases de desenvolvimento. Essa abordagem apresenta algumas vantagens
+	  importantes, tais como o maior comprometimento da equipe com a qualidade do produto
+	  ao longo do desenvolvimento e um maior envolvimento da equipe com os usuários
+	  e outros participantes do processo de desenvolvimento [13];
 	- ((Mencionar benefícios do TDD));
+	
 - Gerenciamento de Configuração
 - Fechamento
 
@@ -283,3 +289,6 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 [9] https://www.scrum.org/Portals/0/Documents/Scrum%20Guides/2013/Scrum-Guide.pdf;
 [10] Endo-Testing: Unit Testing with Mock Objects. http://instinct.googlecode.com/svn/tags/Release-0.1.6/core/docs/reference/endotesting.pdf
 [11] Exploding Software-Engineering Myths. http://research.microsoft.com/en-us/news/features/nagappan-100609.aspx
+[12] http://martinfowler.com/articles/microservices.html#ProductsNotProjects
+[13] https://queue.acm.org/detail.cfm?id=1142065
+
