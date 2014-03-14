@@ -332,6 +332,51 @@ fim).
 
 3.6. Gerenciamento de Configuração
 
+Haverá uma gerência de configuração responsável pelo armazenamento de todos os 
+artefatos gerados nas fases de requisitos, design, construção, testes e 
+manutenção, bem como ferramentas necessárias a todas as áreas. O planejamento 
+desta gerência deve considerar apenas elementos de software, descartando 
+hardware e firmware por não serem aspectos cujo controle faz-se necessário. 
+Não caberá à gerência de configuração definir regras sobre os artefatos 
+gerados (com exceção do código-fonte gerado), de forma que os times podem 
+versionar livremente; contudo, precisa prover mecanismos para auditar a 
+informação (entende-se que estes mecanismos devem ser manuais, pela 
+diversidade de artefatos que um dado time pode produzir). 
+
+Em relação ao código-fonte gerado, a gerência de configuração precisará 
+garantir sua qualidade através da análise estática de código com uso de 
+ferramenta automatizada, de forma a garantir que o código está seguindo as boas 
+práticas determinadas pela empresa. Relatórios desta medida de qualidade de 
+código devem estar disponível para consulta a qualquer momento. O desenvolvedor 
+deve possuir acesso a estas mesmas práticas, de forma a poder criar um código-
+fonte de acordo com as práticas exigidas pela gerência de configuração. 
+
+Outra característica que precisa ser considerada é a permissão de acesso. 
+Apenas usuários de um dado projeto podem ter permissão de acesso ao repositório 
+de informações do projeto, a não ser que a gerência diga o contrário. Assim 
+sendo, é preciso haver uma forma automática de conceder acessos, tanto 
+individuais quanto a grupos, de forma que um privilégio individual de um 
+elemento num grupo possa sobrescrever seu privilégio enquanto membro do grupo.
+
+Esta gerência também será responsável pela integração contínua: deverá prover 
+e manter uma ferramenta de geração de builds automatizados, a ser executada 
+diariamente (“integrando” o código, agregando a execução de testes unitários e 
+de integração gerados pelos programadores ao processo de build, gerando 
+relatórios de métrica de cobertura de testes, e notificando todo o time no 
+caso de builds e testes quebrados), bem como prover uma opção para geração 
+de releases e deploy automático em servidor de testes. Com isto, espera-se 
+agilidade na entrega do sistema para testes. 
+
+Portanto, é responsabilidade da gerência de configuração gerar os releases/
+baselines. As baselines devem ser geradas a cada fim de iteração e os releases 
+devem estar disponíveis para ser gerados sempre que a equipe de construção 
+finalizar uma iteração, de forma que o ciclo de execução de trabalho deve estar 
+alinhado com o desta equipe. Se o código-fonte não estiver conforme o validado 
+pela análise estática de código e de acordo com as métricas de cobertura de 
+testes geradas pela integração contínua, o release não poderá ser entregue. 
+Cabe ao gerente de configuração a responsabilidade de alertar o time, de forma 
+a evitar atrasos num entendimento tardio de que o release não poderá ser 
+entregue por falta de qualidade.
 
 3.7. Gerenciamento 
 
