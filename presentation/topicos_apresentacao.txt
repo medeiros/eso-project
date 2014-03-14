@@ -154,25 +154,118 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	  e verificações estáticas. As validações dinâmicas serão classificadas como atividades do processo
 	  de Testes. As validações estáticas ficarão agrupadas sob o processo de Qualidade de Software, [7, 5-1] 
 	  que não será abordado nesta apresentação.
-	- As atividades de teste serão organizadas de acordo com os seguintes Níveis de Teste [7, 5-3]:
-		- Testes Unitários: os Testes Unitários ficarão sob responsabilidade dos desenvolvedores
-		  (processo de construção). Os resultados desses testes serão visíveis pelo Analista de Testes;
-		- A equipe responsável pelo projeto das interações entre os componentes (vide tópicos sobre o
-		  Design) terá produzido descrições detalhadas sobre as interfaces de cada componente. Essas
-		  descrições darão a oportunidade de cada equipe criar componentes "fake" [10] que simulam 
-		  o comportamento dos componentes interagentes, promovendo a essência dos testes unitários, 
-		  que é testar funcionalidades da forma mais isolada possível;
+	- As atividades de teste serão organizadas de acordo com os seguintes Níveis de Teste [7, pgs 5-3 e 5-4]:
+		- Testes Unitários: 
+			- os Testes Unitários ficarão sob responsabilidade dos desenvolvedores
+	   		  (processo de construção). Os resultados desses testes serão visíveis pelo Analista 
+			  de Testes;
+			- A equipe responsável pelo projeto das interações entre os componentes (vide tópicos sobre o
+			  Design) terá produzido descrições detalhadas sobre as interfaces de cada componente. Essas
+			  descrições darão a oportunidade de cada equipe criar componentes "fake" [10] que simulam 
+			  o comportamento dos componentes interagentes, promovendo a essência dos testes unitários, 
+			  que é testar funcionalidades da forma mais isolada possível;
 		- Testes de Integração: 
 			- conforme mencionado no tópico sobre Design, o sistema que está
 			  sendo projetado possui interações complexas e, da mesma forma que é necessário grande esforço
 			  no gerenciamento dessas interações, muito esforço é necessário para o teste das mesmas;
 			- Assim, a célula responsável pelo estabelecimento e controle das interações entre
 			  componentes ficará responsável pelos testes de integração, verificando o funcionamento
-			  geral do sistema desenvolvido.
-		- Teste do Sistema
-	- Aplicação do TDD
-		[11]
+			  geral do sistema desenvolvido;
+		- Teste do Sistema:
+			- o nível mais abrangente de testes englobará o sistema como um todo, verificando
+			  o funcionamento dos sistemas embarcados, administrativos e operacionais em
+			  conjunto;
+	- Estratégias de testes conforme objetivos [7, pg 5-4]:
+		- Testes de Aceite:
+			- Os testes de aceite visam verificar a conformidade do comportamento do sistema
+			  em relação aos requisitos dos usuários;
+			- Vale ressaltar que, nesta fase, estamos verificando o comportamento do sistema
+			  em relação aos requisitos, mas nem sempre foi o usuário final que especificou
+			  tais requisitos. Os Testes de Usabilidade [7, 5-5] serão conduzidos junto ao
+			  usuário final;
+			- Como o projeto é composto por módulos para atender necessidades de diferentes
+			  grupos, os testes de aceite serão conduzidos de forma separada, separando-se
+			  os grupos de usuários da seguinte forma:
+			- Sistema de gestão:
+				- Módulo de funções administrativas, financeiras etc:
+					- Integrantes do futuro departamento administrativo da empresa
+					  de carsharing;
+				- Interface web para credenciamento de motoristas e agendamento de locações:
+					- Pessoal de marketing (embora eles não sejam os usuários finais,
+					  os requisitos atendidos pelo sistema foram fornecidos pelo
+					  departamento de marketing);
+				- Módulo com funções para os operadores do pátio de veículos (localização dos veículos,
+				  situação das baterias, planejamento conforme os agendamentos, entre outras);
+					- Coordenadores dos funcionários do pátio de veículos, que comandarão
+					  as equipes responsáveis por lidar com os veículos no dia-a-dia;
+			- Sistema de interação motorista-veículo:
+				- Software para execução em tela touchscreen instalada no console do veículo;
+					- Pessoal de marketing; especialistas em ergonomia;
+				- Sistemas de reconhecimento biométrico (optou-se pelo reconhecimento de íris);
+					- Pessoal de marketing; especialistas em ergonomia;
+				- Sistema de interação com equipamentos do veículo (definição de posição dos bancos, volante,
+				  posição dos espelhos, entre outros, também de acordo com parâmetros pré-definidos pelo
+				  motorista);
+					- Pessoal de marketing; especialistas em ergonomia;
+		- Testes alfa:
+			- Com o intuito de verificar se o comportamento implementado converge com as
+			  expectativas dos usuários e, possivelmente, encontrar bugs em um estágio ainda
+			  pouco avançado do projeto, pretendemos liberar versões intermediárias dos
+			  softwares para realização de testes alfa, isto é, internos [7, pg 5-4];
+		- Testes de performance:
+			- O software server-side deverá suportar conexões simultâneas de, potencialmente, 
+			  milhares de veículos. Assim, este componente deverá sofrer Testes de Performance,
+			  verificando a aderência a requisitos de volume de conexões, throughput e tempo
+			  de resposta [7, pg 5-5];
+		- Testes de usabilidade:
+			- Diferentemente do descrito na seção sobre Testes de Aceite, os testes de
+			  usabilidade serão realizados com os futuros usuários do sistema ou, na ausência
+			  destas, com pessoas que representem claramente ou que possuam expectativas
+			  bastante semelhantes às dos usuários finais;
+			- Seguindo esse critério, os usuários para a condução dos testes seriam divididos
+			  da seguinte maneira:				
+				- Sistema de gestão:
+					- Módulo de funções administrativas, financeiras etc:
+						- Integrantes do futuro departamento administrativo da empresa
+						  de carsharing;
+					- Interface web para credenciamento de motoristas e agendamento de locações:
+						- De acordo com o mapeamento do perfil de locatários elaborado
+						  pelo departamento de marketing, serão sorteados funcionários
+						  da Motorbrás representativos de tal perfil;
+					- Módulo com funções para os operadores do pátio de veículos (localização dos veículos,
+					  situação das baterias, planejamento conforme os agendamentos, entre outras);
+						- Coordenadores dos funcionários do pátio de veículos, que comandarão
+						  as equipes responsáveis por lidar com os veículos no dia-a-dia;
+						- Funcionários com perfil semelhante ao dos futuros funcionários;
+				- Sistema de interação motorista-veículo:
+					- Software para execução em tela touchscreen instalada no console do veículo;
+						- Funcionários pertencentes ao grupo de testadores do sistema de locação;
+					- Sistemas de reconhecimento biométrico (optou-se pelo reconhecimento de íris);
+						- Funcionários pertencentes ao grupo de testadores do sistema de locação;
+					- Sistema de interação com equipamentos do veículo (definição de posição dos bancos, volante,
+					  posição dos espelhos, entre outros, também de acordo com parâmetros pré-definidos pelo
+					  motorista);
+						- Funcionários pertencentes ao grupo de testadores do sistema de locação;
+		- Testes Ad hoc e Testes Exploratórios [7, 5-5]:
+			- os testadores presentes nas células de desenvolvimento terão
+			  liberdade para a realização de testes que julgarem válidos na iteração corrente. Os resultados
+			  desses testes precisarão ser documentados em relatório, contendo também sua justificativa
+			  e os resultados;
+	- Razões para a aplicação do TDD:
+		- De acordo com estudos descritos em [11], o TDD é uma técnica que demanda mais tempo para
+		  o desenvolvimento. Por outro lado, foi demonstrado, também, que a técnica é eficaz na
+		  redução de erros;
+		- No estudo, a qualidade foi avaliada medindo-se a quantidade de bugs encontrados na fase
+		  pós-release, ou seja, a avaliação da qualidade levou em conta quantos bugs acabaram
+		  sendo encontrados em ambiente de produção;
+		- O TDD proporciona outros benefícios como melhorias na manutenabilidade do código
+		  (abordaremos esse assunto no próximo tópico) e melhorias na documentação, já que os
+		  testes descrevem a resposta esperada do sistema em diversos cenários;
+			((O item 3.1.2 da KA de testes cita que os testes exploratórios não são
+			  planejados antecipadamente, então não citei que eles devem ser planejados
+			  no início do sprint))
 - Gerenciamento de Manutenção
+	- ((Mencionar benefícios do TDD));
 - Gerenciamento de Configuração
 - Fechamento
 
