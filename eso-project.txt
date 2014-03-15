@@ -103,12 +103,12 @@ forma funcional e testável.
 Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal
 de marketing e parte jurídica – que atuam como reguladores), que vão fornecer e
 auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
-entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD (mais do
+entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD [2] (mais do
 que o rigor do UML) e exemplificação de cenários como formas de obter clareza
 nos detalhes das histórias. Os modelos conceituais estão a cargo dos
 entrevistadores, e não definem característica formal. Apenas é esperado que
-sejam definidos cenários para cada história, de forma a guiar o time durante a
-construção e permitir geração de validação automatizada dos requisitos.
+sejam definidos cenários para cada história [3], de forma a guiar o time durante a
+construção e permitir geração de validação automatizada dos requisitos. [4]
 
 Considerando a característica dinâmica da equipe de marketing, assume-se que os
 requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o
@@ -119,13 +119,13 @@ time.
 Uma arquitetura será definida com base no entendimento das primeiras histórias
 da especificação (e com base em conhecimento da visão geral do projeto e
 características de infra-estrutura da empresa), e evoluída durante todo o
-projeto, apoiando-se em técnicas como refatoração e automatização de testes de
+projeto [5], apoiando-se em técnicas como refatoração e automatização de testes de
 regressão.
 
 Os requisitos serão validados através de testes de aceitação, de duas formas:
 manual (na reunião de demonstração da iteração, quando os stakeholders comparam
 as histórias combinadas em relação ao funcionamento do sistema), e automatizada:
-utilizando a técnica de BDD, cada cenário de cada história será vinculado a
+utilizando a técnica de BDD [6], cada cenário de cada história será vinculado a
 métodos de teste durante a construção, de forma que cada execução da suite de
 testes irá gerar um relatório que define se as histórias estão funcionando de
 acordo com o esperado.
@@ -137,7 +137,7 @@ o entendimento dos requisitos de maior prioridade, o design de software
 arquitetural (top-level) será definido por um engenheiro de software com perfil
 sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design
 detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma
-que o design não será mais dissociado da construção, e sim será parte desta. O
+que o design não será mais dissociado da construção, e sim será parte desta [7]. O
 engenheiro sênior em desenvolvimento pode definir design arquitetural para
 futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time
 na definição do design detalhado, durante a iteração. 
@@ -148,7 +148,7 @@ persistência de dados.
 
 Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do
 time, e não será exigida documentação formal para tal, pois assume-se o conceito
-de que o “código-fonte é o design”. Contudo, será necessário validar a qualidade
+de que o “código-fonte é o design” [8]. Contudo, será necessário validar a qualidade
 deste design, o que será feito através da elaboração de relatório de inspeção de
 código a cada iteração, que deve considerar as questões do documento de design
 arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão,
@@ -166,12 +166,12 @@ Além deste relatório, a qualidade do design também será garantida através d
 com as regras de negócio sendo utilizadas. O DDD faz uso de um diagrama
 simplificado de classes para modelar o entendimento;
 
-• práticas diárias de pair programming e TDD: que orientam o desenvolvedor
+• práticas diárias de pair programming e TDD [9]: que orientam o desenvolvedor
 no sentido de escrever um código claro e seguindo o paradigma de orientação a
 objetos;
 
 • práticas automatizadas: análise estática de código, para garantir que
-boas práticas de design estão sendo adotadas no código sendo escrito. Esta
+boas práticas de design estão sendo adotadas no código sendo escrito [10]. Esta
 prática não deve ser avaliada apenas no final da iteração, mas diariamente, por
 todo o time.
 
@@ -199,8 +199,8 @@ distinções.
 utilizando os melhores algoritmos e padrões. Também é esperado que o código seja
 escrito de forma a permitir futuras modificações sem grande impacto (e para
 isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração
-seja entendido). Outras práticas que serão exigidas do programador são a escrita
-de testes unitários e de integração. A verificação da adoção destas práticas
+seja entendido [11]). Outras práticas que serão exigidas do programador são a escrita
+de testes unitários e de integração [12]. A verificação da adoção destas práticas
 será realizada juntamente com a “validação de qualidade do design”, descrita no
 tópico anterior. 
 
@@ -454,6 +454,23 @@ pelo SWEBOK.
 WWF (2013). “WWF Living Planet Report: Human Impact”,
 http://wwf.panda.org/about_our_earth/all_publications/living_planet_report/
 2013_infographic/
+
+[1]  http://blog.myscrumhalf.com/2011/10/user-stories-o-que-sao-como-usar/
+     http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf (secao 5.3.2 - Functions - "The system shall..." é o mesmo conceito de história)
+[2]  http://books.google.com.br/books?hl=pt-BR&lr=&id=xColAAPGubgC&oi=fnd&pg=PR9&dq=domain+driven+design+requirement&ots=q9-DhkUM6o&sig=IuQaPj8TtU7qkoZPx3MjKj-8Y1U#v=onepage&q=domain%20driven%20design%20requirement&f=false (verifiquei a pagina 8 do livro - chapter 1: crunching knowlegde para ter uma ideia de uma entrevista conduzida com o conceito de DDD, onde o analista de requisitos entende o problema e remove ambiguidades)
+[3]  http://blog.myscrumhalf.com/2011/10/criterios-de-aceitacao-das-user-stories/
+[4]  http://www.agilealliance.org/files/9812/7853/8418/Melnik_XP2007.pdf
+[5]  http://www.mountaingoatsoftware.com/blog/agile-design-intentional-yet-emergent/
+     http://martinfowler.com/articles/designDead.html#GrowingAnArchitecture
+[6]  http://dannorth.net/introducing-bdd/
+     http://www.ryangreenhall.com/articles/bdd-by-example.html
+[7]  http://martinfowler.com/articles/designDead.html#PlannedAndEvolutionaryDesign
+[8]  http://www.developerdotstar.com/mag/articles/reeves_design_main.html
+     http://www.infoq.com/presentations/The-Code-is-the-Design    
+[9]  http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.108.147&rep=rep1&type=pdf
+[10] http://www.codeproject.com/Tips/344663/Static-code-analysis
+[11] http://martinfowler.com/books/refactoring.html
+[12] http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/testing.html
 
 
 
