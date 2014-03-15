@@ -302,7 +302,8 @@ relação à prioridade. Como a equipe é a mesma, não há transição de conhe
 As manutenções corretivas, adaptativas e perfectivas irão entrar no fluxo normal
 de desenvolvimento. Já espera-se que a manutenção preventiva seja um trabalho
 implícito, resultante das práticas de qualidade e métricas nas fases de análise,
-design e construção.
+design e construção. No caso especial da construção, espera-se aplicação de 
+refatoração e code review.
 
 A definição de testes de regressão de outras fases também irá ajudar na
 manutenção, definindo aspectos que não funcionam mais conforme esperado. Os
@@ -364,8 +365,9 @@ diariamente (“integrando” o código, agregando a execução de testes unitá
 de integração gerados pelos programadores ao processo de build, gerando 
 relatórios de métrica de cobertura de testes, e notificando todo o time no 
 caso de builds e testes quebrados), bem como prover uma opção para geração 
-de releases e deploy automático em servidor de testes. Com isto, espera-se 
-agilidade na entrega do sistema para testes. 
+de releases e deploy automático em servidor de testes (base da entrega
+contínua). Com isto, espera-se agilidade na entrega do sistema para validação
+pelos stackholders. 
 
 Portanto, é responsabilidade da gerência de configuração gerar os releases/
 baselines. As baselines devem ser geradas a cada fim de iteração e os releases 

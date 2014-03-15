@@ -264,15 +264,103 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 			((O item 3.1.2 da KA de testes cita que os testes exploratórios não são
 			  planejados antecipadamente, então não citei que eles devem ser planejados
 			  no início do sprint))
+
+
 - Gerenciamento de Manutenção
-	- A equipe responsável pela manutenção futura dos softwares será a mesma equipe
-	  que atuou nas fases de desenvolvimento. Essa abordagem apresenta algumas vantagens
-	  importantes, tais como o maior comprometimento da equipe com a qualidade do produto
-	  ao longo do desenvolvimento e um maior envolvimento da equipe com os usuários
-	  e outros participantes do processo de desenvolvimento [13];
-	- ((Mencionar benefícios do TDD));
+  - Será realizado pela mesma equipe que desenvolve o produto
+    - beneficios:  [13]
+      - comprometimento da equipe com qualidade
+      - envolvimento da equipe com usuários e demais participantes do desenvolvimento
+    - requisições de manutenções entram pela especificação
+      - corretivas: ajustes na especificação
+      - evolutivas: criação de item na especificação
+    - definição de história com prioridade, e passagem ao time, com prioridade
+      - desejável na próxima iteração
+      - discussão do impacto na iteração corrente
+    - visa mitigar 80/20
+      - 80% do esforço de manutenção sendo gasto em ações não corretivas
+      - manutenção acontece durante o projeto
+      - prioridade a cargo dos stackholders
+      - base: entregas contínuas/feedback
+    - não há necessidade de transição de conhecimento
+  - Tratamento de tipos de Manutenções 
+      - adaptativas e corretivas no fluxo normal de desenvolvimento
+      - perfectivas e preventiva como trabalho implícito
+        - em codificação: refatoração/code review
+  - Apoiado em testes de regressão
+    - regressão de design/código-fonte: TDD ((Mencionar benefícios do TDD))
+    - regressão da especificação: BDD
+  - Capacidade de análise de risco viável e alta manutenibilidade
+    - apoiando-se na qualidade das fases anteriores
+      - testes automatizados
+      - métricas
+      - inspeção de design e análise
+  - Plano pós-projeto
+    - equipe menor mantendo o projeto
+    - boa parte do mesmo pessoal
+      - baixo impacto em transição
+    - para entendimento funcional
+      - documento de especificação
+      - documento de design de arquitetura
+    - para entendimento detalhado de design
+      - análise de código
+    - esforço em qualidade é pago
+      - código manutenível
+        - fácil de entender e evoluir
+        - desconsideração por engenharia reversa
+    - boas práticas de qualidade não devem deixar de existir
+      - sob pena de degradar qualidade de código
+      - garantia na gerência de configuração
 	
+
 - Gerenciamento de Configuração
+  - Planejamento 
+    - Apenas considera elementos de software
+      - hardware e firmware não são aplicáveis
+    - Armazenamento: requisitos, design, construção, testes e manutenção
+      - artefatos
+      - ferramentas
+    - Auditoria e regras
+      - apenas sobre código-fonte
+      - liberdade sobre demais artefatos
+        - inspeção manual
+    - Permissão de acesso
+  - Código-fonte
+    - garantia de qualidade automatizada
+      - análise estática de código
+        - para validar boas práticas da empresa
+        - relatórios devem estar sempre disponíveis
+  - Permissão de acesso
+    - apenas membros do projeto têm acesso ao repositório
+      - exceção: definição gerencial
+    - possibilidade de permissões individuais sobre permissões do indivíduo no grupo
+  - Baselines e releases
+    - Integração contínua
+      - deve prover e manter ferramenta automatizada
+      - geração de builds diários
+        - integração de build
+        - execução de testes unitários
+        - execução de testes de integração
+        - notificação por email em caso de falha a todo o time
+        - geração de relatórios de métrica de cobertura de testes
+      - opção para geração de release/deploy automático em servidor específico para 
+        validação pelos stackholders (testes de aceitação)
+        - espera-se agilidade na entrega do sistema para testes
+    - Momento das baselines/releases
+      - Baselines a cada fim de iteração
+      - Possibilidade de gerar releases por baseline (iteração)
+        - "Trigger" (botão) de geração de release/deploy
+          - Base da entrega contínua
+      - Validação na geração de releases
+        - apenas se código-fonte em conformidade com as boas práticas
+          - análise estática de código
+          - cobertura de testes
+  - Espera-se iteração e comprometimento com a equipe de desenvolvimento
+    - proatividade no apontamento de irregularidades
+
+  
+ 
+
 - Fechamento
 
 
