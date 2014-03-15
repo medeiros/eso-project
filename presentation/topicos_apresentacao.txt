@@ -76,21 +76,57 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 			  posição dos espelhos, entre outros, também de acordo com parâmetros pré-definidos pelo
 			  motorista);
 
-- Levantamento de Requisitos
-	- Seguindo as tendências de adoção de métodos ágeis [8], o Scrum [9] será adotado (este item está mais ligado
-	  às disciplinas de processo, que estão fora desta apresentação, mas é importante fazer menção a isto para
-	  esclarecer as bases das decisões que foram tomadas ao longo do trabalho);
-	- Os requisitos de software serão expressados na forma de User Stories, que são descrições funcionais
-	  de alto nível;
-	- A obtenção de requisitos junto aos atores do processo será um trabalho essencialmente multidisciplinar [7, pg 2-3].
-	  Os analistas de requisitos de cada uma das células de desenvolvimento (equipes multidisciplinares de 
-	  engenheiros de software) conduzirão o processo de obtenção de requisitos e redação das User Stories;
-	- Alguns dos stakeholders estarão dentro da Motorbrás (pessoal de marketing, jurídico entre outros). Para que bons 
-	  resultados sejam atingidos, é fundamental que os analistas de requisitos tenham acesso aos stakeholders internos.
-	- Porém, alguns stakeholders importantes, como os usuários finais, não estão presentes. O pessoal de marketing
-	  pode representar os interesses desses usuários, mas seria interessante que clientes em potencial pudessem
-	  ser consultados pelos analistas de requisitos;
+
+- Requisitos de Software
+	- Os requisitos de software serão expressados na forma de especificação
+    - expressas como histórias
+      - definições funcionais de alto nível
+    - por meio de prioridades 
+  - Analista de requisitos deve prover informações
+    - Detalhes das histórias
+      - precisa ter um conhecimento detalhado
+    - No momento de estimativa e durante toda a iteração
+    - A cada iteração, será entregue um documento
+      - Detalha aspectos importantes realizados
+  - Levantamento de requisitos: trabalho multidisciplinar
+    - Engenheiro de software com papel mais técnico
+      - visão técnica para requisitos não-funcionais
+    - Engenheiro de software com papel de tester
+      - Visão funcional
+      - Auxilia numa escrita não-ambígua da especificação 
+  - Acesso aos stackholders
+    - Alguns dentro da empresa (marketing, jurídico)
+    - Usuários finais não estarão presentes
+      - Representado pelo marketing
+      - Possibilidade de envolver usuários finais
+  - Levantamento de requisitos
+    - Entrevistas
+      - Uso de técnicas de DDD e protótipo
+        - formalismo do UML desencorajado
+      - exemplificação de cenários
+        - obtendo clareza nos detalhes das histórias
+      - Modelos ficam a cargo dos entrevistadores
+      - Mas devem ser gerados cenários para cada história
+        - guiarão as etapas de construção
+        - permitirão validação automatizada dos requisitos
+  - Mudança de requisitos
+    - Característica dinâmica do marketing
+      - Sistema aberto para modificações
+        - Se mudanças pequenas na história, podem ser ajustadas
+        - Caso contrário, a ser tratado em posteriores iterações
+  - Definição de arquitetura
+    - no entendimento das primeiras histórias
+    - visão geral do projeto
+    - características de infra-estrutura da empresa
+    - evolução durante o projeto
+      - técnicas de refatoração
+      - testes de aceitação automatizados (BDD)
+  - Validação dos requisitos
+    - testes de aceitação 
+      - manual (remonstração)
+      - automatizado (BDD - relatório)
 	  
+
 - Design
 	- O sistema é composto por diferentes componentes "macro" de software. Nota-se que cada um desses componentes 
 	  requer diferentes competências e, assim, a divisão em componentes-macro e, por sua vez, a divisão do projeto em
@@ -146,6 +182,8 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	- O roteiro de validação da qualidade do design, instituído na fase anterior, será aplicado ao código
 	  produzido, visando os processos de Qualidade de Software, os quais estão fora do escopo desta
 	  apresentação;
+
+
 - Testes
 	- Atividades ligadas ao processo de testes terão início já no levantamento de requisitos. O analista de
 	  testes participará do processo de levantamento e documentação dos requisitos, garantindo que os
