@@ -17,14 +17,14 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
 	- Nomes dos integrantes do grupo
 	
 - Pauta da Apresentação
-	- Contextualização do projeto
-	- Características dos Produtos
-	- Levantamento de Requisitos
-	- Design
-	- Construção
-	- Testes
-	- Gerenciamento de Manutenção
-	- Gerenciamento de Configuração
+	- Contextualização do projeto (Lindomar)
+	- Características dos Produtos (Lindomar)
+	- Levantamento de Requisitos (Rodrigo)
+	- Design (Daniel)
+	- Construção (Daniel)
+	- Testes (Rodrigo)
+	- Gerenciamento de Manutenção (Daniel)
+	- Gerenciamento de Configuração (Daniel)
 
 - Contextualização do projeto
 	- O trânsito nas cidades está se tornando inviável;
