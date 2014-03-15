@@ -94,7 +94,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
     - Engenheiro de software com papel de tester
       - Visão funcional
       - Auxilia numa escrita não-ambígua da especificação 
-  - Acesso aos stackholders
+  - Acesso aos stakeholders
     - Alguns dentro da empresa (marketing, jurídico)
     - Usuários finais não estarão presentes
       - Representado pelo marketing
@@ -318,7 +318,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
     - visa mitigar 80/20
       - 80% do esforço de manutenção sendo gasto em ações não corretivas
       - manutenção acontece durante o projeto
-      - prioridade a cargo dos stackholders
+      - prioridade a cargo dos stakeholders
       - base: entregas contínuas/feedback
     - não há necessidade de transição de conhecimento
   - Tratamento de tipos de Manutenções 
@@ -382,7 +382,7 @@ montadoras, como a DriveNow da BMW e a Quicar da Volkswagen [4].
         - notificação por email em caso de falha a todo o time
         - geração de relatórios de métrica de cobertura de testes
       - opção para geração de release/deploy automático em servidor específico para 
-        validação pelos stackholders (testes de aceitação)
+        validação pelos stakeholders (testes de aceitação)
         - espera-se agilidade na entrega do sistema para testes
     - Momento das baselines/releases
       - Baselines a cada fim de iteração

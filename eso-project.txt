@@ -231,7 +231,7 @@ discute e define quantas histórias da especificação podem ser realizadas,
 considerando a prioridade) e pela construção propriamente dita (onde os
 programadores geram código considerando design, os analistas documentam as
 histórias e os testers validam as histórias contra o sistema conforme vão sendo
-finalizadas), e finalizando na entrega (onde os stackholder validam, numa
+finalizadas), e finalizando na entrega (onde os stakeholder validam, numa
 reunião de demonstração, o sistema rodando, a documentação e demais artefatos
 que tenham sido previamente combinados a serem entregues). Para medida das
 iterações, são utilizadas as métricas já descritas nos tópicos anteriores, bem
@@ -367,7 +367,7 @@ relatórios de métrica de cobertura de testes, e notificando todo o time no
 caso de builds e testes quebrados), bem como prover uma opção para geração 
 de releases e deploy automático em servidor de testes (base da entrega
 contínua). Com isto, espera-se agilidade na entrega do sistema para validação
-pelos stackholders. 
+pelos stakeholders. 
 
 Portanto, é responsabilidade da gerência de configuração gerar os releases/
 baselines. As baselines devem ser geradas a cada fim de iteração e os releases 
