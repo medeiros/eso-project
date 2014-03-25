@@ -380,7 +380,30 @@ Cabe ao gerente de configuração a responsabilidade de alertar o time, de forma
 a evitar atrasos num entendimento tardio de que o release não poderá ser 
 entregue por falta de qualidade.
 
-3.7. Gerenciamento 
+3.7. Gerenciamento de Engenharia de Software
+
+referencia 
+	http://www.amazon.com/Agile-Project-Management-Creating-Innovative/dp/0321658396
+
+laboratorio (projeto):
+
+- medida
+- meta
+	- nao tem problema de custo por ter um patrocinador rico
+	- prazo - quando eh estrategico
+	- funcionalidade - o que associado ao quando
+- risco 
+	- ameacas do projeto
+	- pontos de controle (teoria dos fatores criticos de sucesso)
+		- fazer uma pesquisa dos fatores criticos de sucesso pode ser uma boa 
+			- teoria parece se prender a algumas para gerenciar sempre
+	- como gerenciar o ricso - medida
+- medida
+
+
+ver zotero - para gerenciamento de referencias
+
+3.8. Gerenciamento de Processo de Software
 
 Justificar agile:	
 http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
