@@ -449,7 +449,7 @@ MoToRBras.
 
 
 
-7. Considerações Gerais
+4. Considerações Gerais
 
 O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupação
 com o peso da vida humana na Terra. É assumido que os governos irão cada vez
@@ -461,7 +461,7 @@ Nosso projeto caminha nesta direção.
 
 
 
-8. Conclusão
+5. Conclusão
 
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de
 software expostas no SWEBOK podem ser aplicadas na resolução de um problema
@@ -472,7 +472,7 @@ pelo SWEBOK.
 
 
 
-9. Referências
+6. Referências
 
 WWF (2013). “WWF Living Planet Report: Human Impact”,
 http://wwf.panda.org/about_our_earth/all_publications/living_planet_report/
