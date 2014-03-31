@@ -409,6 +409,8 @@ Justificar agile:
 http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
 http://blogs.gartner.com/michael_blechar/2010/06/27/agile-methodologies-hype-or-reality/
 
+[ver referencia do boehm e turner, using risk to balance agile and plan-driven methods (computer june 2003)]
+
 Para que possa o projeto possa ser viabilizado, será necessária a montagem de
 times de desenvolvimento. Seguindo a metodologia ágil de desenvolvimento SCRUM,
 os times serão dispostos em células multidisciplinares, conforme segue:
