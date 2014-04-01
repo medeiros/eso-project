@@ -3,7 +3,7 @@
 Nos dias atuais, poucas coisas são mais importantes para a Humanidade quanto a
 questão da ecologia. Na proporção em que crescemos enquanto espécie, a projeção
 média de crescimento da população mundial é de 9 bilhões de pessoas até 2050.
-[WWF 2013] Esse crescimento populacional influi diretamente nas condições de
+[1] Esse crescimento populacional influi diretamente nas condições de
 vida no planeta.
 
 Desta forma, no que concerne à área de atuação da MotorBRAS, a redução no
@@ -476,9 +476,10 @@ pelo SWEBOK.
 
 6. Referências
 
-WWF (2013). “WWF Living Planet Report: Human Impact”,
-http://wwf.panda.org/about_our_earth/all_publications/living_planet_report/
-2013_infographic/
+[1]WWF, “Living Planet Report 2013 Infographic.”
+[2]L. Rising and N. S. Janoff, “The Scrum Software Development Process for Small Teams,” vol. 17, no. 4, pp. 26–32, 2000.
+[3]Barry Boehm and Richard Turner, “Using Risk to Balance Agile and Plan-Driven Methods,” IEEE Computer Society, Jun. 2003.
+
 
 [1]  http://blog.myscrumhalf.com/2011/10/user-stories-o-que-sao-como-usar/
      http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf (secao 5.3.2 - Functions - "The system shall..." é o mesmo conceito de história)
