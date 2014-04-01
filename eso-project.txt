@@ -476,6 +476,9 @@ pelo SWEBOK.
 
 6. Referências
 
+[1]WWF, “Living Planet Report 2013 Infographic.”
+[2]L. Rising and N. S. Janoff, “The Scrum Software Development Process for Small Teams,” vol. 17, no. 4, pp. 26–32, 2000.
+[3]Barry Boehm and Richard Turner, “Using Risk to Balance Agile and Plan-Driven Methods,” IEEE Computer Society, Jun. 2003.
 	
 
 
