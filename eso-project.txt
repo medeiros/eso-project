@@ -409,6 +409,8 @@ Justificar agile:
 http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
 http://blogs.gartner.com/michael_blechar/2010/06/27/agile-methodologies-hype-or-reality/
 
+[ver referencia do boehm e turner, using risk to balance agile and plan-driven methods (computer june 2003)]
+
 Para que possa o projeto possa ser viabilizado, será necessária a montagem de
 times de desenvolvimento. Seguindo a metodologia ágil de desenvolvimento SCRUM,
 os times serão dispostos em células multidisciplinares, conforme segue:
@@ -449,7 +451,7 @@ MoToRBras.
 
 
 
-7. Considerações Gerais
+4. Considerações Gerais
 
 O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupação
 com o peso da vida humana na Terra. É assumido que os governos irão cada vez
@@ -461,7 +463,7 @@ Nosso projeto caminha nesta direção.
 
 
 
-8. Conclusão
+5. Conclusão
 
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de
 software expostas no SWEBOK podem ser aplicadas na resolução de um problema
@@ -472,7 +474,7 @@ pelo SWEBOK.
 
 
 
-9. Referências
+6. Referências
 
 WWF (2013). “WWF Living Planet Report: Human Impact”,
 http://wwf.panda.org/about_our_earth/all_publications/living_planet_report/
