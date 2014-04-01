@@ -3,7 +3,7 @@
 Nos dias atuais, poucas coisas são mais importantes para a Humanidade quanto a
 questão da ecologia. Na proporção em que crescemos enquanto espécie, a projeção
 média de crescimento da população mundial é de 9 bilhões de pessoas até 2050.
-[WWF 2013] Esse crescimento populacional influi diretamente nas condições de
+[1] Esse crescimento populacional influi diretamente nas condições de
 vida no planeta.
 
 Desta forma, no que concerne à área de atuação da MotorBRAS, a redução no
@@ -475,6 +475,9 @@ pelo SWEBOK.
 
 
 6. Referências
+
+	
+
 
 WWF (2013). “WWF Living Planet Report: Human Impact”,
 http://wwf.panda.org/about_our_earth/all_publications/living_planet_report/
