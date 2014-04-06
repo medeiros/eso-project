@@ -1,383 +1,435 @@
-1. IntroduÃ§Ã£o ao Projeto
+1. Introdução ao Projeto
 
-Nos dias atuais, poucas coisas sÃ£o mais importantes para a Humanidade quanto a
-questÃ£o da ecologia. Na proporÃ§Ã£o em que crescemos enquanto espÃ©cie, a projeÃ§Ã£o
-mÃ©dia de crescimento da populaÃ§Ã£o mundial Ã© de 9 bilhÃµes de pessoas atÃ© 2050.
-[1] Esse crescimento populacional influi diretamente nas condiÃ§Ãµes de
+Nos dias atuais, poucas coisas são mais importantes para a Humanidade quanto a
+questão da ecologia. Na proporção em que crescemos enquanto espécie, a projeção
+média de crescimento da população mundial é de 9 bilhões de pessoas até 2050.
+[1] Esse crescimento populacional influi diretamente nas condições de
 vida no planeta.
 
-Desta forma, no que concerne Ã  Ã¡rea de atuaÃ§Ã£o da MotorBRAS, a reduÃ§Ã£o no
-controle de emissÃµes de gÃ¡s carbÃ´nico apresenta-se, mais do que nunca, como um
-diferencial competitivo atraente. PaÃ­ses mais desenvolvidos estÃ£o prontos e
-dispostos a investir em tecnologias para reduÃ§Ã£o do consumo de CO2, de forma que
+Desta forma, no que concerne à área de atuação da MotorBRAS, a redução no
+controle de emissões de gás carbônico apresenta-se, mais do que nunca, como um
+diferencial competitivo atraente. Países mais desenvolvidos estão prontos e
+dispostos a investir em tecnologias para redução do consumo de CO2, de forma que
 o risco no investimento em tecnologias ambientais apresenta-se como baixo, uma
-vez que a demanda por novas tecnologias neste campo Ã© cada vez mais atrativa. As
+vez que a demanda por novas tecnologias neste campo é cada vez mais atrativa. As
 empresas que forem pioneiras no investimento de tecnologias ambientais que
-influenciem a vida das pessoas terÃ£o uma Ã³tima vantagem competitiva em relaÃ§Ã£o
+influenciem a vida das pessoas terão uma ótima vantagem competitiva em relação
 aos concorrentes. 
 
-Este projeto visa agregar valor Ã  intenÃ§Ã£o da MoToRBRAS de entrar no mercado de
-carros elÃ©tricos como serviÃ§o atÃ© 2020. A proposta Ã© a de agregar tecnologia ao
-produto, de forma a cativar o consumidor em relaÃ§Ã£o ao serviÃ§o e, assim, mitigar
-o impacto do Homem no meio ambiente. ConsequÃªncias diretas sÃ£o a geraÃ§Ã£o de uma
-imagem positiva no mercado, bem como a conquista de uma posiÃ§Ã£o de vanguarda e
-lideranÃ§a no mercado. 
+Este projeto visa agregar valor à intenção da MoToRBRAS de entrar no mercado de
+carros elétricos como serviço até 2020. A proposta é a de agregar tecnologia ao
+produto, de forma a cativar o consumidor em relação ao serviço e, assim, mitigar
+o impacto do Homem no meio ambiente. Consequências diretas são a geração de uma
+imagem positiva no mercado, bem como a conquista de uma posição de vanguarda e
+liderança no mercado. 
 
-PaÃ­ses desenvolvidos sÃ£o favorÃ¡veis Ã  ideia de aluguel de carros elÃ©tricos em
-suas grandes cidades, como forma de locomoÃ§Ã£o barata e rÃ¡pida das pessoas para
-seu local de trabalho. Carros elÃ©tricos, sendo pequenos e de baixo consumo, sÃ£o
+Países desenvolvidos são favoráveis à ideia de aluguel de carros elétricos em
+suas grandes cidades, como forma de locomoção barata e rápida das pessoas para
+seu local de trabalho. Carros elétricos, sendo pequenos e de baixo consumo, são
 altamente atrativos como um meio-termo entre os carros particulares e o
-transporte pÃºblico. 
+transporte público. 
 
-O que este projeto propÃµe Ã© tornar esse serviÃ§o ainda mais atrativo, atravÃ©s da
-customizaÃ§Ã£o de cada carro, pelo uso de tecnologia de ponta. O diferencial Ã©
-permitir que o carro seja automaticamente customizado para o indivÃ­duo. As
-seguintes caracterÃ­sticas serÃ£o agregadas aos carros elÃ©tricos:
+O que este projeto propõe é tornar esse serviço ainda mais atrativo, através da
+customização de cada carro, pelo uso de tecnologia de ponta. O diferencial é
+permitir que o carro seja automaticamente customizado para o indivíduo. 
 
-â€¢ Reconhecimento de Ã­ris â€“ uma maneira eficiente de identificar o
-indivÃ­duo para entÃ£o iniciar o processo de customizaÃ§Ã£o de suas preferÃªncias;
+2. Condições e Características Importantes
 
-â€¢ IntegraÃ§Ã£o com redes sociais â€“ para que seja possÃ­vel ao indivÃ­duo ter
-acesso a sua agenda, contatos, calendÃ¡rios e preferÃªncias musicais
+De acordo com o projeto previso pelo grupo, os seguintes características serão 
+agregadas aos carros elétricos:
+
+. Reconhecimento de íris – uma maneira eficiente de identificar o
+indivíduo para então iniciar o processo de customização de suas preferências;
+
+. Integração com redes sociais – para que seja possível ao indivíduo ter
+acesso a sua agenda, contatos, calendários e preferências musicais
 instantaneamente; 
 
-â€¢ CustomizaÃ§Ãµes fÃ­sicas internas â€“ preferÃªncias como temperatura do carro
-(ajuste do ar condicionado) e posiÃ§Ã£o do banco serÃ£o carregados de um servidor
-central e aplicados diretamente ao veÃ­culo quando da identificaÃ§Ã£o do indivÃ­duo;
-da mesma forma, alteraÃ§Ãµes no veÃ­culo sÃ£o salvas no servidor central como
-preferÃªncias do indivÃ­duo, para posterior aplicaÃ§Ã£o numa nova viagem;
+. Customizações físicas internas – preferências como temperatura do carro
+(ajuste do ar condicionado) e posição do banco serão carregados de um servidor
+central e aplicados diretamente ao veículo quando da identificação do indivíduo;
+da mesma forma, alterações no veículo são salvas no servidor central como
+preferências do indivíduo, para posterior aplicação numa nova viagem;
 
-â€¢ CustomizaÃ§Ãµes fÃ­sicas externas â€“ da mesma forma como a parte interna do
-carro poderÃ¡ ser customizada com base nas preferÃªncias, a parte externa tambÃ©m
-poderÃ¡, ainda que de forma mais restrita: apenas a cor do carro poderÃ¡ ser
-alterada de acordo com a preferÃªncia do indivÃ­duo, neste momento;
+% Observação sobre o parágrafo seguinte:
+%
+% pelo que pesquisei, as tecnologias de customização de cor ainda não se
+% encontram em um estágio comercializável. Além disso, estive pensando: 
+% dado o caráter transitório do serviço e o custo moderado, talvez a customização
+% física representaria uma característica não essencial. Poderíamos remover este
+% item do documento?
 
-â€¢ Carregamento automÃ¡tico do carro â€“ o carro poderÃ¡ ser automaticamente
+. Customizações físicas externas – da mesma forma como a parte interna do
+carro poderá ser customizada com base nas preferências, a parte externa também
+poderá, ainda que de forma mais restrita: apenas a cor do carro poderá ser
+alterada de acordo com a preferência do indivíduo, neste momento;
+
+% Observação sobre o parágrafo seguinte:
+%
+% A implantação desses checkpoints representaria um aumento grande no nível
+% de complexidade do projeto. Poderíamos remover este item?
+
+. Carregamento automático do carro – o carro poderá ser automaticamente
 recarregado assim que passar por determinados checkpoints espalhados pela
-cidade. O custo com combustÃ­vel Ã© praticamente nulo.
+cidade. O custo com combustível é praticamente nulo.
 
-AlÃ©m das caracterÃ­sticas acima citadas, outros aspectos devem ser considerados
+Além das características acima citadas, outros aspectos devem ser considerados
 para garantir o correto funcionamento de todo o processo, tais como:
 
-â€¢ SeguranÃ§a â€“ um aspecto importante que deve ser considerado em todo o
-projeto, tanto pelo aspecto de seguranÃ§a da identidade do indivÃ­duo quanto pela
-seguranÃ§a na execuÃ§Ã£o das tecnologias fÃ­sicas de customizaÃ§Ã£o e carregamento
-automÃ¡tico, bem como pela seguranÃ§a nas transaÃ§Ãµes de aluguel do veÃ­culo;
+. Segurança – um aspecto importante que deve ser considerado em todo o
+projeto, tanto pelo aspecto de segurança da identidade do indivíduo quanto pela
+segurança na execução das tecnologias físicas de customização e carregamento
+automático, bem como pela segurança nas transações de aluguel do veículo;
 
-â€¢ Controle cadastral â€“ o gerenciamento da customizaÃ§Ã£o das preferÃªncias e
-do pagamento pelo serviÃ§o sÃ£o aspectos que tambÃ©m devem ser endereÃ§ados, de
-forma que um sistema para controle cadastral dos clientes faz-se necessÃ¡rio.
+. Controle cadastral – o gerenciamento da customização das preferências e
+do pagamento pelo serviço são aspectos que também devem ser endereçados, de
+forma que um sistema para controle cadastral dos clientes faz-se necessário.
 
+Além dos sistemas internos ao veículo, são necessários softwares externos para
+compor a infraestrutura de prestação de serviços. Esses softwares são:
 
+. Sistema para aluguel de veículos pelos clientes - componente importante da
+infraestrutura de prestação do serviço, este software permitirá que os motoristas
+interessados efetuem o agendamento e posterior pagamento pelo serviço de aluguel
+de veículo através da internet;
 
-2. CondiÃ§Ãµes e CaracterÃ­sticas Importantes
+. Sistema para gestão da frota de veículos - o processo de gestão da frota de
+veículos requer um software de apoio. Atividades de manutenção, abastecimento,
+disponibilização e recepção de veículos nos pátios, entre outras, serão suportadas 
+por esse software. Este software representará o elo entre o processo de aluguel
+de veículos e as atividades administrativas e operacionais ligadas à gestão 
+da frota.
 
+. Servidor de armazenamento de perfis - software executado em um servidor
+centralizado que armazenará as preferências de cada usuário, bem como efetuará,
+de forma segura, a ponte entre o veículo e os dados disponíveis nas redes sociais
+do motorista.
 
+Algumas características do produto e do contexto de negócios influenciarão a 
+formatação do projeto. A listagem de características e respectivas consequências 
+para o projeto são:
+
+. Alto nível de inovação do produto - não existem serviços similares no mercado
+brasileiro. Estamos tomando como base a experiência de serviços semelhantes em
+outros países, mas, devido a fatores culturais, existe a possibilidade da
+experiência não se repetir com sucesso em nosso mercado. Tal situação 
+possivelmente levará a uma proposta de adaptação pelo departamento de 
+marketing, o que, por sua vez, exigirá a capacidade de absorção de novos
+requisitos por parte da TI. Dessa forma, optamos pela adoção de métodos
+ágeis, que são mais adequados a esse tipo de ambiente de negócio.
+
+. Heterogeneidade dos softwares a serem desenvolvidos - diferentes tipos de
+software serão desenvolvidos - desde sistemas desktop administrativos, passando
+por softwares para servidores e chegando a software embarcado para execução
+dentro do veículo. Esse contexto torna interessante a ideia da criação de
+pequenas equipes, especializadas no domínio específico da aplicação que estão
+desenvolvendo, dedicadas à atuação apenas no software que atende suas
+respectivas especialidades.
 
 3. Disciplinas do SWEBOK
 
-As disciplinas do SWEBOK serÃ£o aplicadas pelos times de desenvolvimento conforme
+As disciplinas do SWEBOK serão aplicadas pelos times de desenvolvimento conforme
 segue: 
 
 3.1. Requisitos
 
-Os requisitos de produto serÃ£o expressos por meio de uma especificaÃ§Ã£o composta
-de histÃ³rias [1], por ordem de prioridade, que sÃ£o definiÃ§Ãµes funcionais de alto
-nÃ­vel. O analista de requisitos serÃ¡ responsÃ¡vel por prover informaÃ§Ãµes
-detalhadas referentes Ã s histÃ³rias aos demais membros do time, no momento de
-estimativa da iteraÃ§Ã£o e durante toda a iteraÃ§Ã£o. Desta forma, cabe a este
-profissional ter o entendimento dos detalhes das histÃ³rias. SerÃ¡ entregue, a
-cada iteraÃ§Ã£o, uma documentaÃ§Ã£o que detalha os aspectos importantes de cada
-histÃ³ria realizada. [verificar questao de prender o texto com o que vem abaixo
-por â€œganchoâ€ no fim do parÃ¡grafo]
+Os requisitos de produto serão expressos por meio de uma especificação composta
+de histórias [1], por ordem de prioridade, que são definições funcionais de alto
+nível. O analista de requisitos será responsável por prover informações
+detalhadas referentes às histórias aos demais membros do time, no momento de
+estimativa da iteração e durante toda a iteração. Desta forma, cabe a este
+profissional ter o entendimento dos detalhes das histórias. Será entregue, a
+cada iteração, uma documentação que detalha os aspectos importantes de cada
+história realizada. [verificar questao de prender o texto com o que vem abaixo
+por “gancho” no fim do parágrafo]
 
-Engenheiro de software com perfil mais tÃ©cnico tambÃ©m precisarÃ¡ ser envolvido no
+Engenheiro de software com perfil mais técnico também precisará ser envolvido no
 entendimento dos requisitos juntamente com o analista de requisitos, pois a
-visÃ£o tÃ©cnica que considera os requisitos nÃ£o-funcionais deve ser analisada ao
+visão técnica que considera os requisitos não-funcionais deve ser analisada ao
 mesmo tempo em que os requisitos surgem.
 
-O tester tambÃ©m deve estar no levantamento de requisitos, para prover uma visÃ£o
-mais funcional que permita que a definiÃ§Ã£o da especificaÃ§Ã£o seja definida de uma
-forma funcional e testÃ¡vel.
+O tester também deve estar no levantamento de requisitos, para prover uma visão
+mais funcional que permita que a definição da especificação seja definida de uma
+forma funcional e testável.
 
-Os analistas de requisito precisarÃ£o ter livre acesso aos stakeholders (pessoal
-de marketing e parte jurÃ­dica â€“ que atuam como reguladores), que vÃ£o fornecer e
-auxiliar na validaÃ§Ã£o dos requisitos. Esse acesso deverÃ¡ ser feito atravÃ©s de
-entrevistas, onde podem-se fazer uso de protÃ³tipos pela tÃ©cnica de DDD [2] (mais do
-que o rigor do UML) e exemplificaÃ§Ã£o de cenÃ¡rios como formas de obter clareza
-nos detalhes das histÃ³rias. Os modelos conceituais estÃ£o a cargo dos
-entrevistadores, e nÃ£o definem caracterÃ­stica formal. Apenas Ã© esperado que
-sejam definidos cenÃ¡rios para cada histÃ³ria [3], de forma a guiar o time durante a
-construÃ§Ã£o e permitir geraÃ§Ã£o de validaÃ§Ã£o automatizada dos requisitos. [4]
+Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal
+de marketing e parte jurídica – que atuam como reguladores), que vão fornecer e
+auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
+entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD [2] (mais do
+que o rigor do UML) e exemplificação de cenários como formas de obter clareza
+nos detalhes das histórias. Os modelos conceituais estão a cargo dos
+entrevistadores, e não definem característica formal. Apenas é esperado que
+sejam definidos cenários para cada história [3], de forma a guiar o time durante a
+construção e permitir geração de validação automatizada dos requisitos. [4]
 
-Considerando a caracterÃ­stica dinÃ¢mica da equipe de marketing, assume-se que os
-requisitos sÃ£o volÃ¡teis; a abordagem para mudanÃ§as Ã© a de tentar incorporar o
-mÃ¡ximo possÃ­vel se a histÃ³ria permanecer a mesma, mas caso trate-se de outra
-histÃ³ria, incorporar apenas na prÃ³xima iteraÃ§Ã£o, como forma de nÃ£o impactar o
+Considerando a característica dinâmica da equipe de marketing, assume-se que os
+requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o
+máximo possível se a história permanecer a mesma, mas caso trate-se de outra
+história, incorporar apenas na próxima iteração, como forma de não impactar o
 time.
 
-Uma arquitetura serÃ¡ definida com base no entendimento das primeiras histÃ³rias
-da especificaÃ§Ã£o (e com base em conhecimento da visÃ£o geral do projeto e
-caracterÃ­sticas de infra-estrutura da empresa), e evoluÃ­da durante todo o
-projeto [5], apoiando-se em tÃ©cnicas como refatoraÃ§Ã£o e automatizaÃ§Ã£o de testes de
-regressÃ£o.
+Uma arquitetura será definida com base no entendimento das primeiras histórias
+da especificação (e com base em conhecimento da visão geral do projeto e
+características de infra-estrutura da empresa), e evoluída durante todo o
+projeto [5], apoiando-se em técnicas como refatoração e automatização de testes de
+regressão.
 
-Os requisitos serÃ£o validados atravÃ©s de testes de aceitaÃ§Ã£o, de duas formas:
-manual (na reuniÃ£o de demonstraÃ§Ã£o da iteraÃ§Ã£o, quando os stakeholders comparam
-as histÃ³rias combinadas em relaÃ§Ã£o ao funcionamento do sistema), e automatizada:
-utilizando a tÃ©cnica de BDD [6], cada cenÃ¡rio de cada histÃ³ria serÃ¡ vinculado a
-mÃ©todos de teste durante a construÃ§Ã£o, de forma que cada execuÃ§Ã£o da suite de
-testes irÃ¡ gerar um relatÃ³rio que define se as histÃ³rias estÃ£o funcionando de
+Os requisitos serão validados através de testes de aceitação, de duas formas:
+manual (na reunião de demonstração da iteração, quando os stakeholders comparam
+as histórias combinadas em relação ao funcionamento do sistema), e automatizada:
+utilizando a técnica de BDD [6], cada cenário de cada história será vinculado a
+métodos de teste durante a construção, de forma que cada execução da suite de
+testes irá gerar um relatório que define se as histórias estão funcionando de
 acordo com o esperado.
 
 3.2. Design
 
-No inÃ­cio do projeto (antes da primeira iteraÃ§Ã£o), considerando a visÃ£o geral e
+No início do projeto (antes da primeira iteração), considerando a visão geral e
 o entendimento dos requisitos de maior prioridade, o design de software
-arquitetural (top-level) serÃ¡ definido por um engenheiro de software com perfil
-sÃªnior em desenvolvimento. ApÃ³s isto, a cada iteraÃ§Ã£o, o trabalho de design
-detalhado serÃ¡ incorporado no trabalho dos desenvolvedores da equipe, de forma
-que o design nÃ£o serÃ¡ mais dissociado da construÃ§Ã£o, e sim serÃ¡ parte desta [7]. O
-engenheiro sÃªnior em desenvolvimento pode definir design arquitetural para
-futuras iteraÃ§Ãµes, dependendo da necessidade, e trabalhar juntamente com o time
-na definiÃ§Ã£o do design detalhado, durante a iteraÃ§Ã£o. 
-O design arquitetural deverÃ¡ ser documentado em alto nÃ­vel, considerando
+arquitetural (top-level) será definido por um engenheiro de software com perfil
+sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design
+detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma
+que o design não será mais dissociado da construção, e sim será parte desta [7]. O
+engenheiro sênior em desenvolvimento pode definir design arquitetural para
+futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time
+na definição do design detalhado, durante a iteração. 
+O design arquitetural deverá ser documentado em alto nível, considerando
 aspectos como estilo arquitetural sendo utilizado, forma de tratamento de
-eventos, forma de lidar com concorrÃªncia, distribuiÃ§Ã£o de componentes,
-persistÃªncia de dados.
+eventos, forma de lidar com concorrência, distribuição de componentes,
+persistência de dados.
 
-JÃ¡ a responsabilidade de design detalhado cabe a todos os desenvolvedores do
-time, e nÃ£o serÃ¡ exigida documentaÃ§Ã£o formal para tal, pois assume-se o conceito
-de que o â€œcÃ³digo-fonte Ã© o designâ€ [8]. Contudo, serÃ¡ necessÃ¡rio validar a qualidade
-deste design, o que serÃ¡ feito atravÃ©s da elaboraÃ§Ã£o de relatÃ³rio de inspeÃ§Ã£o de
-cÃ³digo a cada iteraÃ§Ã£o, que deve considerar as questÃµes do documento de design
-arquitetural, alÃ©m de tÃ©cnicas de design, como: abstraÃ§Ã£o, acoplamento, coesÃ£o,
-decomposiÃ§Ã£o, modularizaÃ§Ã£o, encapsulamento, separaÃ§Ã£o de responsabilidades,
+Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do
+time, e não será exigida documentação formal para tal, pois assume-se o conceito
+de que o “código-fonte é o design” [8]. Contudo, será necessário validar a qualidade
+deste design, o que será feito através da elaboração de relatório de inspeção de
+código a cada iteração, que deve considerar as questões do documento de design
+arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão,
+decomposição, modularização, encapsulamento, separação de responsabilidades,
 design patterns. 
 
-O relatÃ³rio serÃ¡ realizado pelo engenheiro de software da prÃ³pria equipe que
-agregar o papel de sÃªnior, e deve ser entregue como um artefato da iteraÃ§Ã£o
-(â€œrelatÃ³rio de qualidade de designâ€). A responsabilidade pela veracidade do
-documento Ã© de toda a equipe.
+O relatório será realizado pelo engenheiro de software da própria equipe que
+agregar o papel de sênior, e deve ser entregue como um artefato da iteração
+(“relatório de qualidade de design”). A responsabilidade pela veracidade do
+documento é de toda a equipe.
 
-AlÃ©m deste relatÃ³rio, a qualidade do design tambÃ©m serÃ¡ garantida atravÃ©s de:
+Além deste relatório, a qualidade do design também será garantida através de:
 
-â€¢ prÃ¡ticas diÃ¡rias de DDD: para permitir uma modelagem do design alinhada
-com as regras de negÃ³cio sendo utilizadas. O DDD faz uso de um diagrama
+. práticas diárias de DDD: para permitir uma modelagem do design alinhada
+com as regras de negócio sendo utilizadas. O DDD faz uso de um diagrama
 simplificado de classes para modelar o entendimento;
 
-â€¢ prÃ¡ticas diÃ¡rias de pair programming e TDD [9]: que orientam o desenvolvedor
-no sentido de escrever um cÃ³digo claro e seguindo o paradigma de orientaÃ§Ã£o a
+. práticas diárias de pair programming e TDD [9]: que orientam o desenvolvedor
+no sentido de escrever um código claro e seguindo o paradigma de orientação a
 objetos;
 
-â€¢ prÃ¡ticas automatizadas: anÃ¡lise estÃ¡tica de cÃ³digo, para garantir que
-boas prÃ¡ticas de design estÃ£o sendo adotadas no cÃ³digo sendo escrito [10]. Esta
-prÃ¡tica nÃ£o deve ser avaliada apenas no final da iteraÃ§Ã£o, mas diariamente, por
+. práticas automatizadas: análise estática de código, para garantir que
+boas práticas de design estão sendo adotadas no código sendo escrito [10]. Esta
+prática não deve ser avaliada apenas no final da iteração, mas diariamente, por
 todo o time.
 
-Em relaÃ§Ã£o Ã s descriÃ§Ãµes estruturais, espera-se que o documento de arquitetura
-defina diagramas de deployment, e Ã© desejÃ¡vel que os diagramas de classes
-simplificados que surgem da prÃ¡tica de DDD tambÃ©m sejam documentados (a ser
+Em relação às descrições estruturais, espera-se que o documento de arquitetura
+defina diagramas de deployment, e é desejável que os diagramas de classes
+simplificados que surgem da prática de DDD também sejam documentados (a ser
 definido pelo time).
 
-Para este projeto, a estratÃ©gia de design Ã© baseada em design orientado a
+Para este projeto, a estratégia de design é baseada em design orientado a
 objeto, por ser um modelo comumente difundido pelos membros do time e por ser
 adequar ao projeto proposto.
 
 
-3.3. ConstruÃ§Ã£o
+3.3. Construção
 
-Este projeto tratarÃ¡ design e construÃ§Ã£o de forma muito prÃ³xima. Os engenheiros
-de software com perfil de programadores terÃ£o poder de definir o design
-detalhado bem como a codificaÃ§Ã£o, sempre orientados por um programador sÃªnior e
-pelo design arquitetural. O programador poderÃ¡, portanto, aplicar os fundamentos
-de minimizaÃ§Ã£o de complexidade, antecipaÃ§Ã£o de mudanÃ§as e construÃ§Ã£o para
-verificaÃ§Ã£o tanto em design quanto em construÃ§Ã£o, sem a necessidade de haver
-distinÃ§Ãµes.
+Este projeto tratará design e construção de forma muito próxima. Os engenheiros
+de software com perfil de programadores terão poder de definir o design
+detalhado bem como a codificação, sempre orientados por um programador sênior e
+pelo design arquitetural. O programador poderá, portanto, aplicar os fundamentos
+de minimização de complexidade, antecipação de mudanças e construção para
+verificação tanto em design quanto em construção, sem a necessidade de haver
+distinções.
 
-Ã‰ esperado que o programador reduza a complexidade em tudo o que for fazer,
-utilizando os melhores algoritmos e padrÃµes. TambÃ©m Ã© esperado que o cÃ³digo seja
-escrito de forma a permitir futuras modificaÃ§Ãµes sem grande impacto (e para
-isso, Ã© exigido que a prÃ¡tica de TDD seja adotada, e o conceito de refatoraÃ§Ã£o
-seja entendido [11]). Outras prÃ¡ticas que serÃ£o exigidas do programador sÃ£o a escrita
-de testes unitÃ¡rios e de integraÃ§Ã£o [12]. A verificaÃ§Ã£o da adoÃ§Ã£o destas prÃ¡ticas
-serÃ¡ realizada juntamente com a â€œvalidaÃ§Ã£o de qualidade do designâ€, descrita no
-tÃ³pico anterior. 
+É esperado que o programador reduza a complexidade em tudo o que for fazer,
+utilizando os melhores algoritmos e padrões. Também é esperado que o código seja
+escrito de forma a permitir futuras modificações sem grande impacto (e para
+isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração
+seja entendido [11]). Outras práticas que serão exigidas do programador são a escrita
+de testes unitários e de integração [12]. A verificação da adoção destas práticas
+será realizada juntamente com a “validação de qualidade do design”, descrita no
+tópico anterior. 
 
-TambÃ©m serÃ¡ exigido que o programador escreva testes de aceitaÃ§Ã£o baseados em
-BDD, contra cada histÃ³ria da especificaÃ§Ã£o que implementa, para garantir que seu
-cÃ³digo seja verificÃ¡vel. Estes testes serÃ£o executados diariamente, gerando
-relatÃ³rios que indicam se o cÃ³digo Ã© vÃ¡lido em relaÃ§Ã£o ao esperado. 
-SerÃ¡ exigido que o programador siga os padrÃµes de desenvolvimento de cÃ³digo da
-empresa, e a ferramenta de anÃ¡lise estÃ¡tica de cÃ³digo irÃ¡ indicar se os padrÃµes
-estÃ£o sendo ignorados, diariamente, durante a iteraÃ§Ã£o. CÃ³digos nÃ£o-conformes
-devem ser corrigidos o mais rÃ¡pido possÃ­vel, no prazo mÃ¡ximo de duraÃ§Ã£o da
-iteraÃ§Ã£o.
+Também será exigido que o programador escreva testes de aceitação baseados em
+BDD, contra cada história da especificação que implementa, para garantir que seu
+código seja verificável. Estes testes serão executados diariamente, gerando
+relatórios que indicam se o código é válido em relação ao esperado. 
+Será exigido que o programador siga os padrões de desenvolvimento de código da
+empresa, e a ferramenta de análise estática de código irá indicar se os padrões
+estão sendo ignorados, diariamente, durante a iteração. Códigos não-conformes
+devem ser corrigidos o mais rápido possível, no prazo máximo de duração da
+iteração.
 
-NÃ£o serÃ¡ exigido uso formal de UML; contudo, o time pode optar por utilizar UML
-(bem como qualquer outra forma visual de design) para facilitar a comunicaÃ§Ã£o
+Não será exigido uso formal de UML; contudo, o time pode optar por utilizar UML
+(bem como qualquer outra forma visual de design) para facilitar a comunicação
 e/ou o entendimento de um dado objeto ou conjunto de objetos que precisa ser
 criado ou alterado. 
 
-O modelo de construÃ§Ã£o que serÃ¡ adotado neste projeto Ã© o Scrum. Este modelo
-iterativo trata a construÃ§Ã£o de forma concorrente a outras atividades de
+O modelo de construção que será adotado neste projeto é o Scrum. Este modelo
+iterativo trata a construção de forma concorrente a outras atividades de
 desenvolvimento de software, como os requisitos, o design e os testes. Todas
-estas atividades interagem juntamente nesta fase de construÃ§Ã£o; desta forma, o
-planejamento da construÃ§Ã£o se dÃ¡ iterativamente, envolvendo todas as atividades:
-desde a fase de anÃ¡lise (com a definiÃ§Ã£o dos requisitos da especificaÃ§Ã£o como
-histÃ³rias por ordem de prioridade, e o entendimento profundo destas atravÃ©s da
-elaboraÃ§Ã£o de cenÃ¡rios), passando por  uma estimativa para a iteraÃ§Ã£o (onde time
-discute e define quantas histÃ³rias da especificaÃ§Ã£o podem ser realizadas,
-considerando a prioridade) e pela construÃ§Ã£o propriamente dita (onde os
-programadores geram cÃ³digo considerando design, os analistas documentam as
-histÃ³rias e os testers validam as histÃ³rias contra o sistema conforme vÃ£o sendo
+estas atividades interagem juntamente nesta fase de construção; desta forma, o
+planejamento da construção se dá iterativamente, envolvendo todas as atividades:
+desde a fase de análise (com a definição dos requisitos da especificação como
+histórias por ordem de prioridade, e o entendimento profundo destas através da
+elaboração de cenários), passando por  uma estimativa para a iteração (onde time
+discute e define quantas histórias da especificação podem ser realizadas,
+considerando a prioridade) e pela construção propriamente dita (onde os
+programadores geram código considerando design, os analistas documentam as
+histórias e os testers validam as histórias contra o sistema conforme vão sendo
 finalizadas), e finalizando na entrega (onde os stakeholder validam, numa
-reuniÃ£o de demonstraÃ§Ã£o, o sistema rodando, a documentaÃ§Ã£o e demais artefatos
+reunião de demonstração, o sistema rodando, a documentação e demais artefatos
 que tenham sido previamente combinados a serem entregues). Para medida das
-iteraÃ§Ãµes, sÃ£o utilizadas as mÃ©tricas jÃ¡ descritas nos tÃ³picos anteriores, bem
-como o prÃ³prio aval dos stakeholders.
+iterações, são utilizadas as métricas já descritas nos tópicos anteriores, bem
+como o próprio aval dos stakeholders.
 
 
 3.4. Testes
 
-A verificaÃ§Ã£o dinÃ¢mica dos testes serÃ¡ aplicada pelo engenheiro de software com
-perfil de tester durante cada iteraÃ§Ã£o, assim que uma data histÃ³ria for dada
+A verificação dinâmica dos testes será aplicada pelo engenheiro de software com
+perfil de tester durante cada iteração, assim que uma data história for dada
 como pronta pelos engenheiros de software com perfil de programadores. Para este
-fim, os programadores devem liberar cada histÃ³ria pronta num servidor de testes.
+fim, os programadores devem liberar cada história pronta num servidor de testes.
 
-A verificaÃ§Ã£o, num primeiro momento, deve contemplar o conjunto de cenÃ¡rios da
-histÃ³ria (teste de conformidade, ou teste funcional) e a anÃ¡lise dos relatÃ³rios
+A verificação, num primeiro momento, deve contemplar o conjunto de cenários da
+história (teste de conformidade, ou teste funcional) e a análise dos relatórios
 automatizados gerados pelo framework de BDD.
 
-Como jÃ¡ dito, o tester deve participar na fase de levantamento de requisitos,
-para auxiliar o analista na definiÃ§Ã£o das histÃ³rias e cenÃ¡rios especÃ­ficos;
-neste ponto, em sua Ã¡rea de conhecimento, garante critÃ©rios de seleÃ§Ã£o e
-adequaÃ§Ã£o dos testes, bem como o objetivo e a efetividade dos testes. O ganho
+Como já dito, o tester deve participar na fase de levantamento de requisitos,
+para auxiliar o analista na definição das histórias e cenários específicos;
+neste ponto, em sua área de conhecimento, garante critérios de seleção e
+adequação dos testes, bem como o objetivo e a efetividade dos testes. O ganho
 adicional com qualidade vem do fato de considerar que os programadores escrevem
-a aplicaÃ§Ã£o partindo da mesma Ã³tica, o que auxilia na reduÃ§Ã£o de falhas de
-comunicaÃ§Ã£o e de entendimento.
+a aplicação partindo da mesma ótica, o que auxilia na redução de falhas de
+comunicação e de entendimento.
 
 Deseja-se que o tester tenha perfil de programador, no sentido de poder auxiliar
-na revisÃ£o de testes unitÃ¡rios e de integraÃ§Ã£o que os desenvolvedores tenham
-criado. Considerando a caracterÃ­stica de pair programming da equipe, pode atÃ©
-mesmo auxiliar o programador nesta atividade. Contudo, esta atividade nÃ£o Ã©
-obrigatÃ³ria, sendo esperado que o foco do tester mais voltado ao aspecto
+na revisão de testes unitários e de integração que os desenvolvedores tenham
+criado. Considerando a característica de pair programming da equipe, pode até
+mesmo auxiliar o programador nesta atividade. Contudo, esta atividade não é
+obrigatória, sendo esperado que o foco do tester mais voltado ao aspecto
 funcional do software. 
 
-Outro aspecto em que o tester deve atuar Ã© em testes de sistema, verificando se
-diversos requisitos nÃ£o-funcionais estÃ£o de acordo com o esperado (com o apoio
-do documento de design arquitetural e dos programadores), alÃ©m de analisar
-aspectos como performance, stress, configuraÃ§Ã£o, usabilidade. Espera-se que faÃ§a
-uso de  ferramentas para automatizar tais testes, e que gere um relatÃ³rio no
-final de cada iteraÃ§Ã£o, referente a estes testes especÃ­ficos.
+Outro aspecto em que o tester deve atuar é em testes de sistema, verificando se
+diversos requisitos não-funcionais estão de acordo com o esperado (com o apoio
+do documento de design arquitetural e dos programadores), além de analisar
+aspectos como performance, stress, configuração, usabilidade. Espera-se que faça
+uso de  ferramentas para automatizar tais testes, e que gere um relatório no
+final de cada iteração, referente a estes testes específicos.
 
-Os testes de regressÃ£o funcionais devem ser automatizados, cobrindo os aspectos
-funcionais de maior importÃ¢ncia (a serem definidos pelo prÃ³prio tester). Os
-aspectos nÃ£o-funcionais nÃ£o sÃ£o esperados em relaÃ§Ã£o Ã  regressÃ£o, pois sua
-caracterÃ­stica nÃ£o sugere regressÃ£o, mas sim diagnÃ³stico pontual.
+Os testes de regressão funcionais devem ser automatizados, cobrindo os aspectos
+funcionais de maior importância (a serem definidos pelo próprio tester). Os
+aspectos não-funcionais não são esperados em relação à regressão, pois sua
+característica não sugere regressão, mas sim diagnóstico pontual.
 
 O tester tem liberdade para decidir realizar testes estruturais, testes
-exploratÃ³rios e demais tÃ©cnicas de testes que julgar vÃ¡lidas na iteraÃ§Ã£o. Estes
-testes tambÃ©m precisam ser documentados em relatÃ³rio, com justificativa e
-resultados. Os testes precisam ser planejados no inÃ­cio da iteraÃ§Ã£o, e tal
-definiÃ§Ã£o precisa tambÃ©m constar no relatÃ³rio a ser entregue no final da
-iteraÃ§Ã£o.
+exploratórios e demais técnicas de testes que julgar válidas na iteração. Estes
+testes também precisam ser documentados em relatório, com justificativa e
+resultados. Os testes precisam ser planejados no início da iteração, e tal
+definição precisa também constar no relatório a ser entregue no final da
+iteração.
 
 
-3.5. ManutenÃ§Ã£o
+3.5. Manutenção
 
-A equipe que darÃ¡ manutenÃ§Ã£o Ã© a mesma que desenvolveu o produto. Desta forma,
-qualquer nova requisiÃ§Ã£o de modificaÃ§Ã£o (evoluÃ§Ã£o ou correÃ§Ã£o) deve ser definida
-na especificaÃ§Ã£o, seja alterando ou adicionando novos itens. Tal item, entÃ£o,
-precisa ser definido em forma de histÃ³ria e com prioridade, para ingressar numa
-prÃ³xima iteraÃ§Ã£o, seguindo o mesmo fluxo de um novo requisito. Desta forma,
-incorporando correÃ§Ãµes no fluxo normal de desenvolvimento (e nÃ£o apÃ³s todo o
-projeto ter terminado), procura-se eliminar o problema onde 80% do esforÃ§o de
-manutenÃ§Ã£o Ã© gasto em aÃ§Ãµes nÃ£o corretivas. Neste caso, a manutenÃ§Ã£o acontece
+A equipe que dará manutenção é a mesma que desenvolveu o produto. Desta forma,
+qualquer nova requisição de modificação (evolução ou correção) deve ser definida
+na especificação, seja alterando ou adicionando novos itens. Tal item, então,
+precisa ser definido em forma de história e com prioridade, para ingressar numa
+próxima iteração, seguindo o mesmo fluxo de um novo requisito. Desta forma,
+incorporando correções no fluxo normal de desenvolvimento (e não após todo o
+projeto ter terminado), procura-se eliminar o problema onde 80% do esforço de
+manutenção é gasto em ações não corretivas. Neste caso, a manutenção acontece
 enquanto o projeto ainda existe, e a prioridade fica a cargo dos stakeholders. 
 
-A evoluÃ§Ã£o do software, portanto, serÃ¡ agregada durante o projeto de
+A evolução do software, portanto, será agregada durante o projeto de
 desenvolvimento, cabendo apenas que haja um gerenciamento dos requisitos em
-relaÃ§Ã£o Ã  prioridade. Como a equipe Ã© a mesma, nÃ£o hÃ¡ transiÃ§Ã£o de conhecimento.
-As manutenÃ§Ãµes corretivas, adaptativas e perfectivas irÃ£o entrar no fluxo normal
-de desenvolvimento. JÃ¡ espera-se que a manutenÃ§Ã£o preventiva seja um trabalho
-implÃ­cito, resultante das prÃ¡ticas de qualidade e mÃ©tricas nas fases de anÃ¡lise,
-design e construÃ§Ã£o. No caso especial da construÃ§Ã£o, espera-se aplicaÃ§Ã£o de 
-refatoraÃ§Ã£o e code review.
+relação à prioridade. Como a equipe é a mesma, não há transição de conhecimento.
+As manutenções corretivas, adaptativas e perfectivas irão entrar no fluxo normal
+de desenvolvimento. Já espera-se que a manutenção preventiva seja um trabalho
+implícito, resultante das práticas de qualidade e métricas nas fases de análise,
+design e construção. No caso especial da construção, espera-se aplicação de 
+refatoração e code review.
 
-A definiÃ§Ã£o de testes de regressÃ£o de outras fases tambÃ©m irÃ¡ ajudar na
-manutenÃ§Ã£o, definindo aspectos que nÃ£o funcionam mais conforme esperado. Os
-testes de aceitaÃ§Ã£o automatizados com BDD tambÃ©m garantem a mesma regressÃ£o, mas
-num nÃ­vel mais alto: que as funcionalidades continuam vÃ¡lidas. 
+A definição de testes de regressão de outras fases também irá ajudar na
+manutenção, definindo aspectos que não funcionam mais conforme esperado. Os
+testes de aceitação automatizados com BDD também garantem a mesma regressão, mas
+num nível mais alto: que as funcionalidades continuam válidas. 
 
-Espera-se que toda a qualidade definida atÃ© o momento (com testes automatizados,
-mÃ©tricas e inspeÃ§Ã£o de design e anÃ¡lise) permitam que uma anÃ¡lise de impacto
+Espera-se que toda a qualidade definida até o momento (com testes automatizados,
+métricas e inspeção de design e análise) permitam que uma análise de impacto
 gere sempre um baixo custo, e que haja uma alta capacidade de manutenibilidade. 
 
-ApÃ³s a finalizaÃ§Ã£o do projeto, uma equipe menor serÃ¡ designada para manter o
-mesmo seguindo os mesmos princÃ­pios definidos atÃ© entÃ£o, e com boa parte do
-mesmo pessoal, de forma a facilitar a transmissÃ£o de conhecimento. Esta futura
-equipe, poderÃ¡ fazer uso dos documentos de especificaÃ§Ã£o e design de arquitetura
-e das documentaÃ§Ãµes de testes para entender o sistema de um aspecto funcional, e
-deverÃ¡ estudar o cÃ³digo para entender um design mais detalhado. O esforÃ§o em
-qualidade Ã© pago aqui, pois o cÃ³digo deve estar escrito de forma que seja fÃ¡cil
-de entender e evoluir, de forma que a prÃ¡tica de engenharia reversa deve ser
+Após a finalização do projeto, uma equipe menor será designada para manter o
+mesmo seguindo os mesmos princípios definidos até então, e com boa parte do
+mesmo pessoal, de forma a facilitar a transmissão de conhecimento. Esta futura
+equipe, poderá fazer uso dos documentos de especificação e design de arquitetura
+e das documentações de testes para entender o sistema de um aspecto funcional, e
+deverá estudar o código para entender um design mais detalhado. O esforço em
+qualidade é pago aqui, pois o código deve estar escrito de forma que seja fácil
+de entender e evoluir, de forma que a prática de engenharia reversa deve ser
 desconsiderada. 
 
-As prÃ¡ticas de inspeÃ§Ã£o de qualidade nÃ£o devem deixar de existir, sob pena de
-degradar a qualidade do cÃ³digo, de forma que a futura equipe de manutenÃ§Ã£o
-precisarÃ¡ contar com um engenheiro de software com perfil sÃªnior para estar
-responsÃ¡vel por este aspecto (utilizando as ferramentas necessÃ¡rias para tal
+As práticas de inspeção de qualidade não devem deixar de existir, sob pena de
+degradar a qualidade do código, de forma que a futura equipe de manutenção
+precisará contar com um engenheiro de software com perfil sênior para estar
+responsável por este aspecto (utilizando as ferramentas necessárias para tal
 fim).
 
 
-3.6. Gerenciamento de ConfiguraÃ§Ã£o
+3.6. Gerenciamento de Configuração
 
-HaverÃ¡ uma gerÃªncia de configuraÃ§Ã£o responsÃ¡vel pelo armazenamento de todos os 
-artefatos gerados nas fases de requisitos, design, construÃ§Ã£o, testes e 
-manutenÃ§Ã£o, bem como ferramentas necessÃ¡rias a todas as Ã¡reas. O planejamento 
-desta gerÃªncia deve considerar apenas elementos de software, descartando 
-hardware e firmware por nÃ£o serem aspectos cujo controle faz-se necessÃ¡rio. 
-NÃ£o caberÃ¡ Ã  gerÃªncia de configuraÃ§Ã£o definir regras sobre os artefatos 
-gerados (com exceÃ§Ã£o do cÃ³digo-fonte gerado), de forma que os times podem 
+Haverá uma gerência de configuração responsável pelo armazenamento de todos os 
+artefatos gerados nas fases de requisitos, design, construção, testes e 
+manutenção, bem como ferramentas necessárias a todas as áreas. O planejamento 
+desta gerência deve considerar apenas elementos de software, descartando 
+hardware e firmware por não serem aspectos cujo controle faz-se necessário. 
+Não caberá à gerência de configuração definir regras sobre os artefatos 
+gerados (com exceção do código-fonte gerado), de forma que os times podem 
 versionar livremente; contudo, precisa prover mecanismos para auditar a 
-informaÃ§Ã£o (entende-se que estes mecanismos devem ser manuais, pela 
+informação (entende-se que estes mecanismos devem ser manuais, pela 
 diversidade de artefatos que um dado time pode produzir). 
 
-Em relaÃ§Ã£o ao cÃ³digo-fonte gerado, a gerÃªncia de configuraÃ§Ã£o precisarÃ¡ 
-garantir sua qualidade atravÃ©s da anÃ¡lise estÃ¡tica de cÃ³digo com uso de 
-ferramenta automatizada, de forma a garantir que o cÃ³digo estÃ¡ seguindo as boas 
-prÃ¡ticas determinadas pela empresa. RelatÃ³rios desta medida de qualidade de 
-cÃ³digo devem estar disponÃ­vel para consulta a qualquer momento. O desenvolvedor 
-deve possuir acesso a estas mesmas prÃ¡ticas, de forma a poder criar um cÃ³digo-
-fonte de acordo com as prÃ¡ticas exigidas pela gerÃªncia de configuraÃ§Ã£o. 
+Em relação ao código-fonte gerado, a gerência de configuração precisará 
+garantir sua qualidade através da análise estática de código com uso de 
+ferramenta automatizada, de forma a garantir que o código está seguindo as boas 
+práticas determinadas pela empresa. Relatórios desta medida de qualidade de 
+código devem estar disponível para consulta a qualquer momento. O desenvolvedor 
+deve possuir acesso a estas mesmas práticas, de forma a poder criar um código-
+fonte de acordo com as práticas exigidas pela gerência de configuração. 
 
-Outra caracterÃ­stica que precisa ser considerada Ã© a permissÃ£o de acesso. 
-Apenas usuÃ¡rios de um dado projeto podem ter permissÃ£o de acesso ao repositÃ³rio 
-de informaÃ§Ãµes do projeto, a nÃ£o ser que a gerÃªncia diga o contrÃ¡rio. Assim 
-sendo, Ã© preciso haver uma forma automÃ¡tica de conceder acessos, tanto 
-individuais quanto a grupos, de forma que um privilÃ©gio individual de um 
-elemento num grupo possa sobrescrever seu privilÃ©gio enquanto membro do grupo.
+Outra característica que precisa ser considerada é a permissão de acesso. 
+Apenas usuários de um dado projeto podem ter permissão de acesso ao repositório 
+de informações do projeto, a não ser que a gerência diga o contrário. Assim 
+sendo, é preciso haver uma forma automática de conceder acessos, tanto 
+individuais quanto a grupos, de forma que um privilégio individual de um 
+elemento num grupo possa sobrescrever seu privilégio enquanto membro do grupo.
 
-Esta gerÃªncia tambÃ©m serÃ¡ responsÃ¡vel pela integraÃ§Ã£o contÃ­nua: deverÃ¡ prover 
-e manter uma ferramenta de geraÃ§Ã£o de builds automatizados, a ser executada 
-diariamente (â€œintegrandoâ€ o cÃ³digo, agregando a execuÃ§Ã£o de testes unitÃ¡rios e 
-de integraÃ§Ã£o gerados pelos programadores ao processo de build, gerando 
-relatÃ³rios de mÃ©trica de cobertura de testes, e notificando todo o time no 
-caso de builds e testes quebrados), bem como prover uma opÃ§Ã£o para geraÃ§Ã£o 
-de releases e deploy automÃ¡tico em servidor de testes (base da entrega
-contÃ­nua). Com isto, espera-se agilidade na entrega do sistema para validaÃ§Ã£o
+Esta gerência também será responsável pela integração contínua: deverá prover 
+e manter uma ferramenta de geração de builds automatizados, a ser executada 
+diariamente (“integrando” o código, agregando a execução de testes unitários e 
+de integração gerados pelos programadores ao processo de build, gerando 
+relatórios de métrica de cobertura de testes, e notificando todo o time no 
+caso de builds e testes quebrados), bem como prover uma opção para geração 
+de releases e deploy automático em servidor de testes (base da entrega
+contínua). Com isto, espera-se agilidade na entrega do sistema para validação
 pelos stakeholders. 
 
-Portanto, Ã© responsabilidade da gerÃªncia de configuraÃ§Ã£o gerar os releases/
-baselines. As baselines devem ser geradas a cada fim de iteraÃ§Ã£o e os releases 
-devem estar disponÃ­veis para ser gerados sempre que a equipe de construÃ§Ã£o 
-finalizar uma iteraÃ§Ã£o, de forma que o ciclo de execuÃ§Ã£o de trabalho deve estar 
-alinhado com o desta equipe. Se o cÃ³digo-fonte nÃ£o estiver conforme o validado 
-pela anÃ¡lise estÃ¡tica de cÃ³digo e de acordo com as mÃ©tricas de cobertura de 
-testes geradas pela integraÃ§Ã£o contÃ­nua, o release nÃ£o poderÃ¡ ser entregue. 
-Cabe ao gerente de configuraÃ§Ã£o a responsabilidade de alertar o time, de forma 
-a evitar atrasos num entendimento tardio de que o release nÃ£o poderÃ¡ ser 
+Portanto, é responsabilidade da gerência de configuração gerar os releases/
+baselines. As baselines devem ser geradas a cada fim de iteração e os releases 
+devem estar disponíveis para ser gerados sempre que a equipe de construção 
+finalizar uma iteração, de forma que o ciclo de execução de trabalho deve estar 
+alinhado com o desta equipe. Se o código-fonte não estiver conforme o validado 
+pela análise estática de código e de acordo com as métricas de cobertura de 
+testes geradas pela integração contínua, o release não poderá ser entregue. 
+Cabe ao gerente de configuração a responsabilidade de alertar o time, de forma 
+a evitar atrasos num entendimento tardio de que o release não poderá ser 
 entregue por falta de qualidade.
 
 3.7. Gerenciamento de Engenharia de Software
@@ -411,78 +463,78 @@ http://blogs.gartner.com/michael_blechar/2010/06/27/agile-methodologies-hype-or-
 
 [ver referencia do boehm e turner, using risk to balance agile and plan-driven methods (computer june 2003)]
 
-Para que possa o projeto possa ser viabilizado, serÃ¡ necessÃ¡ria a montagem de
-times de desenvolvimento. Seguindo a metodologia Ã¡gil de desenvolvimento SCRUM,
-os times serÃ£o dispostos em cÃ©lulas multidisciplinares, conforme segue:
+Para que possa o projeto possa ser viabilizado, será necessária a montagem de
+times de desenvolvimento. Seguindo a metodologia ágil de desenvolvimento SCRUM,
+os times serão dispostos em células multidisciplinares, conforme segue:
 
-â€¢ 1 celula de infraestrutura de comunicaÃ§Ãµes â€“ composta por 1 Product
+. 1 celula de infraestrutura de comunicações – composta por 1 Product
 Owner, 2 analistas de requisitos, 3 programadores e 1 tester
 
-â€¢ 1 celula de customizaÃ§Ã£o lÃ³gica â€“ composta por 1 Product Owner, 2
+. 1 celula de customização lógica – composta por 1 Product Owner, 2
 analistas de requisitos, 3 programadores e 1 tester
 
-â€¢ 1 celula de customizaÃ§Ã£o fÃ­sica â€“ composta por 1 Product Owner, 2
+. 1 celula de customização física – composta por 1 Product Owner, 2
 analistas de requisitos, 3 programadores e 1 tester
 
-â€¢ 1 celula de gestÃ£o financeira e aluguel de carro â€“ composta por 1
+. 1 celula de gestão financeira e aluguel de carro – composta por 1
 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA e 1 tester 
 
-Os analistas de requisitos precisam ter um forte entendimento do negÃ³cio
-e das tendÃªncias da empresa, bem como acesso livre Ã  pessoas da parte
-operacional, da forma que um grupo de stakeholders precisarÃ¡ ser definido.
-CaberÃ¡ aos Analistas, juntamente com os Product Owners de cada cÃ©lula, a funÃ§Ã£o
-de interagir com os Stakeholders e definir limites e restriÃ§Ãµes necessÃ¡rias para
+Os analistas de requisitos precisam ter um forte entendimento do negócio
+e das tendências da empresa, bem como acesso livre à pessoas da parte
+operacional, da forma que um grupo de stakeholders precisará ser definido.
+Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função
+de interagir com os Stakeholders e definir limites e restrições necessárias para
 o andamento do projeto.
 
 [colocar esse trecho na parte relativa a processo]
 
-Esta abordagem de passagem de conhecimento por comunicaÃ§Ã£o em detrimento da
+Esta abordagem de passagem de conhecimento por comunicação em detrimento da
 passagem de conhecimento por documento previamente escrito pauta-se no exemplo
-da filosofia do sistema de produÃ§Ã£o da Toyota, que sugere a reduÃ§Ã£o de custo
-pela eliminaÃ§Ã£o de desperdÃ­cio [1] (neste caso, o tempo). O trabalho
+da filosofia do sistema de produção da Toyota, que sugere a redução de custo
+pela eliminação de desperdício [1] (neste caso, o tempo). O trabalho
 colaborativo do time baseado no entendimento prova-se mais produtivo do que a
-construÃ§Ã£o de software baseado em documento previamente escrito. [citar refs]
+construção de software baseado em documento previamente escrito. [citar refs]
 [incorporar historia do inicio do scrum por schwartz tambem]
 
-Esta abordagem de aumentar produtividade pela visÃ£o dos requisitos pautados em
-confianÃ§a (mais do que por contratos burocrÃ¡ticos) torna-se mais viÃ¡vel pela
-caracterÃ­stica de que todas as partes envolvidas no projeto sÃ£o internas Ã 
+Esta abordagem de aumentar produtividade pela visão dos requisitos pautados em
+confiança (mais do que por contratos burocráticos) torna-se mais viável pela
+característica de que todas as partes envolvidas no projeto são internas à
 MoToRBras.  
 
 
 
-4. ConsideraÃ§Ãµes Gerais
+4. Considerações Gerais
 
-O projeto aqui proposto caminha lado-a-lado com a tendÃªncia atual de preocupaÃ§Ã£o
-com o peso da vida humana na Terra. Ã‰ assumido que os governos irÃ£o cada vez
-mais investir em tecnologia para resolver tais problemas, ao invÃ©s de considerar
-que haja uma mudanÃ§a drÃ¡stica de consciÃªncia no ser humano de forma geral. Este
-projeto assume que nos prÃ³ximos anos esta tendÃªncia irÃ¡ se acentuar, de forma a
-surgir uma oportunidade no mercado que favorecerÃ¡ as empresas de vanguarda.
-Nosso projeto caminha nesta direÃ§Ã£o. 
+O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupação
+com o peso da vida humana na Terra. É assumido que os governos irão cada vez
+mais investir em tecnologia para resolver tais problemas, ao invés de considerar
+que haja uma mudança drástica de consciência no ser humano de forma geral. Este
+projeto assume que nos próximos anos esta tendência irá se acentuar, de forma a
+surgir uma oportunidade no mercado que favorecerá as empresas de vanguarda.
+Nosso projeto caminha nesta direção. 
 
 
 
-5. ConclusÃ£o
+5. Conclusão
 
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de
-software expostas no SWEBOK podem ser aplicadas na resoluÃ§Ã£o de um problema
-hipotÃ©tico. A forma como as disciplinas do SWEBOK sÃ£o abordadas tem um enfoque
-particular em prÃ¡ticas Ã¡geis de desenvolvimento de software, de forma a
-demonstrar que tais prÃ¡ticas podem aplicadas dentro das orientaÃ§Ãµes propostas
+software expostas no SWEBOK podem ser aplicadas na resolução de um problema
+hipotético. A forma como as disciplinas do SWEBOK são abordadas tem um enfoque
+particular em práticas ágeis de desenvolvimento de software, de forma a
+demonstrar que tais práticas podem aplicadas dentro das orientações propostas
 pelo SWEBOK.
 
 
 
-6. ReferÃªncias
+6. Referências
 
-[1]WWF, â€œLiving Planet Report 2013 Infographic.â€
-[2]L. Rising and N. S. Janoff, â€œThe Scrum Software Development Process for Small Teams,â€ vol. 17, no. 4, pp. 26â€“32, 2000.
-[3]Barry Boehm and Richard Turner, â€œUsing Risk to Balance Agile and Plan-Driven Methods,â€ IEEE Computer Society, Jun. 2003.
+[1]WWF, “Living Planet Report 2013 Infographic.”
+[2]L. Rising and N. S. Janoff, “The Scrum Software Development Process for Small Teams,” vol. 17, no. 4, pp. 26–32, 2000.
+[3]Barry Boehm and Richard Turner, “Using Risk to Balance Agile and Plan-Driven Methods,” IEEE Computer Society, Jun. 2003.
 
 
 [1]  http://blog.myscrumhalf.com/2011/10/user-stories-o-que-sao-como-usar/
-     http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf (secao 5.3.2 - Functions - "The system shall..." Ã© o mesmo conceito de histÃ³ria)
+     http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf (secao 5.3.2 - Functions - "The system shall..." é o mesmo conceito de história)
 [2]  http://books.google.com.br/books?hl=pt-BR&lr=&id=xColAAPGubgC&oi=fnd&pg=PR9&dq=domain+driven+design+requirement&ots=q9-DhkUM6o&sig=IuQaPj8TtU7qkoZPx3MjKj-8Y1U#v=onepage&q=domain%20driven%20design%20requirement&f=false (verifiquei a pagina 8 do livro - chapter 1: crunching knowlegde para ter uma ideia de uma entrevista conduzida com o conceito de DDD, onde o analista de requisitos entende o problema e remove ambiguidades)
 [3]  http://blog.myscrumhalf.com/2011/10/criterios-de-aceitacao-das-user-stories/
 [4]  http://www.agilealliance.org/files/9812/7853/8418/Melnik_XP2007.pdf
