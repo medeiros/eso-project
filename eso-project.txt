@@ -51,28 +51,6 @@ central e aplicados diretamente ao veículo quando da identificação do indivíduo;
 da mesma forma, alterações no veículo são salvas no servidor central como
 preferências do indivíduo, para posterior aplicação numa nova viagem;
 
-% Observação sobre o parágrafo seguinte:
-%
-% pelo que pesquisei, as tecnologias de customização de cor ainda não se
-% encontram em um estágio comercializável. Além disso, estive pensando: 
-% dado o caráter transitório do serviço e o custo moderado, talvez a customização
-% física representaria uma característica não essencial. Poderíamos remover este
-% item do documento?
-
-. Customizações físicas externas – da mesma forma como a parte interna do
-carro poderá ser customizada com base nas preferências, a parte externa também
-poderá, ainda que de forma mais restrita: apenas a cor do carro poderá ser
-alterada de acordo com a preferência do indivíduo, neste momento;
-
-% Observação sobre o parágrafo seguinte:
-%
-% A implantação desses checkpoints representaria um aumento grande no nível
-% de complexidade do projeto. Poderíamos remover este item?
-
-. Carregamento automático do carro – o carro poderá ser automaticamente
-recarregado assim que passar por determinados checkpoints espalhados pela
-cidade. O custo com combustível é praticamente nulo.
-
 Além das características acima citadas, outros aspectos devem ser considerados
 para garantir o correto funcionamento de todo o processo, tais como:
 
