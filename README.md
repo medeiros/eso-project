@@ -1,6 +1,6 @@
 # eso-project
 
-### project to the 'Software Engineering' class from IPT/USP (2014)
+### IPT/USP Software Engineering class project (2014)
 
 - edit references with [Zotero] (https://www.zotero.org/download/) (bibtex format)
 - edit latex document in Windows with [MikTex] (http://miktex.org/download)
