@@ -47,23 +47,31 @@ O que este projeto propõe é tornar esse serviço ainda mais atrativo, através
 De acordo com o projeto previso pelo grupo, os seguintes características serão agregadas aos carros elétricos:
 
 - Reconhecimento de íris: uma maneira eficiente de identificar o indivíduo para então iniciar o processo de customização de suas preferências;
+
 - Integração com redes sociais: para que seja possível ao indivíduo ter acesso a sua agenda, contatos, calendários e preferências musicais instantaneamente; 
+
 - Customizações físicas internas: preferências como temperatura do carro (ajuste do ar condicionado) e posição do banco serão carregados de um servidor central e aplicados diretamente ao veículo quando da identificação do indivíduo; da mesma forma, alterações no veículo são salvas no servidor central como preferências do indivíduo, para posterior aplicação numa nova viagem;
 
 Além das características acima citadas, outros aspectos devem ser considerados para garantir o correto funcionamento de todo o processo, tais como:
 
+
 - Segurança: um aspecto importante que deve ser considerado em todo o projeto, tanto pelo aspecto de segurança da identidade do indivíduo quanto pela segurança na execução das tecnologias físicas de customização e carregamento automático, bem como pela segurança nas transações de aluguel do veículo;
+
 - Controle cadastral: o gerenciamento da customização das preferências e do pagamento pelo serviço são aspectos que também devem ser endereçados, de forma que um sistema para controle cadastral dos clientes faz-se necessário.
 
 Além dos sistemas internos ao veículo, são necessários softwares externos para compor a infraestrutura de prestação de serviços. Esses softwares são:
 
+
 - Sistema para aluguel de veículos pelos cliente:componente importante da infraestrutura de prestação do serviço, este software permitirá que os motoristas interessados efetuem agendamento e posterior pagamento pelo serviço de aluguel de veículo através da internet;
+
 - Sistema para gestão da frota de veículos: o processo de gestão da frota de veículos requer um software de apoio. Atividades de manutenção, abastecimento, disponibilização e recepção de veículos nos pátios, entre outras, serão suportadas por esse software. Este software representará o elo entre o processo de aluguel de veículos e as atividades administrativas e operacionais ligadas à gestão da frota.
+
 - Servidor de armazenamento de perfis: software executado em um servidor centralizado que armazenará as preferências de cada usuário, bem como efetuará, de forma segura, a ponte entre o veículo e os dados disponíveis nas redes sociais do motorista.
 
 Algumas características do produto e do contexto de negócios influenciarão a formatação do projeto. A listagem de características e respectivas consequências para o projeto são:
 
 - Alto nível de inovação do produto: não existem serviços similares no mercado brasileiro. Estamos tomando como base a experiência de serviços semelhantes em outros países, mas, devido a fatores culturais, existe a possibilidade da experiência não se repetir com sucesso em nosso mercado. Tal situação possivelmente levará a uma proposta de adaptação pelo departamento de marketing, o que, por sua vez, exigirá a capacidade de absorção de novos requisitos por parte da TI. Dessa forma, optamos pela adoção de métodos ágeis, que são mais adequados a esse tipo de ambiente de negócio.
+
 - Heterogeneidade dos softwares a serem desenvolvidos: diferentes tipos de software serão desenvolvidos - desde sistemas desktop administrativos, passando por softwares para servidores e chegando a software embarcado para execução dentro do veículo. Esse contexto torna interessante a ideia da criação de pequenas equipes, especializadas no domínio específico da aplicação que estão desenvolvendo, dedicadas à atuação apenas no software que atende suas respectivas especialidades.
 
 
