@@ -2,8 +2,12 @@
 
 \usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \begin{document}
+
+%\listoffigures
 
 \title{Carros elétricos para um mundo melhor}
 \author{
@@ -195,33 +199,59 @@ Para controlar o progresso sendo realizado nas iterações, permitindo uma anál
 
 \subsection{Gerenciamento de Processo de Software}
 
-Justificar agile: 
-http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
-http://blogs.gartner.com/michael\_blechar/2010/06/27/agile-methodologies-hype-or-reality/
+Pela característica dinâmica do projeto da MotorBRAS, as premissas principais na relação entre engenheiros de software e stackholders definem que o processo que os relacionam precisa ser flexível o suficiente para comportar mudanças em requisitos, e que entregas parciais para validação devem ser constantes, de forma a permitir que o feedback aproxime o idealizado do realizado. Para atingir tais fins, o processo Scrum será adotado. 
 
-[ver referencia do boehm e turner, using risk to balance agile and plan-driven methods (computer june 2003)]
+A natureza linear do tradicional modelo em cascata não define como responder a saídas inesperadas de nenhum dos processos intermediários (requisitos, design, desenvolvimento), o que não atende a necessidade do projeto para a MotorBRAS. Já o modelo em espiral (outro bastante utilizado), embora seja um processo iterativo, ainda é linear (requisitos precisam ser definidos na fase de requisitos, design precisa ser definido na fase de design, e assim por diante) \cite{scrum_development_process}. Estes processos lineares não estão de acordo com o desejado, pois o projeto da MotorBRAS é complexo em requisitos (alto potencial de mudanças) e em tecnologia (aplicações embarcadas interagindo com o carro não são um mercado maduro e estabelecido). A seguinte figura ilustra o uso dos modelos lineares (em cascata e espiral) em relação à complexidade das variáveis do projeto. 
 
-Para que possa o projeto possa ser viabilizado, será necessária a montagem de times de desenvolvimento. Seguindo a metodologia ágil de desenvolvimento SCRUM, os times serão dispostos em células multidisciplinares, conforme segue:
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{scrum_risk_complexity_graph}
+\caption{Gráfico Risco de Processo/Complexidade \cite{scrum_development_process}}
+\label{fig:scrum_risk_complexity_graph}
+\end{figure}
 
-- 1 celula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA e 1 tester 
+Considerando que o projeto da MotorBRAS deve tornar-se mais complexo à medida que requisitos forem sendo alterados (e esta alteração de requisitos é uma expectativa dos stackholders), a adoção por um modelo linear tradicional apresenta um risco, que pode ser mitigado pela adoção do Scrum. O Scrum é um processo de desenvolvimento que assume a priori que sistemas de software são complexos, de forma que flexibilidade máxima, adaptação a mudanças e controle apropriado são requeridos, pois produzir sistemas ordenados em circunstâncias complexas e caóticas exige máxima flexibilidade. \cite{scrum_development_process} 
 
-Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre à pessoas da parte operacional, da forma que um grupo de stakeholders precisará ser definido. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
+O relacionamento entre complexidade e probabilidade de sucesso de um projeto, considerando uma metodologia flexível que incorpora controles e gerenciamento de risco, permite maior tolerância à mudanças, conforme figura que segue. 
 
-[colocar esse trecho na parte relativa a processo]
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{scrum_risk_complexity_graph_02}
+\caption{Gráfico Risco de Processo/Complexidade Com Metodologia Flexível \cite{scrum_development_process}}
+\label{fig:scrum_risk_complexity_graph_02}
+\end{figure}
 
-Esta abordagem de passagem de conhecimento por comunicação em detrimento da passagem de conhecimento por documento previamente escrito pauta-se no exemplo da filosofia do sistema de produção da Toyota, que sugere a redução de custo pela eliminação de desperdício [1] (neste caso, o tempo). O trabalho colaborativo do time baseado no entendimento prova-se mais produtivo do que a construção de software baseado em documento previamente escrito. [citar refs] [incorporar historia do inicio do scrum por schwartz tambem]
+As figuras anteriores são relativas a experiências de desenvolvimento de software em empresas como Borland, Easel, VMARK e ADM. O risco e a complexidade foram assumidos nos projetos, e projetos de sucesso foram criados. E ainda que processos ágeis ainda sejam vistos com certa ressalva, já foram provados como sendo um conjunto de métodos maduros de desenvolvimento de software. \cite{agile_meth_hype_reality}
 
-Esta abordagem de aumentar produtividade pela visão dos requisitos pautados em confiança (mais do que por contratos burocráticos) torna-se mais viável pela característica de que todas as partes envolvidas no projeto são internas à MoToRBras.  
+Como forma de automação ao processo, as práticas de integração contínua e entrega contínua serão adotadas. Para a MotorBRAS, a forma pela qual a qualidade do software será medida será por meio de cobertura de código e análise estática de código. Estas métricas serão coletadas por meio de ferramentas consolidadas de mercado, capazes de gerar relatórios de acompanhamento. Além destas medidas de qualidade, a entrega de incrementos de software para teste pelos stackholders também será feita de forma automatizada, garantindo rapidez e redução de erros no processo.   
 
+O Scrum define times de desenvolvimento dispostos entre células mutidisciplinares. Os times para o projeto MotorBRAS serão dispostos conforme segue:
+
+- 1 célula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester 
+
+- 1 célula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
+
+- 1 célula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
+
+- 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester 
+
+
+Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre aos stackholders. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
+
+
+\section{Ferramentas e Métodos}
+
+todo: add info here
+
+
+\section{Qualidade de Software}
+
+todo: add info here
 
 
 \section{Considerações Gerais}
 
 O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupação com o peso da vida humana na Terra. É assumido que os governos irão cada vez mais investir em tecnologia para resolver tais problemas, ao invés de considerar que haja uma mudança drástica de consciência no ser humano de forma geral. Este projeto assume que nos próximos anos esta tendência irá se acentuar, de forma a surgir uma oportunidade no mercado que favorecerá as empresas de vanguarda. Nosso projeto caminha nesta direção. 
-
 
 
 \section{Conclusão}
