@@ -174,34 +174,26 @@ Portanto, é responsabilidade da gerência de configuração gerar os releases/b
 
 \subsection{Gerenciamento de Engenharia de Software}
 
+Ainda que seja considerado possível gerenciar software como qualquer outro processo complexo, este projeto considerará algumas especificidades de software \cite{society_software_2004}, tais como: 
 
+- software deve ser construído como um processo iterativo, e não uma sequência de tarefas fechadas;
 
-referencia 
-  http://www.amazon.com/Agile-Project-Management-Creating-Innovative/dp/0321658396
+- engenharia de software incorpora aspectos de criatividade e disciplina;
 
-  laboratorio (projeto):
+- o grau de complexidade de software é alto;
 
-  - medida
-  - meta
-    - nao tem problema de custo por ter um patrocinador rico
-      - prazo - quando eh estrategico
-      - funcionalidade - o que associado ao quando
-  - risco 
-      - ameacas do projeto
-      - pontos de controle (teoria dos fatores criticos de sucesso)
-          - fazer uma pesquisa dos fatores criticos de sucesso pode ser uma boa 
-              - teoria parece se prender a algumas para gerenciar sempre
-      - como gerenciar o ricso - medida
-  - medida
+- existe uma rápida taxa de mudança em tecnologias envolvidas. 
 
-ver zotero - para gerenciamento de referencias
+Considerando tais especificidades, serão estabelecidas políticas de contratação de pessoal que valorizem profissionais atuantes e experientes em processos iterativos, e com conhecimento prático de tecnologias bem difundidas no mercado. O processo de desenvolvimento Scrum será utilizado por conta de ser um processo iterativo difundido \cite{scrum_development_process}. Em relação à plataforma de desenvolvimento, utilizaremos Java, pois além de ser uma das plataformas mais utilizadas no mundo há quase 20 anos \cite{tiobe_language} (provendo grande quantidade de recursos no mercado, além de bibliotecas, frameworks e documentação), seu escopo cobre tanto softwares Web quanto softwares embarcados (por meio do Android) - o que está diretamente vinculado à necessidade do projeto de rodar software tanto num servidor central quanto em cada carro, individualmente.
 
+Uma vez que as pessoas certas tenham sido contratadas, deve-se verificar quais outros aspectos, como infraestrutura, suporte e expertise, também sejam  garantidos, de forma a validar a análise de viabilidade do projeto, garantindo, assim, que o projeto possa ser completado com sucesso de forma efetiva em prazo e custo \cite{society_software_2004}. Em relação às definições dos stackholders, durante todo o projeto será assumido que os requisitos e o escopo serão flexíveis, de forma a dar suporte à necessidade de alterações de ideias que o setor de marketing da MotorBRAS geralmente apresenta. Para dar suporte a estas alterações, e considerando que o Scrum será adotado, as mesmas serão realizadas diretamente no Backlog do produto, de forma a serem consideradas em iterações futuras, sem impactar a iteração corrente. \cite{schwaber_scrum_2013}
+
+A associação de recursos com tarefas será realizada através da prática de User Stories: a criação de histórias que descrevem a necessidade do stackholder, e sua decomposição em tarefas e a associação de tarefas com recursos, é feita no planejamento de cada iteração. O conceito de User Stories não faz parte do Scrum, mas é comumente adotado em métodos ágeis como forma de orientar o trabalho a ser realizado na iteração \cite{user_stories_applied} (o Scrum em si não fornece mecanismos para controle de tarefas a serem executadas). O uso de User Stories nas reuniões de planejamento das iterações irão, portanto, fornecer a capacidade de atribuir tarefas significativas a pessoas.
+
+Para controlar o progresso sendo realizado nas iterações, permitindo uma análise de risco precisa conforme evolução, será utilizado o gráfico de Burn Down, de duas formas: a cada iteração e para o projeto como um todo. Para o gráfico da iteração, será possível acompanhar o total de horas restantes na iteração, diariamente (com base nas tarefas já realizadas em relação ao planejado). Já para o gráfico do projeto, será possível acompanhar o progresso do projeto como um todo. \cite{understanding_agile_scrum} Com isto, faz-se possível mitigar o risco, através de um acompanhamento e tratamento precoce dos problemas durante as iterações. A atualização do gráfico da iteração será feita diariamente, e a atualização do gráfico do projeto será feita a cada fim de iteração.
 
 
 \subsection{Gerenciamento de Processo de Software}
-
-
-
 
 Justificar agile: 
 http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
