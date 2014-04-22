@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{breakurl}
 
 \begin{document}
 
@@ -195,13 +196,12 @@ Portanto, é responsabilidade da gerência de configuração gerar os releases/b
 
 Ainda que seja considerado possível gerenciar software como qualquer outro processo complexo, este projeto considerará algumas especificidades de software \cite{society_software_2004}, tais como: 
 
-- software deve ser construído como um processo iterativo, e não uma sequência de tarefas fechadas;
-
-- engenharia de software incorpora aspectos de criatividade e disciplina;
-
-- o grau de complexidade de software é alto;
-
-- existe uma rápida taxa de mudança em tecnologias envolvidas. 
+\begin{itemize}
+\item software deve ser construído como um processo iterativo, e não uma sequência de tarefas fechadas;
+\item engenharia de software incorpora aspectos de criatividade e disciplina;
+\item o grau de complexidade de software é alto;
+\item existe uma rápida taxa de mudança em tecnologias envolvidas. 
+\end{itemize}
 
 Considerando tais especificidades, serão estabelecidas políticas de contratação de pessoal que valorizem profissionais atuantes e experientes em processos iterativos, e com conhecimento prático de tecnologias bem difundidas no mercado. O processo de desenvolvimento Scrum será utilizado por conta de ser um processo iterativo difundido \cite{scrum_development_process}. Em relação à plataforma de desenvolvimento, utilizaremos Java, pois além de ser uma das plataformas mais utilizadas no mundo há quase 20 anos \cite{tiobe_language} (provendo grande quantidade de recursos no mercado, além de bibliotecas, frameworks e documentação), seu escopo cobre tanto softwares Web quanto softwares embarcados (por meio do Android) - o que está diretamente vinculado à necessidade do projeto de rodar software tanto num servidor central quanto em cada carro, individualmente.
 
@@ -242,13 +242,12 @@ Como forma de automação ao processo, as práticas de integração contínua e 
 
 O Scrum define times de desenvolvimento dispostos entre células mutidisciplinares. Os times para o projeto MotorBRAS serão dispostos conforme segue:
 
-- 1 célula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester 
-
-- 1 célula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
-
-- 1 célula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
-
-- 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester 
+\begin{itemize}
+\item 1 célula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester; 
+\item 1 célula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester;
+\item 1 célula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester;
+\item 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester;
+\end{itemize}
 
 
 Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre aos stackholders. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
@@ -272,6 +271,9 @@ O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupaç
 \section{Conclusão}
 
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de software expostas no SWEBOK podem ser aplicadas na resolução de um problema hipotético. A forma como as disciplinas do SWEBOK são abordadas tem um enfoque particular em práticas ágeis de desenvolvimento de software, de forma a demonstrar que tais práticas podem aplicadas dentro das orientações propostas pelo SWEBOK.
+
+
+\nocite{mackinnon_endo-testing:_2000}
 
 \bibliographystyle{IEEEtran}
 \bibliography{eso-project}
