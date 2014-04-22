@@ -2,8 +2,12 @@
 
 \usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \begin{document}
+
+%\listoffigures
 
 \title{Carros elétricos para um mundo melhor}
 \author{
@@ -16,11 +20,11 @@
 }
 
 \IEEEcompsoctitleabstractindextext{%
-%\begin{abstract}
-%Abstract aqui
-%\end{abstract}
+\begin{abstract}
+Nos dias atuais, o software está envolvido em todas as atividades, de processadores de texto a operações de naves espaciais. Num cenário onde os aplicativos apoiam praticamente todas as atividades humanas, é esperado que haja muita demanda de software em uma das indústrias mais tradicionais: a automobilística. Associada a outra preocupação constante - o impacto no meio-ambiente -, este trabalho apresenta uma proposta para adição de valor, por meio de tecnologias de software, à seção de carros elétricos da empresa automobilística fictícia MotorBRAS. Expõe-se uma forma de aplicação de técnicas de engenharia de software que visam a geração de tecnologia para apoio à evolução do negócio, por meio de organização de um setor de desenvolvimento de software que aplique as devidas técnicas.  
+\end{abstract}
 \begin{IEEEkeywords}
-  Engenharia de Software, SWEBOK
+Engenharia de Software, SWEBOK, Scrum
 \end{IEEEkeywords}}
 
 \maketitle
@@ -189,57 +193,80 @@ Portanto, é responsabilidade da gerência de configuração gerar os releases/b
 
 \subsection{Gerenciamento de Engenharia de Software}
 
-referencia 
-  http://www.amazon.com/Agile-Project-Management-Creating-Innovative/dp/0321658396
+Ainda que seja considerado possível gerenciar software como qualquer outro processo complexo, este projeto considerará algumas especificidades de software \cite{society_software_2004}, tais como: 
 
-  laboratorio (projeto):
+- software deve ser construído como um processo iterativo, e não uma sequência de tarefas fechadas;
 
-  - medida
-  - meta
-    - nao tem problema de custo por ter um patrocinador rico
-      - prazo - quando eh estrategico
-      - funcionalidade - o que associado ao quando
-  - risco 
-      - ameacas do projeto
-      - pontos de controle (teoria dos fatores criticos de sucesso)
-          - fazer uma pesquisa dos fatores criticos de sucesso pode ser uma boa 
-              - teoria parece se prender a algumas para gerenciar sempre
-      - como gerenciar o ricso - medida
-  - medida
+- engenharia de software incorpora aspectos de criatividade e disciplina;
 
-ver zotero - para gerenciamento de referencias
+- o grau de complexidade de software é alto;
 
+- existe uma rápida taxa de mudança em tecnologias envolvidas. 
+
+Considerando tais especificidades, serão estabelecidas políticas de contratação de pessoal que valorizem profissionais atuantes e experientes em processos iterativos, e com conhecimento prático de tecnologias bem difundidas no mercado. O processo de desenvolvimento Scrum será utilizado por conta de ser um processo iterativo difundido \cite{scrum_development_process}. Em relação à plataforma de desenvolvimento, utilizaremos Java, pois além de ser uma das plataformas mais utilizadas no mundo há quase 20 anos \cite{tiobe_language} (provendo grande quantidade de recursos no mercado, além de bibliotecas, frameworks e documentação), seu escopo cobre tanto softwares Web quanto softwares embarcados (por meio do Android) - o que está diretamente vinculado à necessidade do projeto de rodar software tanto num servidor central quanto em cada carro, individualmente.
+
+Uma vez que as pessoas certas tenham sido contratadas, deve-se verificar quais outros aspectos, como infraestrutura, suporte e expertise, também sejam  garantidos, de forma a validar a análise de viabilidade do projeto, garantindo, assim, que o projeto possa ser completado com sucesso de forma efetiva em prazo e custo \cite{society_software_2004}. Em relação às definições dos stackholders, durante todo o projeto será assumido que os requisitos e o escopo serão flexíveis, de forma a dar suporte à necessidade de alterações de ideias que o setor de marketing da MotorBRAS geralmente apresenta. Para dar suporte a estas alterações, e considerando que o Scrum será adotado, as mesmas serão realizadas diretamente no Backlog do produto, de forma a serem consideradas em iterações futuras, sem impactar a iteração corrente. \cite{schwaber_scrum_2013}
+
+A associação de recursos com tarefas será realizada através da prática de User Stories: a criação de histórias que descrevem a necessidade do stackholder, e sua decomposição em tarefas e a associação de tarefas com recursos, é feita no planejamento de cada iteração. O conceito de User Stories não faz parte do Scrum, mas é comumente adotado em métodos ágeis como forma de orientar o trabalho a ser realizado na iteração \cite{user_stories_applied} (o Scrum em si não fornece mecanismos para controle de tarefas a serem executadas). O uso de User Stories nas reuniões de planejamento das iterações irão, portanto, fornecer a capacidade de atribuir tarefas significativas a pessoas.
+
+Para controlar o progresso sendo realizado nas iterações, permitindo uma análise de risco precisa conforme evolução, será utilizado o gráfico de Burn Down, de duas formas: a cada iteração e para o projeto como um todo. Para o gráfico da iteração, será possível acompanhar o total de horas restantes na iteração, diariamente (com base nas tarefas já realizadas em relação ao planejado). Já para o gráfico do projeto, será possível acompanhar o progresso do projeto como um todo. \cite{understanding_agile_scrum} Com isto, faz-se possível mitigar o risco, através de um acompanhamento e tratamento precoce dos problemas durante as iterações. A atualização do gráfico da iteração será feita diariamente, e a atualização do gráfico do projeto será feita a cada fim de iteração.
 
 
 \subsection{Gerenciamento de Processo de Software}
 
-Justificar agile: 
-http://audacium.com/wp-content/uploads/2012/08/Gartner-Agile-Maturity-Model.pdf
-http://blogs.gartner.com/michael\_blechar/2010/06/27/agile-methodologies-hype-or-reality/
+Pela característica dinâmica do projeto da MotorBRAS, as premissas principais na relação entre engenheiros de software e stackholders definem que o processo que os relacionam precisa ser flexível o suficiente para comportar mudanças em requisitos, e que entregas parciais para validação devem ser constantes, de forma a permitir que o feedback aproxime o idealizado do realizado. Para atingir tais fins, o processo Scrum será adotado. 
 
-[ver referencia do boehm e turner, using risk to balance agile and plan-driven methods (computer june 2003)]
+A natureza linear do tradicional modelo em cascata não define como responder a saídas inesperadas de nenhum dos processos intermediários (requisitos, design, desenvolvimento), o que não atende a necessidade do projeto para a MotorBRAS. Já o modelo em espiral (outro bastante utilizado), embora seja um processo iterativo, ainda é linear (requisitos precisam ser definidos na fase de requisitos, design precisa ser definido na fase de design, e assim por diante) \cite{scrum_development_process}. Estes processos lineares não estão de acordo com o desejado, pois o projeto da MotorBRAS é complexo em requisitos (alto potencial de mudanças) e em tecnologia (aplicações embarcadas interagindo com o carro não são um mercado maduro e estabelecido). A seguinte figura ilustra o uso dos modelos lineares (em cascata e espiral) em relação à complexidade das variáveis do projeto. 
 
-Para que possa o projeto possa ser viabilizado, será necessária a montagem de times de desenvolvimento. Seguindo a metodologia ágil de desenvolvimento SCRUM, os times serão dispostos em células multidisciplinares, conforme segue:
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{scrum_risk_complexity_graph}
+\caption{Gráfico Risco de Processo/Complexidade \cite{scrum_development_process}}
+\label{fig:scrum_risk_complexity_graph}
+\end{figure}
 
-- 1 celula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores e 1 tester
-- 1 celula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA e 1 tester 
+Considerando que o projeto da MotorBRAS deve tornar-se mais complexo à medida que requisitos forem sendo alterados (e esta alteração de requisitos é uma expectativa dos stackholders), a adoção por um modelo linear tradicional apresenta um risco, que pode ser mitigado pela adoção do Scrum. O Scrum é um processo de desenvolvimento que assume a priori que sistemas de software são complexos, de forma que flexibilidade máxima, adaptação a mudanças e controle apropriado são requeridos, pois produzir sistemas ordenados em circunstâncias complexas e caóticas exige máxima flexibilidade. \cite{scrum_development_process} 
 
-Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre à pessoas da parte operacional, da forma que um grupo de stakeholders precisará ser definido. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
+O relacionamento entre complexidade e probabilidade de sucesso de um projeto, considerando uma metodologia flexível que incorpora controles e gerenciamento de risco, permite maior tolerância à mudanças, conforme figura que segue. 
 
-[colocar esse trecho na parte relativa a processo]
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{scrum_risk_complexity_graph_02}
+\caption{Gráfico Risco de Processo/Complexidade Com Metodologia Flexível \cite{scrum_development_process}}
+\label{fig:scrum_risk_complexity_graph_02}
+\end{figure}
 
-Esta abordagem de passagem de conhecimento por comunicação em detrimento da passagem de conhecimento por documento previamente escrito pauta-se no exemplo da filosofia do sistema de produção da Toyota, que sugere a redução de custo pela eliminação de desperdício [1] (neste caso, o tempo). O trabalho colaborativo do time baseado no entendimento prova-se mais produtivo do que a construção de software baseado em documento previamente escrito. [citar refs] [incorporar historia do inicio do scrum por schwartz tambem]
+As figuras anteriores são relativas a experiências de desenvolvimento de software em empresas como Borland, Easel, VMARK e ADM. O risco e a complexidade foram assumidos nos projetos, e projetos de sucesso foram criados. E ainda que processos ágeis ainda sejam vistos com certa ressalva, já foram provados como sendo um conjunto de métodos maduros de desenvolvimento de software. \cite{agile_meth_hype_reality}
 
-Esta abordagem de aumentar produtividade pela visão dos requisitos pautados em confiança (mais do que por contratos burocráticos) torna-se mais viável pela característica de que todas as partes envolvidas no projeto são internas à MoToRBras.  
+Como forma de automação ao processo, as práticas de integração contínua e entrega contínua serão adotadas. Para a MotorBRAS, a forma pela qual a qualidade do software será medida será por meio de cobertura de código e análise estática de código. Estas métricas serão coletadas por meio de ferramentas consolidadas de mercado, capazes de gerar relatórios de acompanhamento. Além destas medidas de qualidade, a entrega de incrementos de software para teste pelos stackholders também será feita de forma automatizada, garantindo rapidez e redução de erros no processo.   
 
+O Scrum define times de desenvolvimento dispostos entre células mutidisciplinares. Os times para o projeto MotorBRAS serão dispostos conforme segue:
+
+- 1 célula de infraestrutura de comunicações: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester 
+
+- 1 célula de customização lógica: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
+
+- 1 célula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester
+
+- 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester 
+
+
+Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre aos stackholders. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
+
+
+\subsection{Ferramentas e Métodos}
+
+todo: add info here
+
+
+\subsection{Qualidade de Software}
+
+todo: add info here
 
 
 \section{Considerações Gerais}
 
 O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupação com o peso da vida humana na Terra. É assumido que os governos irão cada vez mais investir em tecnologia para resolver tais problemas, ao invés de considerar que haja uma mudança drástica de consciência no ser humano de forma geral. Este projeto assume que nos próximos anos esta tendência irá se acentuar, de forma a surgir uma oportunidade no mercado que favorecerá as empresas de vanguarda. Nosso projeto caminha nesta direção. 
-
 
 
 \section{Conclusão}
