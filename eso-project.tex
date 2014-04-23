@@ -5,6 +5,9 @@
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{breakurl}
+\usepackage{color}
+
+\newcommand{\hilight}[1]{\textbf{\textcolor{red}{#1}}} % para ajudar a destacar TODOs e outros alertas
 
 \begin{document}
 
@@ -93,40 +96,59 @@ Algumas características do produto e do contexto de negócios influenciarão a 
 
 \end{itemize}
 
-\section{Disciplinas do SWEBOK-3}
+\section{Disciplinas do SWEBOK-3 \hilight{(Estamos utilizando a versão 2014 ou a
+versão 2004 do swebok?)}}
 
 As disciplinas do SWEBOK serão aplicadas pelos times de desenvolvimento conforme segue: 
 
 \subsection{Requisitos}
 
-Os requisitos de produto serão expressos por meio de uma especificação composta de histórias [1], por ordem de prioridade, que são definições funcionais de alto nível. O analista de requisitos será responsável por prover informações detalhadas referentes às histórias aos demais membros do time, no momento de estimativa da iteração e durante toda a iteração. Desta forma, cabe a este profissional ter o entendimento dos detalhes das histórias. Será entregue, a cada iteração, uma documentação que detalha os aspectos importantes de cada história realizada. [verificar questao de prender o texto com o que vem abaixo por gancho no fim do parágrafo]
+Os requisitos de produto serão expressos por meio de uma especificação composta
+de histórias \cite{primo_user_2011}, por ordem de prioridade, que são definições funcionais de alto
+nível. O analista de requisitos será responsável por prover informações
+detalhadas referentes às histórias aos demais membros do time, no momento de
+estimativa da iteração e durante toda a iteração. Desta forma, cabe a este
+profissional ter o entendimento dos detalhes das histórias. Será entregue, a
+cada iteração, uma documentação que detalha os aspectos importantes de cada
+história realizada. \hilight{[verificar questao de prender o
+texto com o que vem abaixo por gancho no fim do parágrafo]}
 
 Engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
 
 O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável.
 
-Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD [2] (mais do que o rigor do UML) e exemplificação de cenários como formas de obter clareza nos detalhes das histórias. Os modelos conceituais estão a cargo dos entrevistadores, e não definem característica formal. Apenas é esperado que sejam definidos cenários para cada história [3], de forma a guiar o time durante a construção e permitir geração de validação automatizada dos requisitos. [4]
+Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal
+de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e
+auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
+entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD \cite{evans_domain-driven_2004}  
+(mais do que o rigor do UML) e exemplificação de
+cenários como formas de obter clareza nos detalhes das histórias. Os modelos
+conceituais estão a cargo dos entrevistadores, e não definem característica
+formal. Apenas é esperado que sejam definidos cenários para cada história
+\cite{washington2003using}, de forma a guiar o time durante a construção e
+permitir geração de validação automatizada dos requisitos
+\cite{melnik_multiple_2007}.
 
 Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de não impactar o time.
 
-Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto [5], apoiando-se em técnicas como refatoração e automatização de testes de regressão.
+Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto \cite{cohn_agile_2009}, apoiando-se em técnicas como refatoração e automatização de testes de regressão.
 
-Os requisitos serão validados através de testes de aceitação, de duas formas: manual (na reunião de demonstração da iteração, quando os stakeholders comparam as histórias combinadas em relação ao funcionamento do sistema), e automatizada: utilizando a técnica de BDD [6], cada cenário de cada história será vinculado a métodos de teste durante a construção, de forma que cada execução da suite de testes irá gerar um relatório que define se as histórias estão funcionando de acordo com o esperado.
+Os requisitos serão validados através de testes de aceitação, de duas formas: manual (na reunião de demonstração da iteração, quando os stakeholders comparam as histórias combinadas em relação ao funcionamento do sistema), e automatizada: utilizando a técnica de BDD \hilight{(rodrigo verificar)}, cada cenário de cada história será vinculado a métodos de teste durante a construção, de forma que cada execução da suite de testes irá gerar um relatório que define se as histórias estão funcionando de acordo com o esperado.
 
 
 \subsection{Design}
 
-No início do projeto (antes da primeira iteração), considerando a visão geral e o entendimento dos requisitos de maior prioridade, o design de software arquitetural (top-level) será definido por um engenheiro de software com perfil sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma que o design não será mais dissociado da construção, e sim será parte desta [7]. O engenheiro sênior em desenvolvimento pode definir design arquitetural para futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time na definição do design detalhado, durante a iteração. O design arquitetural deverá ser documentado em alto nível, considerando aspectos como estilo arquitetural sendo utilizado, forma de tratamento de eventos, forma de lidar com concorrência, distribuição de componentes, persistência de dados.
+No início do projeto (antes da primeira iteração), considerando a visão geral e o entendimento dos requisitos de maior prioridade, o design de software arquitetural (top-level) será definido por um engenheiro de software com perfil sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma que o design não será mais dissociado da construção, e sim será parte desta \cite{fowler_planned_evolutionary_design}. O engenheiro sênior em desenvolvimento pode definir design arquitetural para futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time na definição do design detalhado, durante a iteração. O design arquitetural deverá ser documentado em alto nível, considerando aspectos como estilo arquitetural sendo utilizado, forma de tratamento de eventos, forma de lidar com concorrência, distribuição de componentes, persistência de dados.
 
-Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do time, e não será exigida documentação formal para tal, pois assume-se o conceito de que o "código-fonte é o design" [8]. Contudo, será necessário validar a qualidade deste design, o que será feito através da elaboração de relatório de inspeção de código a cada iteração, que deve considerar as questões do documento de design arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão, decomposição, modularização, encapsulamento, separação de responsabilidades, design patterns. 
+Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do time, e não será exigida documentação formal para tal, pois assume-se o conceito de que o "código-fonte é o design". Contudo, será necessário validar a qualidade deste design, o que será feito através da elaboração de relatório de inspeção de código a cada iteração, que deve considerar as questões do documento de design arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão, decomposição, modularização, encapsulamento, separação de responsabilidades, design patterns. 
 
 O relatório será realizado pelo engenheiro de software da própria equipe que agregar o papel de sênior, e deve ser entregue como um artefato da iteração (relatório de qualidade de design). A responsabilidade pela veracidade do documento é de toda a equipe.
 
 Além deste relatório, a qualidade do design também será garantida através de:
 \begin{itemize}
 \item práticas diárias de DDD: para permitir uma modelagem do design alinhada com as regras de negócio sendo utilizadas. O DDD faz uso de um diagrama simplificado de classes para modelar o entendimento;
-\item práticas diárias de pair programming e TDD [9]: que orientam o desenvolvedor no sentido de escrever um código claro e seguindo o paradigma de orientação a objetos;
-\item práticas automatizadas: análise estática de código, para garantir que boas práticas de design estão sendo adotadas no código sendo escrito [10]. Esta prática não deve ser avaliada apenas no final da iteração, mas diariamente, por todo o time.
+\item práticas diárias de pair programming e TDD \cite{begel_pair_2008}, \cite{nagappan_realizing_2008}: que orientam o desenvolvedor no sentido de escrever um código claro e seguindo o paradigma de orientação a objetos;
+\item práticas automatizadas: análise estática de código, para garantir que boas práticas de design estão sendo adotadas no código sendo escrito \cite{karpov_static_code_analysis}. Esta prática não deve ser avaliada apenas no final da iteração, mas diariamente, por todo o time.
 \end{itemize}
 
 Em relação às descrições estruturais, espera-se que o documento de arquitetura defina diagramas de deployment, e é desejável que os diagramas de classes simplificados que surgem da prática de DDD também sejam documentados (a ser definido pelo time).
@@ -138,7 +160,7 @@ Para este projeto, a estratégia de design é baseada em design orientado a obje
 
 Este projeto tratará design e construção de forma muito próxima. Os engenheiros de software com perfil de programadores terão poder de definir o design detalhado bem como a codificação, sempre orientados por um programador sênior e pelo design arquitetural. O programador poderá, portanto, aplicar os fundamentos de minimização de complexidade, antecipação de mudanças e construção para verificação tanto em design quanto em construção, sem a necessidade de haver distinções.
 
-É esperado que o programador reduza a complexidade em tudo o que for fazer, utilizando os melhores algoritmos e padrões. Também é esperado que o código seja escrito de forma a permitir futuras modificações sem grande impacto (e para isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração seja entendido [11]). Outras práticas que serão exigidas do programador são a escrita de testes unitários e de integração [12]. A verificação da adoção destas práticas será realizada juntamente com a validação de qualidade do design, descrita no tópico anterior. 
+É esperado que o programador reduza a complexidade em tudo o que for fazer, utilizando os melhores algoritmos e padrões. Também é esperado que o código seja escrito de forma a permitir futuras modificações sem grande impacto (e para isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração seja entendido \cite{Fowler1999}). Outras práticas que serão exigidas do programador são a escrita de testes unitários e de integração \cite{unit_int_func_testing}. A verificação da adoção destas práticas será realizada juntamente com a validação de qualidade do design, descrita no tópico anterior. 
 
 Também será exigido que o programador escreva testes de aceitação baseados em BDD, contra cada história da especificação que implementa, para garantir que seu código seja verificável. Estes testes serão executados diariamente, gerando relatórios que indicam se o código é válido em relação ao esperado. Será exigido que o programador siga os padrões de desenvolvimento de código da empresa, e a ferramenta de análise estática de código irá indicar se os padrões estão sendo ignorados, diariamente, durante a iteração. Códigos não-conformes devem ser corrigidos o mais rápido possível, no prazo máximo de duração da iteração.
 
@@ -273,7 +295,9 @@ O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupaç
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de software expostas no SWEBOK podem ser aplicadas na resolução de um problema hipotético. A forma como as disciplinas do SWEBOK são abordadas tem um enfoque particular em práticas ágeis de desenvolvimento de software, de forma a demonstrar que tais práticas podem aplicadas dentro das orientações propostas pelo SWEBOK.
 
 
-\nocite{mackinnon_endo-testing:_2000}
+% \nocite{mackinnon_endo-testing:_2000}
+
+\hilight{Parece que existe um package que faz com que as quebras de linhas de URLs ocorram corretamente}
 
 \bibliographystyle{IEEEtran}
 \bibliography{eso-project}
