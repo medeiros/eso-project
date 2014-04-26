@@ -52,15 +52,15 @@ O que este projeto propõe é tornar esse serviço ainda mais atrativo, através
 
 \section{Condições e Características Importantes}
 
-De acordo com o projeto previso pelo grupo, os seguintes características serão agregadas aos carros elétricos:
+De acordo com o projeto previsto pelo grupo, as seguintes características serão agregadas aos carros elétricos:
 
 \begin{itemize}
 
-\item Reconhecimento de íris: uma maneira eficiente de identificar o indivíduo para então iniciar o processo de customização de suas preferências;
+\item Reconhecimento de íris: uma maneira eficaz de identificar o indivíduo para então iniciar o processo de customização de suas preferências;
 
 \item Integração com redes sociais: para que seja possível ao indivíduo ter acesso a sua agenda, contatos, calendários e preferências musicais instantaneamente; 
 
-\item Customizações físicas internas: preferências como temperatura do carro (ajuste do ar condicionado) e posição do banco serão carregados de um servidor central e aplicados diretamente ao veículo quando da identificação do indivíduo; da mesma forma, alterações no veículo são salvas no servidor central como preferências do indivíduo, para posterior aplicação numa nova viagem;
+\item Customizações físicas internas: preferências como temperatura do carro (ajuste do ar condicionado) e posição do banco serão carregadas de um servidor central e aplicadas diretamente ao veículo quando da identificação do indivíduo; da mesma forma, alterações no veículo são salvas no servidor central como preferências do indivíduo, para posterior aplicação numa nova viagem;
 
 \end{itemize}
 
@@ -96,8 +96,7 @@ Algumas características do produto e do contexto de negócios influenciarão a 
 
 \end{itemize}
 
-\section{Disciplinas do SWEBOK-3 \hilight{(Estamos utilizando a versão 2014 ou a
-versão 2004 do swebok?)}}
+\section{Disciplinas do SWEBOK}
 
 As disciplinas do SWEBOK serão aplicadas pelos times de desenvolvimento conforme segue: 
 
@@ -113,11 +112,11 @@ cada iteração, uma documentação que detalha os aspectos importantes de cada
 história realizada. \hilight{[verificar questao de prender o
 texto com o que vem abaixo por gancho no fim do parágrafo]}
 
-Engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
+Um engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
 
 O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável.
 
-Os analistas de requisito precisarão ter livre acesso aos stakeholders (pessoal
+Os analistas de requisitos precisarão ter livre acesso aos stakeholders (pessoal
 de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e
 auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
 entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD \cite{evans_domain-driven_2004}  
@@ -129,12 +128,18 @@ formal. Apenas é esperado que sejam definidos cenários para cada história
 permitir geração de validação automatizada dos requisitos
 \cite{melnik_multiple_2007}.
 
-Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de não impactar o time.
+Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de não impactar os prazos e custos do projeto \cite{zowghi2002study}.
 
 Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto \cite{cohn_agile_2009}, apoiando-se em técnicas como refatoração e automatização de testes de regressão.
 
-Os requisitos serão validados através de testes de aceitação, de duas formas: manual (na reunião de demonstração da iteração, quando os stakeholders comparam as histórias combinadas em relação ao funcionamento do sistema), e automatizada: utilizando a técnica de BDD \hilight{(rodrigo verificar)}, cada cenário de cada história será vinculado a métodos de teste durante a construção, de forma que cada execução da suite de testes irá gerar um relatório que define se as histórias estão funcionando de acordo com o esperado.
-
+Os requisitos serão validados através de testes de aceitação, de duas formas:
+manual (na reunião de demonstração da iteração, quando os stakeholders comparam
+as histórias combinadas em relação ao funcionamento do sistema), e
+automatizada: utilizando a técnica de BDD \cite{chelimsky2010rspec}, cada
+cenário de cada história será vinculado a métodos de teste durante a
+construção, de forma que cada execução da suite de testes irá gerar um
+relatório que define se as histórias estão funcionando de acordo com o
+esperado.
 
 \subsection{Design}
 
@@ -162,24 +167,54 @@ Este projeto tratará design e construção de forma muito próxima. Os engenhei
 
 É esperado que o programador reduza a complexidade em tudo o que for fazer, utilizando os melhores algoritmos e padrões. Também é esperado que o código seja escrito de forma a permitir futuras modificações sem grande impacto (e para isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração seja entendido \cite{Fowler1999}). Outras práticas que serão exigidas do programador são a escrita de testes unitários e de integração \cite{unit_int_func_testing}. A verificação da adoção destas práticas será realizada juntamente com a validação de qualidade do design, descrita no tópico anterior. 
 
-Também será exigido que o programador escreva testes de aceitação baseados em BDD, contra cada história da especificação que implementa, para garantir que seu código seja verificável. Estes testes serão executados diariamente, gerando relatórios que indicam se o código é válido em relação ao esperado. Será exigido que o programador siga os padrões de desenvolvimento de código da empresa, e a ferramenta de análise estática de código irá indicar se os padrões estão sendo ignorados, diariamente, durante a iteração. Códigos não-conformes devem ser corrigidos o mais rápido possível, no prazo máximo de duração da iteração.
+Também será exigido que o programador escreva testes de aceitação baseados em BDD \cite{chelimsky2010rspec}, contra cada história da especificação que implementa, para garantir que seu código seja verificável. Estes testes serão executados diariamente, gerando relatórios que indicam se o código é válido em relação ao esperado. Será exigido que o programador siga os padrões de desenvolvimento de código da empresa, e a ferramenta de análise estática de código irá indicar se os padrões estão sendo ignorados, diariamente, durante a iteração. Códigos não-conformes devem ser corrigidos o mais rápido possível, no prazo máximo de duração da iteração.
 
 Não será exigido uso formal de UML; contudo, o time pode optar por utilizar UML (bem como qualquer outra forma visual de design) para facilitar a comunicação e/ou o entendimento de um dado objeto ou conjunto de objetos que precisa ser criado ou alterado. 
 
-O modelo de construção que será adotado neste projeto é o Scrum. Este modelo iterativo trata a construção de forma concorrente a outras atividades de desenvolvimento de software, como os requisitos, o design e os testes. Todas estas atividades interagem juntamente nesta fase de construção; desta forma, o planejamento da construção se dá iterativamente, envolvendo todas as atividades: desde a fase de análise (com a definição dos requisitos da especificação como histórias por ordem de prioridade, e o entendimento profundo destas através da elaboração de cenários), passando por  uma estimativa para a iteração (onde time discute e define quantas histórias da especificação podem ser realizadas, considerando a prioridade) e pela construção propriamente dita (onde os programadores geram código considerando design, os analistas documentam as histórias e os testers validam as histórias contra o sistema conforme vão sendo finalizadas), e finalizando na entrega (onde os stakeholder validam, numa reunião de demonstração, o sistema rodando, a documentação e demais artefatos que tenham sido previamente combinados a serem entregues). Para medida das iterações, são utilizadas as métricas já descritas nos tópicos anteriores, bem como o próprio aval dos stakeholders.
+O modelo de construção que será adotado neste projeto é o Scrum
+\cite{schwaber_scrum_2013}. Este modelo iterativo trata a construção de forma
+concorrente a outras atividades de desenvolvimento de software, como os
+requisitos, o design e os testes. Todas estas atividades interagem juntamente
+nesta fase de construção; desta forma, o planejamento da construção se dá
+iterativamente, envolvendo todas as atividades: desde a fase de análise (com a
+definição dos requisitos da especificação como histórias por ordem de
+prioridade, e o entendimento profundo destas através da elaboração de
+cenários), passando por  uma estimativa para a iteração (onde time discute e
+define quantas histórias da especificação podem ser realizadas, considerando a
+prioridade) e pela construção propriamente dita (onde os programadores geram
+código considerando design, os analistas documentam as histórias e os testers
+validam as histórias contra o sistema conforme vão sendo finalizadas), e
+finalizando na entrega (onde os stakeholder validam, numa reunião de
+demonstração, o sistema rodando, a documentação e demais artefatos que tenham
+sido previamente combinados a serem entregues).  Para medida das iterações, são
+utilizadas as métricas já descritas nos tópicos anteriores, bem como o próprio
+aval dos stakeholders.
 
 
 \subsection{Testes}
 
 A verificação dinâmica dos testes será aplicada pelo engenheiro de software com perfil de tester durante cada iteração, assim que uma data história for dada como pronta pelos engenheiros de software com perfil de programadores. Para este fim, os programadores devem liberar cada história pronta num servidor de testes.
 
-A verificação, num primeiro momento, deve contemplar o conjunto de cenários da história (teste de conformidade, ou teste funcional) e a análise dos relatórios automatizados gerados pelo framework de BDD.
+A verificação, num primeiro momento, deve contemplar o conjunto de cenários da
+história (teste de conformidade, ou teste funcional) e a análise dos relatórios
+automatizados gerados pelo framework de BDD \cite{chelimsky2010rspec}.
 
 Como já dito, o tester deve participar na fase de levantamento de requisitos, para auxiliar o analista na definição das histórias e cenários específicos; neste ponto, em sua área de conhecimento, garante critérios de seleção e adequação dos testes, bem como o objetivo e a efetividade dos testes. O ganho adicional com qualidade vem do fato de considerar que os programadores escrevem a aplicação partindo da mesma ótica, o que auxilia na redução de falhas de comunicação e de entendimento.
 
-Deseja-se que o tester tenha perfil de programador, no sentido de poder auxiliar na revisão de testes unitários e de integração que os desenvolvedores tenham criado. Considerando a característica de pair programming da equipe, pode até mesmo auxiliar o programador nesta atividade. Contudo, esta atividade não é obrigatória, sendo esperado que o foco do tester mais voltado ao aspecto funcional do software. 
+Deseja-se que o tester tenha perfil multidisciplinar o suficiente para que
+possa atuar nos diferentes Níveis de Teste previstos em
+\cite{society_software_2004}, sendo eles: os Testes Unitários, os Testes de
+Integração e os Testes de Sistema. Considerando o emprego da técnica de pair
+programming, o tester poderá até mesmo auxiliar os programadores nesta
+atividade.  Contudo, esta atividade não é obrigatória, sendo esperado que o
+foco do tester mais voltado ao aspecto funcional do software. 
 
-Outro aspecto em que o tester deve atuar é em testes de sistema, verificando se diversos requisitos não-funcionais estão de acordo com o esperado (com o apoio do documento de design arquitetural e dos programadores), além de analisar aspectos como performance, stress, configuração, usabilidade. Espera-se que faça uso de  ferramentas para automatizar tais testes, e que gere um relatório no final de cada iteração, referente a estes testes específicos.
+No que concerne aos Testes de Sistema, o tester se concentrará em diversos
+requisitos não-funcionais, verificando se eles estão de acordo com o esperado
+(com o apoio do documento de design arquitetural e dos programadores), além de
+analisar aspectos como performance, stress, configuração, usabilidade.
+Espera-se que faça uso de  ferramentas para automatizar tais testes, e que gere
+um relatório no final de cada iteração, referente a estes testes específicos.
 
 Os testes de regressão funcionais devem ser automatizados, cobrindo os aspectos funcionais de maior importância (a serem definidos pelo próprio tester). Os aspectos não-funcionais não são esperados em relação à regressão, pois sua característica não sugere regressão, mas sim diagnóstico pontual.
 
@@ -188,7 +223,16 @@ O tester tem liberdade para decidir realizar testes estruturais, testes explorat
 
 \subsection{Manutenção}
 
-A equipe que dará manutenção é a mesma que desenvolveu o produto. Desta forma, qualquer nova requisição de modificação (evolução ou correção) deve ser definida na especificação, seja alterando ou adicionando novos itens. Tal item, então, precisa ser definido em forma de história e com prioridade, para ingressar numa próxima iteração, seguindo o mesmo fluxo de um novo requisito. Desta forma, incorporando correções no fluxo normal de desenvolvimento (e não após todo o projeto ter terminado), procura-se eliminar o problema onde 80 por cento do esforço de manutenção é gasto em ações não corretivas. Neste caso, a manutenção acontece enquanto o projeto ainda existe, e a prioridade fica a cargo dos stakeholders. 
+A equipe que dará manutenção é a mesma que desenvolveu o produto \cite{fowler_products_not_projects}. Desta forma,
+qualquer nova requisição de modificação (evolução ou correção) deve ser
+definida na especificação, seja alterando ou adicionando novos itens. Tal item,
+então, precisa ser definido em forma de história e com prioridade, para
+ingressar numa próxima iteração, seguindo o mesmo fluxo de um novo requisito.
+Desta forma, incorporando correções no fluxo normal de desenvolvimento (e não
+após todo o projeto ter terminado), procura-se eliminar o problema onde 80 por
+cento do esforço de manutenção é gasto em ações não corretivas. Neste caso, a
+manutenção acontece enquanto o projeto ainda existe, e a prioridade fica a
+cargo dos stakeholders \cite{schwaber_scrum_2013}. 
 
 A evolução do software, portanto, será agregada durante o projeto de desenvolvimento, cabendo apenas que haja um gerenciamento dos requisitos em relação à prioridade. Como a equipe é a mesma, não há transição de conhecimento. As manutenções corretivas, adaptativas e perfectivas irão entrar no fluxo normal de desenvolvimento. Já espera-se que a manutenção preventiva seja um trabalho implícito, resultante das práticas de qualidade e métricas nas fases de análise, design e construção. No caso especial da construção, espera-se aplicação de refatoração e code review.
 
@@ -198,18 +242,45 @@ Espera-se que toda a qualidade definida até o momento (com testes automatizados
 
 Após a finalização do projeto, uma equipe menor será designada para manter o mesmo seguindo os mesmos princípios definidos até então, e com boa parte do mesmo pessoal, de forma a facilitar a transmissão de conhecimento. Esta futura equipe, poderá fazer uso dos documentos de especificação e design de arquitetura e das documentações de testes para entender o sistema de um aspecto funcional, e deverá estudar o código para entender um design mais detalhado. O esforço em qualidade é pago aqui, pois o código deve estar escrito de forma que seja fácil de entender e evoluir, de forma que a prática de engenharia reversa deve ser desconsiderada. 
 
-As práticas de inspeção de qualidade não devem deixar de existir, sob pena de degradar a qualidade do código, de forma que a futura equipe de manutenção precisará contar com um engenheiro de software com perfil sênior para estar responsável por este aspecto (utilizando as ferramentas necessárias para tal fim).
-
+Revisões e auditorias \cite{society_software_2004} deverão ser conduzidas
+regularmente ao longo do ciclo de vida do produto (e não somente durante a
+duração do projeto), de forma que desvios possam ser identificados e corrigidos
+antes que causem maiores danos.
 
 \subsection{Gerenciamento de Configuração}
 
-Haverá uma gerência de configuração responsável pelo armazenamento de todos os artefatos gerados nas fases de requisitos, design, construção, testes e manutenção, bem como ferramentas necessárias a todas as áreas. O planejamento desta gerência deve considerar apenas elementos de software, descartando hardware e firmware por não serem aspectos cujo controle faz-se necessário. Não caberá à gerência de configuração definir regras sobre os artefatos gerados (com exceção do código-fonte gerado), de forma que os times podem versionar livremente; contudo, precisa prover mecanismos para auditar a informação (entende-se que estes mecanismos devem ser manuais, pela diversidade de artefatos que um dado time pode produzir). 
+As atividades de Gerenciamento de Configuração estão relacionadas com todas
+as demais atividades \cite{society_software_2004}. Por conta disso, a gerência
+responsável pela gestão do projeto e, posteriomente, do produto, deverá
+garantir o estabelecimento e manutenção de todos os canais de comunicação
+necessários.
+
+Haverá uma gerência de configuração responsável pelo armazenamento de todos os
+artefatos gerados nas fases de requisitos, design, construção, testes e
+manutenção, bem como ferramentas necessárias a todas as áreas. O planejamento
+desta gerência deve considerar apenas elementos de software, descartando
+hardware e firmware por não serem aspectos cujo controle faz-se necessário. Não
+caberá à gerência de configuração definir regras sobre os artefatos gerados
+(com exceção do código-fonte gerado), de forma que os times podem versionar
+livremente; contudo, precisa prover mecanismos para auditar a informação
+(entende-se que estes mecanismos devem ser manuais, pela diversidade de
+artefatos que um dado time pode produzir). 
 
 Em relação ao código-fonte gerado, a gerência de configuração precisará garantir sua qualidade através da análise estática de código com uso de ferramenta automatizada, de forma a garantir que o código está seguindo as boas práticas determinadas pela empresa. Relatórios desta medida de qualidade de código devem estar disponível para consulta a qualquer momento. O desenvolvedor deve possuir acesso a estas mesmas práticas, de forma a poder criar um código-fonte de acordo com as práticas exigidas pela gerência de configuração. 
 
 Outra característica que precisa ser considerada é a permissão de acesso. Apenas usuários de um dado projeto podem ter permissão de acesso ao repositório de informações do projeto, a não ser que a gerência diga o contrário. Assim sendo, é preciso haver uma forma automática de conceder acessos, tanto individuais quanto a grupos, de forma que um privilégio individual de um elemento num grupo possa sobrescrever seu privilégio enquanto membro do grupo.
 
-Esta gerência também será responsável pela integração contínua: deverá prover e manter uma ferramenta de geração de builds automatizados, a ser executada diariamente ("integrando" o código, agregando a execução de testes unitários e de integração gerados pelos programadores ao processo de build, gerando relatórios de métrica de cobertura de testes, e notificando todo o time no caso de builds e testes quebrados), bem como prover uma opção para geração de releases e deploy automático em servidor de testes (base da entregacontínua). Com isto, espera-se agilidade na entrega do sistema para validação pelos stakeholders. 
+Esta gerência também será responsável pela integração contínua
+\cite{fowler_ci_2006}: deverá prover e manter uma ferramenta de geração de
+builds automatizados, a ser executada diariamente ("integrando" o código,
+agregando a execução de testes unitários e de integração gerados pelos
+programadores ao processo de build, gerando relatórios de métrica de cobertura
+de testes, e notificando todo o time no caso de builds e testes quebrados), bem
+como prover uma opção para geração de releases e deploy automático em servidor
+de testes (base da entrega contínua). Estes relatórios poderão alimentar os
+processos de Gerenciamento da Qualidade \cite{society_software_2004} e, além
+disto, espera-se agilidade na entrega do sistema para validação pelos
+stakeholders. 
 
 Portanto, é responsabilidade da gerência de configuração gerar os releases/baselines. As baselines devem ser geradas a cada fim de iteração e os releases devem estar disponíveis para ser gerados sempre que a equipe de construção finalizar uma iteração, de forma que o ciclo de execução de trabalho deve estar alinhado com o desta equipe. Se o código-fonte não estiver conforme o validado pela análise estática de código e de acordo com as métricas de cobertura de testes geradas pela integração contínua, o release não poderá ser entregue. Cabe ao gerente de configuração a responsabilidade de alertar o time, de forma a evitar atrasos num entendimento tardio de que o release não poderá ser entregue por falta de qualidade.
 
