@@ -348,7 +348,23 @@ Os analistas de requisitos precisam ter um forte entendimento do negócio e das 
 
 \subsection{Ferramentas e Métodos}
 
-todo: add info here
+As ferramentas de modelagem de requisitos não serão formalizadas, cabendo aos desenvolvedores o acordo e a utilização de quaisquer ferramentas. Em termos de rastreabilidade e auditoria, o projeto será analisado em termos de especificações de validação automática através de testes, de forma que a modelagem dos requisitos pode, livremente, servir de apoio aos desenvolvedores, sem que precise ser formalmente controlada. A mesma filosofia vale para o design: tendo em vida o preceito ágil de que "o código é o design", não haverá exigência por diagramas de UML. Contudo, ferramentas automatizadas de análise estática de código e cobertura de testes vão servir para validação de um código de qualidade, o que implicitamente considera uma validação de design.
+
+O projeto fará uso da linguagem de programação Java, conforme já descrito naseção de Engenharia de Software deste documento. Além dos benefícios já citados nesta tecnologia, a Máquina Virtual Java (JVM) oferece grande poder de escalabilidade, aspecto interessante para a MotorBRAS à medida que mais e mais carros passem a incorporar a plataforma automatizada deste projeto. Os desenvolvedores inicialmente farão uso da IDE Eclipse, da IBM, por ser a mais comumente adotada na comunidade Java, reduzindo quaisquer curvas de aprendizado. Contudo, poderão substituir por outra de sua preferência (ainda visando a redução máxima com curva de aprendizado em IDE), desde que obedeça às mesmas regras de estilo de código sendo adotadas pela equipe (o código precisa seguir um mesmo padrão, independente da IDE), e que seja uma IDE consolidada no mercado, para evitar problemas que afetariam a produtividade (opções: Netbeans ou IDEA Intellij).   
+
+Em relação a testes, a equipe atuará em duas frentes: 
+\begin{itemize}
+\item em testes que validam código: pela aplicação do conceito de integração contínua, que realiza a compilação do projeto e então executa testes automatizados a cada dia, notificando o time sobre divergências, assim verificando e validando a qualidade do que está sendo gravado em repositório de código
+\item em testes funcionais, de caixa preta, que validam o output a partir do input: fazendo uso da ferramenta Selenium, que reproduz o uso automático da aplicação, simulando um usuário real em casos de teste previamente gravados (com base nas especificações). 
+\end{itemize}
+
+Os testes não se resumem a automatização em sua totalidade, cabendo ao engenheiro de software com perfil de tester realizar os devidos testes estruturais, exploratórios, e outros previamente descritos no tópico de testes deste documento.
+
+Não serão adotadas ferramentas de manutenção em específico. Tendo em vista que o código está sendo produzido de forma clara (com especificações claras vinculadas a testes executáveis), não há a necessidade de utilização de ferramentas de reengenharia ou compreeensão sugeridas no SWEBOK \cite{society_software_2004}. A engenharia reversa para diagramas de classes pode ser desejável em situações de comunicação, mas por não se tratar de algo pertinente ao método de construção do software aqui proposto, não será formalizado em uma ferramenta especifica.
+
+A gerência de configuração fará uso da ferramenta SVN, por ser a mais utilizada no mercado (causando menor risco em curva de aprendizado pela equipe da MotorBRAS), além do fato de ser facilmente utilizada. Para garantia de qualidade, a ferramenta de análise de código Sonar será utilizada, por ser a mais popular à comunidade Java, e por já oferecer um conjunto de regras de qualidade de código que é de conhecimento geral dos desenvolvedores Java e que, por isto e por sua efetividade, será adotada.  
+
+O método heurístico de orientação a objetos será utilizado, principalmente por caber ao problema da MotorBRAS: a necessidade do problema pode ser claramente mapeada para objetos com estado e comportamento, bem como suas interações. Além deste benefício inicial, o paradigma de orientação a objetos está diretamente vinculado à linguagem de programação Java. E conforme já descrito na seção de Requisitos deste documento, serão feitos uso de protótipos, mais especificamente para validar a necessidade do cliente em termos de requisitos.   
 
 
 \subsection{Qualidade de Software}
