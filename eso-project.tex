@@ -11,8 +11,6 @@
 
 \begin{document}
 
-%\listoffigures
-
 \title{Carros elétricos para um mundo melhor}
 \author{
   Daniel~M.~Assis, 
@@ -109,8 +107,7 @@ detalhadas referentes às histórias aos demais membros do time, no momento de
 estimativa da iteração e durante toda a iteração. Desta forma, cabe a este
 profissional ter o entendimento dos detalhes das histórias. Será entregue, a
 cada iteração, uma documentação que detalha os aspectos importantes de cada
-história realizada. \hilight{[verificar questao de prender o
-texto com o que vem abaixo por gancho no fim do parágrafo]}
+história realizada. 
 
 Um engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
 
@@ -145,14 +142,14 @@ esperado.
 
 No início do projeto (antes da primeira iteração), considerando a visão geral e o entendimento dos requisitos de maior prioridade, o design de software arquitetural (top-level) será definido por um engenheiro de software com perfil sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma que o design não será mais dissociado da construção, e sim será parte desta \cite{fowler_planned_evolutionary_design}. O engenheiro sênior em desenvolvimento pode definir design arquitetural para futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time na definição do design detalhado, durante a iteração. O design arquitetural deverá ser documentado em alto nível, considerando aspectos como estilo arquitetural sendo utilizado, forma de tratamento de eventos, forma de lidar com concorrência, distribuição de componentes, persistência de dados.
 
-Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do time, e não será exigida documentação formal para tal, pois assume-se o conceito de que o "código-fonte é o design". Contudo, será necessário validar a qualidade deste design, o que será feito através da elaboração de relatório de inspeção de código a cada iteração, que deve considerar as questões do documento de design arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão, decomposição, modularização, encapsulamento, separação de responsabilidades, design patterns. 
+Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do time, e não será exigida documentação formal para tal, pois assume-se o conceito de que o "código-fonte é o design" (ou seja, seguindo a visão de design do XP, o design existe como uma forma diferente, significando a prática de manter o código claro, uso de práticas de refatoração, conhecimento e aplicação de padrões de projeto, ter um olho em mudanças futuras e saber comunicar o design por meio de conversação \cite{fowler_design_dead}). Contudo, será necessário validar a qualidade deste design, o que será feito através da elaboração de relatório de inspeção de código a cada iteração, que deve considerar as questões do documento de design arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão, decomposição, modularização, encapsulamento, separação de responsabilidades, design patterns. 
 
 O relatório será realizado pelo engenheiro de software da própria equipe que agregar o papel de sênior, e deve ser entregue como um artefato da iteração (relatório de qualidade de design). A responsabilidade pela veracidade do documento é de toda a equipe.
 
 Além deste relatório, a qualidade do design também será garantida através de:
 \begin{itemize}
 \item práticas diárias de DDD: para permitir uma modelagem do design alinhada com as regras de negócio sendo utilizadas. O DDD faz uso de um diagrama simplificado de classes para modelar o entendimento;
-\item práticas diárias de pair programming e TDD \cite{begel_pair_2008}, \cite{nagappan_realizing_2008}: que orientam o desenvolvedor no sentido de escrever um código claro e seguindo o paradigma de orientação a objetos;
+\item práticas diárias de pair programming e TDD \cite{begel_pair_2008}\cite{nagappan_realizing_2008}: que orientam o desenvolvedor no sentido de escrever um código claro e seguindo o paradigma de orientação a objetos;
 \item práticas automatizadas: análise estática de código, para garantir que boas práticas de design estão sendo adotadas no código sendo escrito \cite{karpov_static_code_analysis}. Esta prática não deve ser avaliada apenas no final da iteração, mas diariamente, por todo o time.
 \end{itemize}
 
@@ -348,13 +345,13 @@ Os analistas de requisitos precisam ter um forte entendimento do negócio e das 
 
 \subsection{Ferramentas e Métodos}
 
-As ferramentas de modelagem de requisitos não serão formalizadas, cabendo aos desenvolvedores o acordo e a utilização de quaisquer ferramentas. Em termos de rastreabilidade e auditoria, o projeto será analisado em termos de especificações de validação automática através de testes, de forma que a modelagem dos requisitos pode, livremente, servir de apoio aos desenvolvedores, sem que precise ser formalmente controlada. A mesma filosofia vale para o design: tendo em vida o preceito ágil de que "o código é o design", não haverá exigência por diagramas de UML. Contudo, ferramentas automatizadas de análise estática de código e cobertura de testes vão servir para validação de um código de qualidade, o que implicitamente considera uma validação de design.
+As ferramentas de modelagem de requisitos não serão formalizadas, cabendo aos desenvolvedores o acordo e a utilização de quaisquer ferramentas. Em termos de rastreabilidade e auditoria, o projeto será analisado em termos de especificações de validação automática através de testes, de forma que a modelagem dos requisitos pode, livremente, servir de apoio aos desenvolvedores, sem que precise ser formalmente controlada. A mesma filosofia vale para o design: tendo em vida o preceito ágil de que "o código é o design" \cite{fowler_design_dead}, já descrito na seção de Design deste documento, não haverá exigência por diagramas de UML. Contudo, ferramentas automatizadas de análise estática de código e cobertura de testes vão servir para validação de um código de qualidade, o que implicitamente considera uma validação de design.
 
-O projeto fará uso da linguagem de programação Java, conforme já descrito na seção de Engenharia de Software deste documento. Além dos benefícios já citados nesta tecnologia, a Máquina Virtual Java (JVM) oferece grande poder de escalabilidade, aspecto interessante para a MotorBRAS à medida que mais e mais carros passem a incorporar a plataforma automatizada deste projeto. Os desenvolvedores inicialmente farão uso da IDE Eclipse, da IBM, por ser a mais comumente adotada na comunidade Java, reduzindo quaisquer curvas de aprendizado. Contudo, poderão substituir por outra de sua preferência (ainda visando a redução máxima com curva de aprendizado em IDE), desde que obedeça às mesmas regras de estilo de código sendo adotadas pela equipe (o código precisa seguir um mesmo padrão, independente da IDE), e que seja uma IDE consolidada no mercado, para evitar problemas que afetariam a produtividade (opções: Netbeans ou IDEA Intellij).   
+O projeto fará uso da linguagem de programação Java, conforme já descrito na seção de Engenharia de Software deste documento. Além dos benefícios já citados nesta tecnologia, a Máquina Virtual Java (JVM) oferece grande poder de escalabilidade \cite{10.1109/IISWC.2005.1526008}, aspecto interessante para a MotorBRAS à medida que mais e mais carros passem a incorporar a plataforma automatizada deste projeto. Os desenvolvedores inicialmente farão uso da IDE Eclipse, da IBM, por ser a mais comumente adotada na comunidade Java \cite{java_report_2012}, reduzindo quaisquer curvas de aprendizado. Contudo, poderão substituir por outra de sua preferência (ainda visando a redução máxima com curva de aprendizado em IDE), desde que obedeça às mesmas regras de estilo de código sendo adotadas pela equipe (o código precisa seguir um mesmo padrão, independente da IDE), e que seja uma IDE consolidada no mercado, para evitar problemas que afetariam a produtividade.   
 
 Em relação a testes, a equipe atuará em duas frentes: 
 \begin{itemize}
-\item em testes que validam código: pela aplicação do conceito de integração contínua, que realiza a compilação do projeto e então executa testes automatizados a cada dia, notificando o time sobre divergências, assim verificando e validando a qualidade do que está sendo gravado em repositório de código
+\item em testes que validam código: pela aplicação do conceito de integração contínua \cite{ci_fowler}, que realiza a compilação do projeto e então executa testes automatizados a cada dia, notificando o time sobre divergências, assim verificando e validando a qualidade do que está sendo gravado em repositório de código
 \item em testes funcionais, de caixa preta, que validam o output a partir do input: fazendo uso da ferramenta Selenium, que reproduz o uso automático da aplicação, simulando um usuário real em casos de teste previamente gravados (com base nas especificações). 
 \end{itemize}
 
@@ -362,9 +359,9 @@ Os testes não se resumem a automatização em sua totalidade, cabendo ao engenh
 
 Não serão adotadas ferramentas de manutenção em específico. Tendo em vista que o código está sendo produzido de forma clara (com especificações claras vinculadas a testes executáveis), não há a necessidade de utilização de ferramentas de reengenharia ou compreeensão sugeridas no SWEBOK \cite{society_software_2004}. A engenharia reversa para diagramas de classes pode ser desejável em situações de comunicação, mas por não se tratar de algo pertinente ao método de construção do software aqui proposto, não será formalizado em uma ferramenta especifica.
 
-A gerência de configuração fará uso da ferramenta SVN, por ser a mais utilizada no mercado (causando menor risco em curva de aprendizado pela equipe da MotorBRAS), além do fato de ser facilmente utilizada. Para garantia de qualidade, a ferramenta de análise de código Sonar será utilizada, por ser a mais popular à comunidade Java, e por já oferecer um conjunto de regras de qualidade de código que é de conhecimento geral dos desenvolvedores Java e que, por isto e por sua efetividade, será adotada.  
+A gerência de configuração fará uso da ferramenta Git, por ser a que tem mais crescido no mercado \cite{scm_ranking}, além do fato de ser facilmente utilizada. Para garantia de qualidade, a ferramenta open source SonarQube será utilizada, por ser popular à comunidade Java, além de ser bastante efetiva, sendo capaz de avaliar design, arquitetura, complexidade, duplicação, regras de codificação, potenciais erros e testes \cite{quality_java_2010}.   
 
-O método heurístico de orientação a objetos será utilizado, principalmente por caber ao problema da MotorBRAS: a necessidade do problema pode ser claramente mapeada para objetos com estado e comportamento, bem como suas interações. Além deste benefício inicial, o paradigma de orientação a objetos está diretamente vinculado à linguagem de programação Java. E conforme já descrito na seção de Requisitos deste documento, serão feitos uso de protótipos, mais especificamente para validar a necessidade do cliente em termos de requisitos.   
+O método heurístico de orientação a objetos será utilizado, principalmente por caber ao problema da MotorBRAS: a necessidade do problema pode ser claramente mapeada para objetos com estado e comportamento, bem como suas interações. Além deste benefício inicial, o paradigma de orientação a objetos está diretamente vinculado à linguagem de programação Java. E conforme já descrito na seção de Requisitos deste documento, serão feitos uso de protótipos, mais especificamente para validar a necessidade do cliente em termos de requisitos.  
 
 
 \subsection{Qualidade de Software}
@@ -385,11 +382,6 @@ O projeto aqui proposto caminha lado-a-lado com a tendência atual de preocupaç
 \section{Conclusão}
 
 Este artigo procurou demonstrar como as diferentes disciplinas de engenharia de software expostas no SWEBOK podem ser aplicadas na resolução de um problema hipotético. A forma como as disciplinas do SWEBOK são abordadas tem um enfoque particular em práticas ágeis de desenvolvimento de software, de forma a demonstrar que tais práticas podem aplicadas dentro das orientações propostas pelo SWEBOK.
-
-
-% \nocite{mackinnon_endo-testing:_2000}
-
-\hilight{Parece que existe um package que faz com que as quebras de linhas de URLs ocorram corretamente}
 
 \bibliographystyle{IEEEtran}
 \bibliography{eso-project}
