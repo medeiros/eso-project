@@ -350,7 +350,7 @@ Os analistas de requisitos precisam ter um forte entendimento do negócio e das 
 
 As ferramentas de modelagem de requisitos não serão formalizadas, cabendo aos desenvolvedores o acordo e a utilização de quaisquer ferramentas. Em termos de rastreabilidade e auditoria, o projeto será analisado em termos de especificações de validação automática através de testes, de forma que a modelagem dos requisitos pode, livremente, servir de apoio aos desenvolvedores, sem que precise ser formalmente controlada. A mesma filosofia vale para o design: tendo em vida o preceito ágil de que "o código é o design", não haverá exigência por diagramas de UML. Contudo, ferramentas automatizadas de análise estática de código e cobertura de testes vão servir para validação de um código de qualidade, o que implicitamente considera uma validação de design.
 
-O projeto fará uso da linguagem de programação Java, conforme já descrito naseção de Engenharia de Software deste documento. Além dos benefícios já citados nesta tecnologia, a Máquina Virtual Java (JVM) oferece grande poder de escalabilidade, aspecto interessante para a MotorBRAS à medida que mais e mais carros passem a incorporar a plataforma automatizada deste projeto. Os desenvolvedores inicialmente farão uso da IDE Eclipse, da IBM, por ser a mais comumente adotada na comunidade Java, reduzindo quaisquer curvas de aprendizado. Contudo, poderão substituir por outra de sua preferência (ainda visando a redução máxima com curva de aprendizado em IDE), desde que obedeça às mesmas regras de estilo de código sendo adotadas pela equipe (o código precisa seguir um mesmo padrão, independente da IDE), e que seja uma IDE consolidada no mercado, para evitar problemas que afetariam a produtividade (opções: Netbeans ou IDEA Intellij).   
+O projeto fará uso da linguagem de programação Java, conforme já descrito na seção de Engenharia de Software deste documento. Além dos benefícios já citados nesta tecnologia, a Máquina Virtual Java (JVM) oferece grande poder de escalabilidade, aspecto interessante para a MotorBRAS à medida que mais e mais carros passem a incorporar a plataforma automatizada deste projeto. Os desenvolvedores inicialmente farão uso da IDE Eclipse, da IBM, por ser a mais comumente adotada na comunidade Java, reduzindo quaisquer curvas de aprendizado. Contudo, poderão substituir por outra de sua preferência (ainda visando a redução máxima com curva de aprendizado em IDE), desde que obedeça às mesmas regras de estilo de código sendo adotadas pela equipe (o código precisa seguir um mesmo padrão, independente da IDE), e que seja uma IDE consolidada no mercado, para evitar problemas que afetariam a produtividade (opções: Netbeans ou IDEA Intellij).   
 
 Em relação a testes, a equipe atuará em duas frentes: 
 \begin{itemize}
@@ -369,7 +369,12 @@ O método heurístico de orientação a objetos será utilizado, principalmente 
 
 \subsection{Qualidade de Software}
 
-todo: add info here
+Entende-se (e o SWEBOK \cite{society_software_2004} sugere o mesmo) que o conceito de qualidade está descrito ortogonalmente em relação a todos os tópicos anteriores deste documento. Assim, novas de‌finições faz-se-iam ambíguas, de forma que não serão aqui descritas. Contudo, alguns últimos aspectos relevantes sobre qualidade no projeto da MotorBRAS podem aqui ser mencionados:
+
+\begin{itemize}
+\item A caracterização de defeitos será utilizada conforme descrita pelo SWEBOK \cite{society_software_2004} (error, fault, failure e mistake) durante a manutenção, para gerar métricas de qualidade após a entrega do produto. O objetivo é que os stackholders do projeto da MotorBRAS possam acompanhar a qualidade do produto após a entrega e quando do produto de software em manutenção.
+\item Como forma de validar a qualidade do produto imediatamente antes da entrega final, uma organização independente pode ser acionada. Esta empresa poderia dar um aval de qualidade após verificação e validação do produto de software em execução. O objetivo disto seria o de aumentar a confiança dos stackholders no produto como um todo, e entende-se ser um aspecto além da equipe de desenvolvimento do projeto, e sim uma segurança adicional a cargo dos stackholders, caso sintam necessidade. 
+\end{itemize}
 
 
 \section{Considerações Gerais}
