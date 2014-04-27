@@ -23,7 +23,7 @@
 
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
-Nos dias atuais, o software está envolvido em todas as atividades, de processadores de texto a operações de naves espaciais. Num cenário onde os aplicativos apoiam praticamente todas as atividades humanas, é esperado que haja muita demanda de software em uma das indústrias mais tradicionais: a automobilística. Associada a outra preocupação constante - o impacto no meio-ambiente -, este trabalho apresenta uma proposta para adição de valor, por meio de tecnologias de software, à seção de carros elétricos da empresa automobilística fictícia MotorBRAS. Expõe-se uma forma de aplicação de técnicas de engenharia de software que visam a geração de tecnologia para apoio à evolução do negócio, por meio de organização de um setor de desenvolvimento de software que aplique as devidas técnicas.  
+Nos dias atuais, o software está envolvido em todas as atividades, de processadores de texto a operações de naves espaciais. Num cenário onde os aplicativos apoiam praticamente todas as atividades humanas, é esperado que haja muita demanda de software em uma das indústrias mais tradicionais: a automobilística. Associada a outra preocupação constante -- o impacto no meio-ambiente --, este trabalho apresenta uma proposta para adição de valor, por meio de tecnologias de software, à seção de carros elétricos da empresa automobilística fictícia MotorBRAS. Expõe-se uma forma de aplicação de técnicas de engenharia de software que visam a geração de tecnologia para apoio à evolução do negócio, por meio de organização de um setor de desenvolvimento de software que aplique as devidas técnicas.  
 \end{abstract}
 \begin{IEEEkeywords}
 Engenharia de Software, SWEBOK, Scrum
@@ -76,7 +76,7 @@ Além dos sistemas internos ao veículo, são necessários softwares externos pa
 
 \begin{itemize}
 
-\item Sistema para aluguel de veículos pelos cliente:componente importante da infraestrutura de prestação do serviço, este software permitirá que os motoristas interessados efetuem agendamento e posterior pagamento pelo serviço de aluguel de veículo através da internet;
+\item Sistema para aluguel de veículos pelos cliente: componente importante da infraestrutura de prestação do serviço, este software permitirá que os motoristas interessados efetuem agendamento e posterior pagamento pelo serviço de aluguel de veículo através da internet;
 
 \item Sistema para gestão da frota de veículos: o processo de gestão da frota de veículos requer um software de apoio. Atividades de manutenção, abastecimento, disponibilização e recepção de veículos nos pátios, entre outras, serão suportadas por esse software. Este software representará o elo entre o processo de aluguel de veículos e as atividades administrativas e operacionais ligadas à gestão da frota.
 
@@ -90,7 +90,7 @@ Algumas características do produto e do contexto de negócios influenciarão a 
 
 \item Alto nível de inovação do produto: não existem serviços similares no mercado brasileiro. Estamos tomando como base a experiência de serviços semelhantes em outros países, mas, devido a fatores culturais, existe a possibilidade da experiência não se repetir com sucesso em nosso mercado. Tal situação possivelmente levará a uma proposta de adaptação pelo departamento de marketing, o que, por sua vez, exigirá a capacidade de absorção de novos requisitos por parte da TI. Dessa forma, optamos pela adoção de métodos ágeis, que são mais adequados a esse tipo de ambiente de negócio.
 
-\item Heterogeneidade dos softwares a serem desenvolvidos: diferentes tipos de software serão desenvolvidos - desde sistemas desktop administrativos, passando por softwares para servidores e chegando a software embarcado para execução dentro do veículo. Esse contexto torna interessante a ideia da criação de pequenas equipes, especializadas no domínio específico da aplicação que estão desenvolvendo, dedicadas à atuação apenas no software que atende suas respectivas especialidades.
+\item Heterogeneidade dos softwares a serem desenvolvidos: diferentes tipos de software serão desenvolvidos -- desde sistemas desktop administrativos, passando por softwares para servidores e chegando a software embarcado para execução dentro do veículo. Esse contexto torna interessante a ideia da criação de pequenas equipes, especializadas no domínio específico da aplicação que estão desenvolvendo, dedicadas à atuação apenas no software que atende suas respectivas especialidades.
 
 \end{itemize}
 
@@ -111,7 +111,7 @@ história realizada.
 
 Um engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
 
-O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável.
+O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável, garantindo a verificabilidade dos requisitos \cite{society_software_2004}. % pg 2-1
 
 Os analistas de requisitos precisarão ter livre acesso aos stakeholders (pessoal
 de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e
@@ -125,7 +125,7 @@ formal. Apenas é esperado que sejam definidos cenários para cada história
 permitir geração de validação automatizada dos requisitos
 \cite{melnik_multiple_2007}.
 
-Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de não impactar os prazos e custos do projeto \cite{zowghi2002study}.
+Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de reduzir os impactos de tais mudanças sobre os prazos e custos do projeto \cite{zowghi2002study}.
 
 Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto \cite{cohn_agile_2009}, apoiando-se em técnicas como refatoração e automatização de testes de regressão.
 
@@ -140,7 +140,19 @@ esperado.
 
 \subsection{Design}
 
-No início do projeto (antes da primeira iteração), considerando a visão geral e o entendimento dos requisitos de maior prioridade, o design de software arquitetural (top-level) será definido por um engenheiro de software com perfil sênior em desenvolvimento. Após isto, a cada iteração, o trabalho de design detalhado será incorporado no trabalho dos desenvolvedores da equipe, de forma que o design não será mais dissociado da construção, e sim será parte desta \cite{fowler_planned_evolutionary_design}. O engenheiro sênior em desenvolvimento pode definir design arquitetural para futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time na definição do design detalhado, durante a iteração. O design arquitetural deverá ser documentado em alto nível, considerando aspectos como estilo arquitetural sendo utilizado, forma de tratamento de eventos, forma de lidar com concorrência, distribuição de componentes, persistência de dados.
+No início do projeto (antes da primeira iteração), considerando a visão geral e
+o entendimento dos requisitos de maior prioridade, o design de software
+arquitetural (top-level) \cite{society_software_2004} será definido por um % pg 3-1
+engenheiro de software com perfil sênior em desenvolvimento. Após isto, a cada
+iteração, o trabalho de design detalhado será incorporado no trabalho dos
+desenvolvedores da equipe, de forma que o design não será mais dissociado da
+construção, e sim será parte desta \cite{fowler_planned_evolutionary_design}. O
+engenheiro sênior em desenvolvimento pode definir design arquitetural para
+futuras iterações, dependendo da necessidade, e trabalhar juntamente com o time
+na definição do design detalhado, durante a iteração. O design arquitetural
+deverá ser documentado em alto nível, considerando aspectos como estilo
+arquitetural sendo utilizado, forma de tratamento de eventos, forma de lidar
+com concorrência, distribuição de componentes, persistência de dados.
 
 Já a responsabilidade de design detalhado cabe a todos os desenvolvedores do time, e não será exigida documentação formal para tal, pois assume-se o conceito de que o "código-fonte é o design" (ou seja, seguindo a visão de design do XP, o design existe como uma forma diferente, significando a prática de manter o código claro, uso de práticas de refatoração, conhecimento e aplicação de padrões de projeto, ter um olho em mudanças futuras e saber comunicar o design por meio de conversação \cite{fowler_design_dead}). Contudo, será necessário validar a qualidade deste design, o que será feito através da elaboração de relatório de inspeção de código a cada iteração, que deve considerar as questões do documento de design arquitetural, além de técnicas de design, como: abstração, acoplamento, coesão, decomposição, modularização, encapsulamento, separação de responsabilidades, design patterns. 
 
@@ -160,13 +172,13 @@ Para este projeto, a estratégia de design é baseada em design orientado a obje
 
 \subsection{Construção}
 
-Este projeto tratará design e construção de forma muito próxima. Os engenheiros de software com perfil de programadores terão poder de definir o design detalhado bem como a codificação, sempre orientados por um programador sênior e pelo design arquitetural. O programador poderá, portanto, aplicar os fundamentos de minimização de complexidade, antecipação de mudanças e construção para verificação tanto em design quanto em construção, sem a necessidade de haver distinções.
+Neste projeto as disciplinas de Design e Construção \cite{society_software_2004} serão conduzidas de forma muito próxima. Os engenheiros de software com perfil de programadores terão poder de definir o design detalhado bem como a codificação, sempre orientados por um programador sênior e pelo design arquitetural. O programador poderá, portanto, aplicar os fundamentos de minimização de complexidade, antecipação de mudanças e construção para verificação tanto em design quanto em construção, sem a necessidade de haver distinções. % pg 4-3 do SWEBOK, seção 2.1
 
 É esperado que o programador reduza a complexidade em tudo o que for fazer, utilizando os melhores algoritmos e padrões. Também é esperado que o código seja escrito de forma a permitir futuras modificações sem grande impacto (e para isso, é exigido que a prática de TDD seja adotada, e o conceito de refatoração seja entendido \cite{Fowler1999}). Outras práticas que serão exigidas do programador são a escrita de testes unitários e de integração \cite{unit_int_func_testing}. A verificação da adoção destas práticas será realizada juntamente com a validação de qualidade do design, descrita no tópico anterior. 
 
 Também será exigido que o programador escreva testes de aceitação baseados em BDD \cite{chelimsky2010rspec}, contra cada história da especificação que implementa, para garantir que seu código seja verificável. Estes testes serão executados diariamente, gerando relatórios que indicam se o código é válido em relação ao esperado. Será exigido que o programador siga os padrões de desenvolvimento de código da empresa, e a ferramenta de análise estática de código irá indicar se os padrões estão sendo ignorados, diariamente, durante a iteração. Códigos não-conformes devem ser corrigidos o mais rápido possível, no prazo máximo de duração da iteração.
 
-Não será exigido uso formal de UML; contudo, o time pode optar por utilizar UML (bem como qualquer outra forma visual de design) para facilitar a comunicação e/ou o entendimento de um dado objeto ou conjunto de objetos que precisa ser criado ou alterado. 
+Não será exigido uso formal de UML ou outro tipo específico de notação \cite{society_software_2004}; contudo, o time pode optar por utilizar UML (bem como qualquer outra forma visual de design) para facilitar a comunicação e/ou o entendimento de um dado objeto ou conjunto de objetos que precisa ser criado ou alterado. % pg 4-4
 
 O modelo de construção que será adotado neste projeto é o Scrum
 \cite{schwaber_scrum_2013}. Este modelo iterativo trata a construção de forma
@@ -199,7 +211,7 @@ automatizados gerados pelo framework de BDD \cite{chelimsky2010rspec}.
 Como já dito, o tester deve participar na fase de levantamento de requisitos, para auxiliar o analista na definição das histórias e cenários específicos; neste ponto, em sua área de conhecimento, garante critérios de seleção e adequação dos testes, bem como o objetivo e a efetividade dos testes. O ganho adicional com qualidade vem do fato de considerar que os programadores escrevem a aplicação partindo da mesma ótica, o que auxilia na redução de falhas de comunicação e de entendimento.
 
 Deseja-se que o tester tenha perfil multidisciplinar o suficiente para que
-possa atuar nos diferentes Níveis de Teste previstos em
+possa atuar nos diferentes Níveis de Teste previstos no SWEBOK
 \cite{society_software_2004}, sendo eles: os Testes Unitários, os Testes de
 Integração e os Testes de Sistema. Considerando o emprego da técnica de pair
 programming, o tester poderá até mesmo auxiliar os programadores nesta
@@ -293,7 +305,7 @@ Ainda que seja considerado possível gerenciar software como qualquer outro proc
 \item existe uma rápida taxa de mudança em tecnologias envolvidas. 
 \end{itemize}
 
-Considerando tais especificidades, serão estabelecidas políticas de contratação de pessoal que valorizem profissionais atuantes e experientes em processos iterativos, e com conhecimento prático de tecnologias bem difundidas no mercado. O processo de desenvolvimento Scrum será utilizado por conta de ser um processo iterativo difundido \cite{scrum_development_process}. Em relação à plataforma de desenvolvimento, utilizaremos Java, pois além de ser uma das plataformas mais utilizadas no mundo há quase 20 anos \cite{tiobe_language} (provendo grande quantidade de recursos no mercado, além de bibliotecas, frameworks e documentação), seu escopo cobre tanto softwares Web quanto softwares embarcados (por meio do Android) - o que está diretamente vinculado à necessidade do projeto de rodar software tanto num servidor central quanto em cada carro, individualmente.
+Considerando tais especificidades, serão estabelecidas políticas de contratação de pessoal que valorizem profissionais atuantes e experientes em processos iterativos, e com conhecimento prático de tecnologias bem difundidas no mercado. O processo de desenvolvimento Scrum será utilizado por conta de ser um processo iterativo difundido \cite{scrum_development_process}. Em relação à plataforma de desenvolvimento, utilizaremos Java, pois além de ser uma das plataformas mais utilizadas no mundo há quase 20 anos \cite{tiobe_language} (provendo grande quantidade de recursos no mercado, além de bibliotecas, frameworks e documentação), seu escopo cobre tanto softwares Web quanto softwares embarcados (por meio do Android) -- o que está diretamente vinculado à necessidade do projeto de rodar software tanto num servidor central quanto em cada carro, individualmente.
 
 Uma vez que as pessoas certas tenham sido contratadas, deve-se verificar quais outros aspectos, como infraestrutura, suporte e expertise, também sejam  garantidos, de forma a validar a análise de viabilidade do projeto, garantindo, assim, que o projeto possa ser completado com sucesso de forma efetiva em prazo e custo \cite{society_software_2004}. Em relação às definições dos stackholders, durante todo o projeto será assumido que os requisitos e o escopo serão flexíveis, de forma a dar suporte à necessidade de alterações de ideias que o setor de marketing da MotorBRAS geralmente apresenta. Para dar suporte a estas alterações, e considerando que o Scrum será adotado, as mesmas serão realizadas diretamente no Backlog do produto, de forma a serem consideradas em iterações futuras, sem impactar a iteração corrente. \cite{schwaber_scrum_2013}
 
@@ -328,7 +340,7 @@ O relacionamento entre complexidade e probabilidade de sucesso de um projeto, co
 
 As figuras anteriores são relativas a experiências de desenvolvimento de software em empresas como Borland, Easel, VMARK e ADM. O risco e a complexidade foram assumidos nos projetos, e projetos de sucesso foram criados. E ainda que processos ágeis ainda sejam vistos com certa ressalva, já foram provados como sendo um conjunto de métodos maduros de desenvolvimento de software. \cite{agile_meth_hype_reality}
 
-Como forma de automação ao processo, as práticas de integração contínua e entrega contínua serão adotadas. Para a MotorBRAS, a forma pela qual a qualidade do software será medida será por meio de cobertura de código e análise estática de código. Estas métricas serão coletadas por meio de ferramentas consolidadas de mercado, capazes de gerar relatórios de acompanhamento. Além destas medidas de qualidade, a entrega de incrementos de software para teste pelos stackholders também será feita de forma automatizada, garantindo rapidez e redução de erros no processo.   
+Como forma de automação ao processo \cite{society_software_2004}, as práticas de integração contínua e entrega contínua serão adotadas. Para a MotorBRAS, a forma pela qual a qualidade do software será medida será por meio de cobertura de código e análise estática de código. Estas métricas serão coletadas por meio de ferramentas consolidadas de mercado, capazes de gerar relatórios de acompanhamento. Além destas medidas de qualidade, a entrega de incrementos de software para teste pelos stackholders também será feita de forma automatizada, garantindo rapidez e redução de erros no processo.   
 
 O Scrum define times de desenvolvimento dispostos entre células mutidisciplinares. Os times para o projeto MotorBRAS serão dispostos conforme segue:
 
@@ -339,9 +351,7 @@ O Scrum define times de desenvolvimento dispostos entre células mutidisciplinar
 \item 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester;
 \end{itemize}
 
-
 Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre aos stackholders. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
-
 
 \subsection{Ferramentas e Métodos}
 
