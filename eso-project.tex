@@ -76,7 +76,7 @@ Além dos sistemas internos ao veículo, são necessários softwares externos pa
 
 \begin{itemize}
 
-\item Sistema para aluguel de veículos pelos cliente: componente importante da infraestrutura de prestação do serviço, este software permitirá que os motoristas interessados efetuem agendamento e posterior pagamento pelo serviço de aluguel de veículo através da internet;
+\item Sistema para aluguel de veículos pelos cliente: componente importante da infraestrutura de prestação do serviço, este software permitirá que os motoristas interessados efetuem agendamento e posterior pagamento pelo serviço de aluguel de veículo através da Internet;
 
 \item Sistema para gestão da frota de veículos: o processo de gestão da frota de veículos requer um software de apoio. Atividades de manutenção, abastecimento, disponibilização e recepção de veículos nos pátios, entre outras, serão suportadas por esse software. Este software representará o elo entre o processo de aluguel de veículos e as atividades administrativas e operacionais ligadas à gestão da frota.
 
@@ -88,9 +88,9 @@ Algumas características do produto e do contexto de negócios influenciarão a 
 
 \begin{itemize}
 
-\item Alto nível de inovação do produto: não existem serviços similares no mercado brasileiro. Estamos tomando como base a experiência de serviços semelhantes em outros países, mas, devido a fatores culturais, existe a possibilidade da experiência não se repetir com sucesso em nosso mercado. Tal situação possivelmente levará a uma proposta de adaptação pelo departamento de marketing, o que, por sua vez, exigirá a capacidade de absorção de novos requisitos por parte da TI. Dessa forma, optamos pela adoção de métodos ágeis, que são mais adequados a esse tipo de ambiente de negócio.
+\item Alto nível de inovação do produto: não existem serviços similares no mercado brasileiro. Estamos tomando como base a experiência de serviços semelhantes em outros países (EUA e Europa \cite{car2go_locations}, mas, devido a fatores culturais, existe a possibilidade da experiência não se repetir com sucesso em nosso mercado. Tal situação possivelmente levará a uma proposta de adaptação pelo departamento de marketing, o que, por sua vez, exigirá a capacidade de absorção de novos requisitos por parte da TI, durante o projeto. Dessa forma, optamos pela adoção de métodos ágeis, que são mais adequados a esse tipo de necessidade oriunda da mudança dinâmica de requisitos \cite{cao_ramesh_2008}.
 
-\item Heterogeneidade dos softwares a serem desenvolvidos: diferentes tipos de software serão desenvolvidos -- desde sistemas desktop administrativos, passando por softwares para servidores e chegando a software embarcado para execução dentro do veículo. Esse contexto torna interessante a ideia da criação de pequenas equipes, especializadas no domínio específico da aplicação que estão desenvolvendo, dedicadas à atuação apenas no software que atende suas respectivas especialidades.
+\item Heterogeneidade dos softwares a serem desenvolvidos: diferentes tipos de software serão desenvolvidos -- desde sistemas desktop administrativos, passando por softwares para servidores e chegando a software embarcado para execução dentro do veículo. Esse contexto torna interessante a ideia da criação de pequenas equipes (ou times), especializadas no domínio específico da aplicação que estão desenvolvendo, dedicadas à atuação apenas no software que atende suas respectivas especialidades e iteragindo frequetemente entre si \cite{backmann_nord_ozkaya_2012}.
 
 \end{itemize}
 
@@ -350,6 +350,8 @@ O Scrum define times de desenvolvimento dispostos entre células mutidisciplinar
 \item 1 célula de customização física: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 tester;
 \item 1 célula de gestão financeira e aluguel de carro: composta por 1 Product Owner, 2 analistas de requisitos, 3 programadores, 1 DBA, 1 tester;
 \end{itemize}
+
+Para que diferentes células possam iteragir corretamente, o "Scrum of Scrums" será utilizado. Nesta forma de organização, alguns membros de times se organizam para alinhar as funcionalidades sendo implementadas de forma que sejam entregues em tempo hábil. \cite{backmann_nord_ozkaya_2012}
 
 Os analistas de requisitos precisam ter um forte entendimento do negócio e das tendências da empresa, bem como acesso livre aos stackholders. Caberá aos Analistas, juntamente com os Product Owners de cada célula, a função de interagir com os Stakeholders e definir limites e restrições necessárias para o andamento do projeto.
 
