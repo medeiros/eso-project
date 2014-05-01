@@ -100,43 +100,19 @@ As disciplinas do SWEBOK serão aplicadas pelos times de desenvolvimento conform
 
 \subsection{Requisitos}
 
-Os requisitos de produto serão expressos por meio de uma especificação composta
-de histórias \cite{primo_user_2011}, por ordem de prioridade, que são definições funcionais de alto
-nível. O analista de requisitos será responsável por prover informações
-detalhadas referentes às histórias aos demais membros do time, no momento de
-estimativa da iteração e durante toda a iteração. Desta forma, cabe a este
-profissional ter o entendimento dos detalhes das histórias. Será entregue, a
-cada iteração, uma documentação que detalha os aspectos importantes de cada
-história realizada. 
+Os requisitos de produto serão expressos por meio de uma especificação composta de histórias \cite{primo_user_2011}. Uma história (ou "User Story") é uma breve definição de intento, que descreve algo que o sistema deve fazer para o usuário, tal qual um requisito, mas escrito de uma forma que atende tanto à característica de eficiência dos times ágeis de desenvolvimento quanto às necessidades de comunicação entre stackholders e membros dos times \cite{agile_sw_requirements}. O analista de requisitos será responsável por prover informações detalhadas referentes às histórias aos demais membros do time, no momento de estimativa da iteração e durante toda a iteração. Desta forma, cabe a este profissional ter o entendimento dos detalhes das histórias. Será entregue, a cada iteração, uma documentação que detalha os aspectos importantes de cada história realizada. 
 
-Um engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem.
+Um engenheiro de software com perfil mais técnico também precisará ser envolvido no entendimento dos requisitos juntamente com o analista de requisitos, pois a visão técnica que considera os requisitos não-funcionais deve ser analisada ao mesmo tempo em que os requisitos surgem. Considerar aspectos não-funcionais apenas em nível de design tem historicamente causado problemas, e no nível de implementação os problemas podem ser ainda piores \cite{agile_requirements_definition}.
 
-O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável, garantindo a verificabilidade dos requisitos \cite{society_software_2004}. % pg 2-1
+O tester também deve estar no levantamento de requisitos, para prover uma visão mais funcional que permita que a definição da especificação seja definida de uma forma funcional e testável, sugerindo alternativas que possam ser mais práticas para realizar, levantando exemplos e contexto para cada história, e garantindo a verificabilidade dos requisitos \cite{} \cite{society_software_2004}. % pg 2-1
 
-Os analistas de requisitos precisarão ter livre acesso aos stakeholders (pessoal
-de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e
-auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de
-entrevistas, onde podem-se fazer uso de protótipos pela técnica de DDD \cite{evans_domain-driven_2004}  
-(mais do que o rigor do UML) e exemplificação de
-cenários como formas de obter clareza nos detalhes das histórias. Os modelos
-conceituais estão a cargo dos entrevistadores, e não definem característica
-formal. Apenas é esperado que sejam definidos cenários para cada história
-\cite{washington2003using}, de forma a guiar o time durante a construção e
-permitir geração de validação automatizada dos requisitos
-\cite{melnik_multiple_2007}.
+Os analistas de requisitos precisarão ter livre acesso aos stakeholders (pessoal de marketing e parte jurídica, que atuam como reguladores), que vão fornecer e auxiliar na validação dos requisitos. Esse acesso deverá ser feito através de entrevistas, onde podem-se fazer uso de diagramas de domínio pela técnica de DDD \cite{evans_domain-driven_2004} (mais do que o rigor do UML) como formas de obter clareza nos detalhes das histórias. Os modelos conceituais estão a cargo dos entrevistadores, e não definem característica formal. Apenas é esperado, alinhado com o método ágil, que sejam definidos cenários para cada história \cite{washington2003using}, de forma a guiar o time durante a construção e permitir geração de validação automatizada dos requisitos \cite{melnik_multiple_2007}.
 
 Considerando a característica dinâmica da equipe de marketing, assume-se que os requisitos são voláteis; a abordagem para mudanças é a de tentar incorporar o máximo possível se a história permanecer a mesma, mas caso trate-se de outra história, incorporar apenas na próxima iteração, como forma de reduzir os impactos de tais mudanças sobre os prazos e custos do projeto \cite{zowghi2002study}.
 
-Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto \cite{cohn_agile_2009}, apoiando-se em técnicas como refatoração e automatização de testes de regressão.
+Uma arquitetura será definida com base no entendimento das primeiras histórias da especificação (e com base em conhecimento da visão geral do projeto e características de infra-estrutura da empresa), e evoluída durante todo o projeto \cite{cohn_agile_2009}, apoiando-se em técnicas como refatoração e automatização de testes de regressão, de forma a ir melhorando o design do código sendo criado e garantindo que o mesmo seja capaz de ser evoluído com mais facilidade em cada nova modificação \cite{arora_chauhan_2014}.
 
-Os requisitos serão validados através de testes de aceitação, de duas formas:
-manual (na reunião de demonstração da iteração, quando os stakeholders comparam
-as histórias combinadas em relação ao funcionamento do sistema), e
-automatizada: utilizando a técnica de BDD \cite{chelimsky2010rspec}, cada
-cenário de cada história será vinculado a métodos de teste durante a
-construção, de forma que cada execução da suite de testes irá gerar um
-relatório que define se as histórias estão funcionando de acordo com o
-esperado.
+Os requisitos serão validados através de testes de aceitação, de duas formas: manual (na reunião de review da iteração definida pelo Scrum \cite{scrum_development_process}, quando os stakeholders comparam as histórias combinadas em relação ao funcionamento do sistema), e automatizada: a técnicas de BDD \cite{chelimsky2010rspec} será utiilzada, para que cenário de cada história seja vinculado a métodos de teste durante a construção, de forma que cada execução da suite de testes gere um relatório que define se as histórias estão funcionando de acordo com o esperado.
 
 \subsection{Design}
 
