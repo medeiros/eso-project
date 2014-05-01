@@ -184,29 +184,23 @@ O tester tem liberdade para decidir realizar outros tipos e técnicas de testes 
 
 \subsection{Manutenção}
 
-A equipe que dará manutenção é a mesma que desenvolveu o produto \cite{fowler_products_not_projects}. Desta forma,
-qualquer nova requisição de modificação (evolução ou correção) deve ser
-definida na especificação, seja alterando ou adicionando novos itens. Tal item,
-então, precisa ser definido em forma de história e com prioridade, para
-ingressar numa próxima iteração, seguindo o mesmo fluxo de um novo requisito.
-Desta forma, incorporando correções no fluxo normal de desenvolvimento (e não
-após todo o projeto ter terminado), procura-se eliminar o problema onde 80 por
-cento do esforço de manutenção é gasto em ações não corretivas. Neste caso, a
-manutenção acontece enquanto o projeto ainda existe, e a prioridade fica a
-cargo dos stakeholders \cite{schwaber_scrum_2013}. 
+A manutenção ocorrerá tanto durante o projeto (por meio de alterações ou correções de funcionalidades implementadas antes da finalização do projeto) quanto após o projeto.
 
-A evolução do software, portanto, será agregada durante o projeto de desenvolvimento, cabendo apenas que haja um gerenciamento dos requisitos em relação à prioridade. Como a equipe é a mesma, não há transição de conhecimento. As manutenções corretivas, adaptativas e perfectivas irão entrar no fluxo normal de desenvolvimento. Já espera-se que a manutenção preventiva seja um trabalho implícito, resultante das práticas de qualidade e métricas nas fases de análise, design e construção. No caso especial da construção, espera-se aplicação de refatoração e code review.
+Durante o projeto, qualquer nova requisição de modificação (evolução ou correção) deve ser definida na especificação, seja alterando ou adicionando novos itens. Tal item precisa ser definido em forma de história e com prioridade, para ingressar numa próxima iteração, seguindo o mesmo fluxo de um novo requisito. Desta forma, incorporando correções no fluxo normal de desenvolvimento (e não após todo o projeto ter terminado), procura-se eliminar o problema onde 80 por cento do esforço de manutenção é gasto em ações não corretivas. Aqui, a manutenção acontece enquanto o projeto ainda existe, e a prioridade fica a cargo dos stakeholders \cite{schwaber_scrum_2013}. 
 
-A definição de testes de regressão de outras fases também irá ajudar na manutenção, definindo aspectos que não funcionam mais conforme esperado. Os testes de aceitação automatizados com BDD também garantem a mesma regressão, mas num nível mais alto: que as funcionalidades continuam válidas. 
+A evolução do software, portanto, será primeiramente agregada durante o projeto de desenvolvimento, cabendo apenas que haja um gerenciamento dos requisitos em relação à prioridade. Como a equipe é a mesma, não há transição de conhecimento. As manutenções corretivas, adaptativas e perfectivas irão entrar no fluxo normal de desenvolvimento. Já espera-se que a manutenção preventiva seja um trabalho implícito, resultante das práticas de qualidade e métricas nas fases de análise, design e construção. No caso especial da construção, espera-se aplicação de refatoração e code review.
 
-Espera-se que toda a qualidade definida até o momento (com testes automatizados, métricas e inspeção de design e análise) permitam que uma análise de impacto gere sempre um baixo custo, e que haja uma alta capacidade de manutenibilidade. 
+A definição de testes de regressão de outras fases também irá ajudar na manutenção, definindo aspectos que não funcionam mais conforme esperado. Os testes de aceitação automatizados com BDD (já citados na seção de Construção deste documento) também garantem a mesma regressão, mas num nível mais alto: garantem que as funcionalidades como um todo continuam válidas. 
 
-Após a finalização do projeto, uma equipe menor será designada para manter o mesmo seguindo os mesmos princípios definidos até então, e com boa parte do mesmo pessoal, de forma a facilitar a transmissão de conhecimento. Esta futura equipe, poderá fazer uso dos documentos de especificação e design de arquitetura e das documentações de testes para entender o sistema de um aspecto funcional, e deverá estudar o código para entender um design mais detalhado. O esforço em qualidade é pago aqui, pois o código deve estar escrito de forma que seja fácil de entender e evoluir, de forma que a prática de engenharia reversa deve ser desconsiderada. 
+Espera-se que toda a qualidade definida até o momento (com testes automatizados, métricas e inspeção de design e análise) permitam que uma análise de impacto gere sempre um baixo custo, e que haja uma alta capacidade de manutenibilidade. Considerando a realidade do projeto da MotorBRAS, que sugere alterações constantes em funcionalidades, esta análise de impacto definindo baixo custo é uma métrica importante.
 
-Revisões e auditorias \cite{society_software_2004} deverão ser conduzidas
-regularmente ao longo do ciclo de vida do produto (e não somente durante a
-duração do projeto), de forma que desvios possam ser identificados e corrigidos
-antes que causem maiores danos.
+Após a finalização do projeto, uma equipe menor será designada para mantê-lo, seguindo os mesmos princípios definidos até então, e com boa parte do mesmo pessoal, de forma a facilitar a transmissão de conhecimento. Esta futura equipe, poderá fazer uso dos documentos de especificação e design de arquitetura e das documentações de testes para entender o sistema de um aspecto funcional, e deverá estudar o código para entender um design mais detalhado. O esforço em qualidade é pago aqui, pois o código deve estar escrito de forma que seja fácil de entender e evoluir, de forma que a prática de engenharia reversa deve ser desconsiderada. 
+
+Revisões e auditorias \cite{society_software_2004} deverão ser conduzidas regularmente ao longo do ciclo de vida do produto (e não somente durante a
+duração do projeto), de forma que desvios possam ser identificados e corrigidos antes que causem maiores danos.
+
+Após o projeto ter sido finalizado, uma equipe será criada para mantê-lo pós-produção. A equipe que dará manutenção após o projeto ter sido finalizado é um time composto de pessoas que desenvolveram o produto, de forma que permite ao time de desenvolvimento assumir total responsabilidade pelo software em produção \cite{fowler_products_not_projects}. 
+
 
 \subsection{Gerenciamento de Configuração}
 
