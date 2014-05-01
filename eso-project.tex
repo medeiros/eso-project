@@ -151,32 +151,35 @@ O modelo de construção que será adotado neste projeto é o Scrum \cite{schwab
 
 \subsection{Testes}
 
-A verificação dinâmica dos testes será aplicada pelo engenheiro de software com perfil de tester durante cada iteração, assim que uma data história for dada como pronta pelos engenheiros de software com perfil de programadores. Para este fim, os programadores devem liberar cada história pronta num servidor de testes.
+A verificação dinâmica dos testes será aplicada pelo engenheiro de software com perfil de tester durante cada iteração, assim que uma dada história for dada como pronta pelos engenheiros de software com perfil de programadores. Para este fim, os programadores devem liberar cada história pronta num servidor de testes.
 
-A verificação, num primeiro momento, deve contemplar o conjunto de cenários da
-história (teste de conformidade, ou teste funcional) e a análise dos relatórios
-automatizados gerados pelo framework de BDD \cite{chelimsky2010rspec}.
+A verificação deve, inicialmente, contemplar os aspectos sendo utilizados neste projeto para a MotorBRAS no que tangem aos requisitos: o conjunto de cenários da história (teste de conformidade, ou teste funcional) e a análise dos relatórios automatizados gerados pelo framework de BDD \cite{chelimsky2010rspec}, já citado no tópico de Construção deste documento. Como já dito, o tester deve participar na fase de levantamento de requisitos, para auxiliar o analista na definição das histórias e cenários específicos; neste ponto, em sua área de conhecimento, garante critérios de seleção e adequação dos testes, bem como o objetivo e a efetividade dos testes \cite{agile_testing}. 
 
-Como já dito, o tester deve participar na fase de levantamento de requisitos, para auxiliar o analista na definição das histórias e cenários específicos; neste ponto, em sua área de conhecimento, garante critérios de seleção e adequação dos testes, bem como o objetivo e a efetividade dos testes. O ganho adicional com qualidade vem do fato de considerar que os programadores escrevem a aplicação partindo da mesma ótica, o que auxilia na redução de falhas de comunicação e de entendimento.
+Demais aspectos de testes dentro do projeto da MotorBRAS serão guiados pelo modelo de quadrantes de testes propostos por Lisa Crispin: \cite{agile_testing}
 
-Deseja-se que o tester tenha perfil multidisciplinar o suficiente para que
-possa atuar nos diferentes Níveis de Teste previstos no SWEBOK
-\cite{society_software_2004}, sendo eles: os Testes Unitários, os Testes de
-Integração e os Testes de Sistema. Considerando o emprego da técnica de pair
-programming, o tester poderá até mesmo auxiliar os programadores nesta
-atividade.  Contudo, esta atividade não é obrigatória, sendo esperado que o
-foco do tester mais voltado ao aspecto funcional do software. 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{agile_testing_quadrants}
+\caption{Diagrama de Quadrantes de Teste de Software \cite{agile_testing}}
+\label{fig:agile_testing_quadrants}
+\end{figure}
 
-No que concerne aos Testes de Sistema, o tester se concentrará em diversos
-requisitos não-funcionais, verificando se eles estão de acordo com o esperado
-(com o apoio do documento de design arquitetural e dos programadores), além de
-analisar aspectos como performance, stress, configuração, usabilidade.
-Espera-se que faça uso de  ferramentas para automatizar tais testes, e que gere
-um relatório no final de cada iteração, referente a estes testes específicos.
+Observa-se que os níveis de teste propostos pelo SWEBOK \cite{society_software_2004} (Testes Unitários, os Testes de Integração e os Testes de Sistema) estão respectivamente relacionados aos Unit Tests, Component Tests e Funcional Tests do diagrama, respectivamente.
 
-Os testes de regressão funcionais devem ser automatizados, cobrindo os aspectos funcionais de maior importância (a serem definidos pelo próprio tester). Os aspectos não-funcionais não são esperados em relação à regressão, pois sua característica não sugere regressão, mas sim diagnóstico pontual.
+Considerando o diagrama acima, espera-se que o tester atue em todos os quadrantes:
 
-O tester tem liberdade para decidir realizar testes estruturais, testes exploratórios e demais técnicas de testes que julgar válidas na iteração. Estes testes também precisam ser documentados em relatório, com justificativa e resultados. Os testes precisam ser planejados no início da iteração, e tal definição precisa também constar no relatório a ser entregue no final da iteração.
+\begin{itemize}
+\item no primeiro quadrante: em testes unitários e de componentes, juntamente com os desenvolvedores, através da técnica de "pair programming" \cite{pairprogramming};
+\item no segundo quadrante: em testes funcionais, com exemplos, com testes das histórias (e por isso novamente faz-se importante sua presença na fase de requisitos) e, opcionalmente, através do uso de protótipos e simulações;
+\item no terceiro quadrante: em testes exploratórios, de usabilidade, e testes alpha e beta (deixando os testes de UAT para validação pelos stackholders);
+\item no quarto quadrante: em testes de performance, carga e segurança.
+\end{itemize}
+
+No que concerne aos Testes de Performance e de Carga, o tester se concentrará em requisitos não-funcionais, verificando se eles estão de acordo com o esperado (com o apoio do documento de design arquitetural e dos programadores), em aspectos como performance, stress, configuração. Conforme proposto pelo quarto quadrante, espera-se que faça uso de ferramentas para validar tais aspectos, e que gere um relatório no final de cada iteração, referente a estes testes específicos.
+
+Os testes funcionais mencionados no segundo quadrante devem ser automatizados, cobrindo os aspectos funcionais de maior importância (a serem definidos pelo próprio tester), e a maior importância desta automação para o projeto da MotorBRAS é a regressão, garantindo que as funcionalidades não estão sendo alteradas além do esperado. Os aspectos não-funcionais não são esperados em relação à regressão, pois sua característica não sugere regressão, mas sim diagnóstico pontual e uso de ferramentas específicas.
+
+O tester tem liberdade para decidir realizar outros tipos e técnicas de testes que julgar válidas na iteração. Estes testes também precisam ser documentados em relatório, com justificativa e resultados. Os testes precisam ser planejados no início da iteração, e tal definição precisa também constar no relatório a ser entregue no final da iteração.
 
 
 \subsection{Manutenção}
